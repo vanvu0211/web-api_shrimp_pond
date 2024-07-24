@@ -1,0 +1,12 @@
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\bin\Debug\net6.0\ShrimpPond.Domain.deps.json
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\bin\Debug\net6.0\ShrimpPond.Domain.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\bin\Debug\net6.0\ShrimpPond.Domain.pdb
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\ShrimpPond.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\ShrimpPond.Domain.AssemblyInfoInputs.cache
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\ShrimpPond.Domain.AssemblyInfo.cs
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\ShrimpPond.Domain.csproj.CoreCompileInputs.cache
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\ShrimpPond.Domain.sourcelink.json
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\ShrimpPond.Domain.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\refint\ShrimpPond.Domain.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\ShrimpPond.Domain.pdb
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Domain\obj\Debug\net6.0\ref\ShrimpPond.Domain.dll
