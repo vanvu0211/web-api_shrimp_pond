@@ -16,5 +16,3 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_Cle
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Infrastructure\obj\Debug\net6.0\refint\ShrimpPond.Infrastructure.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Infrastructure\obj\Debug\net6.0\ShrimpPond.Infrastructure.pdb
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Infrastructure\obj\Debug\net6.0\ref\ShrimpPond.Infrastructure.dll
-C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Infrastructure\bin\Debug\net6.0\ShrimpPond.Infrastructure.runtimeconfig.json
-C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Infrastructure\obj\Debug\net6.0\ShrimpPond.Infrastructure.genruntimeconfig.cache

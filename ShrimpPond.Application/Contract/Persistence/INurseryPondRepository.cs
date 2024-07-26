@@ -1,5 +1,5 @@
 ﻿using ShrimpPond.Application.Contract.Persistence.Genenric;
-using ShrimpPond.Domain;
+using ShrimpPond.Domain.PondData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ShrimpPond.Application.Contract.Persistence
 {
-    public interface INurseryPondRepository: IRepositoryBaseAsync<NurseryPond,string>
+    public interface IPondRepository: IRepositoryBaseAsync<Pond,string>
     {
 
     }

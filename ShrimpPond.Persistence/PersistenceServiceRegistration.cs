@@ -21,8 +21,10 @@ namespace ShrimpPond.Persistence
 
             services.AddScoped(typeof(IRepositoryBaseAsync<,>), typeof(RepositoryBase<,>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<INurseryPondRepository, NurseryPondRepository>();
-           return services;
+            services.AddScoped<IPondRepository, PondRepository>();
+            services.AddScoped<ICertificateRepository, CertificateRepository>();
+            services.AddScoped<ISizeShrimpRepository, SizeShrimpRepository>();
+            return services;
         }
     }
 }

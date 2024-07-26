@@ -1,8 +1,6 @@
-using ShrimpPond.Persistence;
-using ShrimpPond.Infrastructure;
+using EquipmentManagement.Infrastructure;
 using ShrimpPond.Application;
-
-using ShrimpPond.Domain;
+using ShrimpPond.Persistence;
 
 
 namespace ShrimpPond.API
@@ -17,8 +15,9 @@ namespace ShrimpPond.API
             // Add services to the container.
 
             builder.Services.AddApplicationServices();
-            //builder.Services.AddInfrastructureServices(builder.Configuration);
+            builder.Services.AddInfrastructureServices();
             builder.Services.AddPersistenceServices(builder.Configuration);
+
             builder.Services.AddControllers();
             builder.Services.AddCors(options =>
             {

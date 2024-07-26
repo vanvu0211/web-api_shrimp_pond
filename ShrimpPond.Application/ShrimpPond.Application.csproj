@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -20,8 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Feature\NurseryPond\Commands\ActiveNurseryPond\" />
-    <Folder Include="Feature\NurseryPond\Queries\" />
+    <Folder Include="Feature\PondType\Commands\UpdatePondType\" />
+    <Folder Include="Feature\Pond\Queries\" />
   </ItemGroup>
 
 </Project>

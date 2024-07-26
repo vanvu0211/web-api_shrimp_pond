@@ -8,7 +8,10 @@ namespace ShrimpPond.Application.Contract.Persistence.Genenric
 {
     public interface IUnitOfWork
     {
-        INurseryPondRepository nurseryPondRepository {  get; }
+        IPondRepository pondRepository {  get; }
+        ICertificateRepository certificateRepository {  get; }
+        ISizeShrimpRepository sizeShrimpRepository {  get; }
+        IPondTypeRepository pondTypeRepository {  get; }
 
         Task<int> CommitAsync();
         Task SaveChangeAsync();

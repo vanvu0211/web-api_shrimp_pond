@@ -16,11 +16,17 @@ namespace ShrimpPond.Persistence.Repository.Generic
         public UnitOfWork(ShrimpPondDbContext context)
         {
             _context = context;
-            nurseryPondRepository = new NurseryPondRepository(context);
+            pondRepository = new PondRepository(context);
+            certificateRepository = new CertificateRepository(context);
+            sizeShrimpRepository = new SizeShrimpRepository(context);
+            pondTypeRepository = new PondTypeRepository(context);
             
         }
-        public INurseryPondRepository nurseryPondRepository { get; private set; }
-      
+        public IPondRepository pondRepository { get; private set; }
+        public ICertificateRepository certificateRepository { get; private set; }
+        public ISizeShrimpRepository sizeShrimpRepository { get; private set; }
+        public IPondTypeRepository pondTypeRepository { get; private set; }
+
 
         public async Task<int> CommitAsync()
         {
