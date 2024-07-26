@@ -10,10 +10,7 @@ using System.Threading.Tasks;
 
 namespace ShrimpPond.Persistence.Repository
 {
-    public class EnvironmentParaRepository : RepositoryBase<EnvironmentPara,int>,IEnvironmentParaRepository
-    {
-        public EnvironmentParaRepository(ShrimpPondDbContext shrimpPondDbContext) : base(shrimpPondDbContext)
-        {
-        }
+    public class EnvironmentParaRepository
+    { 
     }
 }

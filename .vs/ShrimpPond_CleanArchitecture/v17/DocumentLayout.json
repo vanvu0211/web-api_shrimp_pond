@@ -3,104 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\repository\\generic\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\repository\\generic\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\controllers\\pondtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\pondtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\nurserypond\\commands\\createnurserypond\\creatanurserypondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\nurserypond\\commands\\createnurserypond\\creatanurserypondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\nurserypond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\nurserypond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.infrastructure\\infrastructureservicesregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|solutionrelative:shrimppond.infrastructure\\infrastructureservicesregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\repository\\temperaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\repository\\temperaturerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\temperaturevalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\temperaturevalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\persistenceserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\persistenceserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\contract\\persistence\\itemperaturevaluerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\persistence\\itemperaturevaluerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\contract\\persistence\\iphvaluerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\persistence\\iphvaluerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\repository\\phvaluerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\repository\\phvaluerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\repository\\medicinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\repository\\medicinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\repository\\nurserypondrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\repository\\nurserypondrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\repository\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\repository\\foodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\repository\\environmentpararepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\repository\\environmentpararepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\contract\\persistence\\imedicinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\persistence\\imedicinerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\contract\\persistence\\ienvironmentpararepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\persistence\\ienvironmentpararepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\filtermachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\filtermachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\oxymachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\oxymachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\phvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\phvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\contract\\persistence\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\persistence\\ifoodrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\contract\\persistence\\inurserypondrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\persistence\\inurserypondrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\contract\\persistence\\genenric\\irepositorybaseasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\persistence\\genenric\\irepositorybaseasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240724113254_DbInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShrimpPond.Persistence\\Migrations\\20240724113254_DbInit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.persistence\\databasecontext\\shrimpponddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\databasecontext\\shrimpponddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\environmentpara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\environmentpara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,327 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TemperatureRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\TemperatureRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\TemperatureRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\TemperatureRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\Repository\\TemperatureRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABIAAAA",
+              "DocumentIndex": 4,
+              "Title": "PersistenceServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\PersistenceServiceRegistration.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\PersistenceServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\PersistenceServiceRegistration.cs",
+              "RelativeToolTip": "ShrimpPond.Persistence\\PersistenceServiceRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:44:20.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PhValueRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\PhValueRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\PhValueRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\PhValueRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\Repository\\PhValueRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:44:11.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EnvironmentParaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\EnvironmentParaRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\EnvironmentParaRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\EnvironmentParaRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\Repository\\EnvironmentParaRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:44:00.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MedicineRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\MedicineRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\MedicineRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\MedicineRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\Repository\\MedicineRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:43:20.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FoodRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\FoodRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\FoodRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\FoodRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\Repository\\FoodRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:43:09.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FilterMachine.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\FilterMachine.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\FilterMachine.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\FilterMachine.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\FilterMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:41:46.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OxyMachine.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\OxyMachine.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\OxyMachine.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\OxyMachine.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\OxyMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:41:40.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IMedicineRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IMedicineRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\IMedicineRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IMedicineRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\Persistence\\IMedicineRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:41:08.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IFoodRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IFoodRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\IFoodRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IFoodRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\Persistence\\IFoodRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:40:37.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IEnvironmentParaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IEnvironmentParaRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\IEnvironmentParaRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IEnvironmentParaRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\Persistence\\IEnvironmentParaRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:40:01.482Z",
+              "WhenOpened": "2024-07-26T16:01:29.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ITemperatureValueRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\ITemperatureValueRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\ITemperatureValueRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\ITemperatureValueRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\Persistence\\ITemperatureValueRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Title": "ApplicationServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\ApplicationServiceRegistration.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\ApplicationServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\ApplicationServiceRegistration.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\ApplicationServiceRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:38:52.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "INurseryPondRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\INurseryPondRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\INurseryPondRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\INurseryPondRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\Persistence\\INurseryPondRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:37:43.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IPhValueRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IPhValueRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\IPhValueRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IPhValueRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\Persistence\\IPhValueRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:37:41.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IRepositoryBaseAsync.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\Genenric\\IRepositoryBaseAsync.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\Genenric\\IRepositoryBaseAsync.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\Genenric\\IRepositoryBaseAsync.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\Persistence\\Genenric\\IRepositoryBaseAsync.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:37:21.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\Generic\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\Generic\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\Generic\\UnitOfWork.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\Repository\\Generic\\UnitOfWork.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:35:24.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreataNurseryPondHandler.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\NurseryPond\\Commands\\CreateNurseryPond\\CreataNurseryPondHandler.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\NurseryPond\\Commands\\CreateNurseryPond\\CreataNurseryPondHandler.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\NurseryPond\\Commands\\CreateNurseryPond\\CreataNurseryPondHandler.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\NurseryPond\\Commands\\CreateNurseryPond\\CreataNurseryPondHandler.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAABQAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:33:25.627Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "20240724113254_DbInit.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240724113254_DbInit.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Migrations\\20240724113254_DbInit.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240724113254_DbInit.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\Migrations\\20240724113254_DbInit.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:32:54.553Z",
+              "WhenOpened": "2024-07-26T16:01:07.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "NurseryPond.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\NurseryPond.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\NurseryPond.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\NurseryPond.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\NurseryPond.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAARAAAA",
+              "Title": "InfrastructureServicesRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
+              "RelativeToolTip": "ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:31:37.612Z",
+              "WhenOpened": "2024-07-26T15:58:43.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ShrimpPondDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\DatabaseContext\\ShrimpPondDbContext.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\DatabaseContext\\ShrimpPondDbContext.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\DatabaseContext\\ShrimpPondDbContext.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\DatabaseContext\\ShrimpPondDbContext.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Program.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\Program.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Program.cs",
+              "RelativeToolTip": "ShrimpPond.API\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADgvxMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:27:59.766Z",
+              "WhenOpened": "2024-07-26T15:58:10.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NurseryPondRepository.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\NurseryPondRepository.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\NurseryPondRepository.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\NurseryPondRepository.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\Repository\\NurseryPondRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:27:57.785Z",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\appsettings.json",
+              "RelativeToolTip": "ShrimpPond.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-26T15:58:09.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Medicine.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\Medicine.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\Medicine.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\Medicine.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\Medicine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
+              "DocumentIndex": 0,
+              "Title": "PondTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\PondTypeController.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\PondTypeController.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\PondTypeController.cs",
+              "RelativeToolTip": "ShrimpPond.API\\Controllers\\PondTypeController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACoAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:27:15.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Food.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\Food.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\Food.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\Food.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\Food.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:26:57.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TemperatureValue.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\TemperatureValue.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\TemperatureValue.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\TemperatureValue.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\TemperatureValue.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:26:36.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PHValue.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PHValue.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\PHValue.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PHValue.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\PHValue.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:25:54.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "EnvironmentPara.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\EnvironmentPara.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\EnvironmentPara.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\EnvironmentPara.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\EnvironmentPara.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T11:20:03.29Z",
+              "WhenOpened": "2024-07-26T15:54:43.862Z",
               "EditorCaption": ""
             }
           ]

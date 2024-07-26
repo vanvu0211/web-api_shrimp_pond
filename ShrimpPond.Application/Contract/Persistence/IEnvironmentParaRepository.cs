@@ -1,4 +1,6 @@
-﻿using ShrimpPond.Application.Contract.Persistence.Genenric;
+﻿
+
+using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Domain;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ShrimpPond.Application.Contract.Persistence
 {
-    public interface IEnvironmentParaRepository: IRepositoryBaseAsync<EnvironmentPara,int>
+    public interface IEnvironmentParaRepository
     {
     }
 }

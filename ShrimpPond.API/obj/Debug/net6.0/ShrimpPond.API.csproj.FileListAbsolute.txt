@@ -14,7 +14,6 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_Cle
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.AssemblyInfoInputs.cache
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.AssemblyInfo.cs
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.csproj.CoreCompileInputs.cache
-C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\staticwebassets.development.json
@@ -84,3 +83,4 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_Cle
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.MvcApplicationPartsAssemblyInfo.cs
