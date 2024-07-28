@@ -9,7 +9,7 @@ namespace ShrimpPond.Domain.PondData
     public class SizeShrimp
     {
         public int SizeShrimpId { get; set; }
-        public float Value { get; set; }
+        public float SizeValue { get; set; }
         public DateTime UpdateDate { get; set; }
         public string PondId { get; set; } = string.Empty;
     }

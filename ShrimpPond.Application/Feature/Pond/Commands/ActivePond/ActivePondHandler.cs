@@ -40,7 +40,7 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
             var sizeShrimp = new Domain.PondData.SizeShrimp()
             {
                 PondId = request.PondId,
-                Value = request.SizeShrimp,
+                SizeValue = request.SizeShrimp,
                 UpdateDate = DateTime.Now,
             };
 

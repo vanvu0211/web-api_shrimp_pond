@@ -4,9 +4,13 @@ using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.Feeding.Commands.Feeding;
 using ShrimpPond.Application.Feature.Feeding.Commands.MedicineFeeding;
 using ShrimpPond.Application.Feature.Food.Commands.CreateNewFood;
+using ShrimpPond.Application.Feature.Food.Queries.GetAllFood;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
 using ShrimpPond.Application.Feature.Update.Commands.LossShrimpUpdate;
 using ShrimpPond.Application.Feature.Update.Commands.SizeShrimpUpdate;
+using ShrimpPond.Application.Feature.Update.Queries.GetFoodFeeding;
+using ShrimpPond.Application.Feature.Update.Queries.GetLossUpdate;
+using ShrimpPond.Application.Feature.Update.Queries.GetSizeUpdate;
 using ShrimpPond.Domain.PondData;
 
 namespace ShrimpPond.API.Controllers
@@ -20,6 +24,34 @@ namespace ShrimpPond.API.Controllers
         public UpdateController(IMediator mediator)
         {
             _mediator = mediator;
+        }
+        [HttpGet("SizeShrimp")]
+        public async Task<IActionResult> GetSizeShrimp([FromQuery] string? PondId, int pageSize = 200, int pageNumber = 1)
+        {
+            var sizeShrimps = await _mediator.Send(new GetSizeUpdate());
+            if (PondId != null)
+            {
+                sizeShrimps = sizeShrimps.Where(x => x.PondId == PondId).ToList();
+            }
+            sizeShrimps = sizeShrimps.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
+            return Ok(sizeShrimps);
+        }
+        [HttpGet("LossShrimp")]
+        public async Task<IActionResult> GetLossShrimp([FromQuery] string? PondId, int pageSize = 200, int pageNumber = 1)
+        {
+            var LossShrimps = await _mediator.Send(new GetLossUpdate());
+            if (PondId != null)
+            {
+                LossShrimps = LossShrimps.Where(x => x.PondId == PondId).ToList();
+            }
+            LossShrimps = LossShrimps.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
+            return Ok(LossShrimps);
+        }
+        [HttpGet("FoodFeeding")]
+        public async Task<IActionResult> GetFoodFeeding([FromQuery] string? PondId, int pageSize = 200, int pageNumber = 1)
+        {
+            var FoodFeedings = await _mediator.Send(new GetFoodFeeding { PondId = PondId });
+            return Ok(FoodFeedings);
         }
         [HttpPost("Food")]
         public async Task<IActionResult> FoodFeeding([FromBody] FoodFeeding e)
