@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShrimpPond.Application.Feature.Food.Commands.Queries.GetAllFood
+namespace ShrimpPond.Application.Feature.Food.Queries.GetAllFood
 {
-    public record GetAllFood:IRequest<List<GetAllFoodDTO>>
+    public record GetAllFood : IRequest<List<GetAllFoodDTO>>
     {
     }
 }
