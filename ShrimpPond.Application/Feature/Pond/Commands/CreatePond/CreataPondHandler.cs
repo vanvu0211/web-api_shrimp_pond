@@ -29,14 +29,21 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond
             }
             //convert
 
-            var Condition = _unitOfWork.pondRepository.FindAll().SingleOrDefault(p=>p.PondId == request.PondId);
+            var Condition1 =  _unitOfWork.pondRepository.FindAll().SingleOrDefault(p=>p.PondId == request.PondId);
 
-            if (Condition != null)
+            if (Condition1 != null)
             {
                 throw new BadRequestException("PondId already exist", validatorResult);
             }
 
-            var nurseryPond = new Pond()
+            var Condition2 = _unitOfWork.pondTypeRepository.FindAll().SingleOrDefault(p => p.PondTypeName == request.PondTypeName);
+
+            if (Condition2 == null)
+            {
+                throw new BadRequestException("Not found PondType", validatorResult);
+            }
+
+            var nurseryPond = new Domain.PondData.Pond()
             {
                 PondId = request.PondId,
                 Deep = request.Deep,

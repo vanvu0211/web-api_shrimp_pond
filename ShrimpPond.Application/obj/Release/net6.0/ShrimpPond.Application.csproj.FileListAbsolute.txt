@@ -1,0 +1,16 @@
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\bin\Release\net6.0\ShrimpPond.Application.deps.json
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\bin\Release\net6.0\ShrimpPond.Application.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\bin\Release\net6.0\ShrimpPond.Application.pdb
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\bin\Release\net6.0\ShrimpPond.Domain.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\bin\Release\net6.0\ShrimpPond.Domain.pdb
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPond.Application.csproj.AssemblyReference.cache
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPond.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPond.Application.AssemblyInfoInputs.cache
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPond.Application.AssemblyInfo.cs
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPond.Application.csproj.CoreCompileInputs.cache
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPond.Application.sourcelink.json
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPo.C772EBD5.Up2Date
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPond.Application.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\refint\ShrimpPond.Application.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ShrimpPond.Application.pdb
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\obj\Release\net6.0\ref\ShrimpPond.Application.dll

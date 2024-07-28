@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nEQcu51EgqEFeYG0STBO8iHQKGKuA+fOId5XBpupGPY=",
+  "Source": "ShrimpPond.API",
+  "BasePath": "_content/ShrimpPond.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

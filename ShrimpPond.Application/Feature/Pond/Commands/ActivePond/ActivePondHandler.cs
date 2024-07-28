@@ -45,19 +45,20 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
             };
 
             _unitOfWork.sizeShrimpRepository.Add(sizeShrimp);
-
             //Active
             activePond.StartDate = DateTime.Now;
             activePond.Status = EPondStatus.Active;
             activePond.AmountShrimp = request.AmountShrimp;
-  
+            activePond.OriginPondId = request.OriginPondId;
             if (request.Certificates != null)
             {
                 foreach (var pic in request.Certificates)
                 {
-                    var certificate = new Domain.PondData.Certificate
+
+
+                    var certificate= new  Domain.PondData.Certificate()
                     {
-                        CertificateName = "Giấy xét nghiệm thông thương phẩm",
+                        CertificateName = "Giấy xét nghiệm tôm thương phẩm",
                         PondId = request.PondId,
                         FileData = Convert.FromBase64String(pic),
                     };
@@ -68,7 +69,7 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
 
             _unitOfWork.pondRepository.Update(activePond);
             await _unitOfWork.SaveChangeAsync();
-            return "OK";
+            return  request.PondId;
         }
     }
 }

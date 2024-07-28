@@ -24,4 +24,8 @@
     <ProjectReference Include="..\ShrimpPond.Application\ShrimpPond.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

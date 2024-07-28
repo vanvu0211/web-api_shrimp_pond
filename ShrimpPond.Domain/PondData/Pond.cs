@@ -12,8 +12,8 @@ namespace ShrimpPond.Domain.PondData
     {
         //Khởi tạo ao
         public string PondId { get; set; } = string.Empty;
-        public string Deep { get; set; } = string.Empty;
-        public string Diameter { get; set; } = string.Empty;
+        public float Deep { get; set; } 
+        public float Diameter { get; set; } 
         public string PondTypeName { get; set; } = string.Empty;
         public PondType? PondType { get; set; }
 
@@ -23,8 +23,8 @@ namespace ShrimpPond.Domain.PondData
         public string OriginPondId { get; set; } = string.Empty;
         public string SeedId { get; set; } = string.Empty;
         [Column(TypeName = "VARBINARY(MAX)")]
-        public List<Certificate>? Certificates { get; set; }
-        public string AmountShrimp { get; set; } = string.Empty;
+        public List<Certificate>? Certificates { get; set; } = new();
+        public float AmountShrimp { get; set; }
         public DateTime StartDate { get; set; }
 
         //Trong quá trình nuôi 

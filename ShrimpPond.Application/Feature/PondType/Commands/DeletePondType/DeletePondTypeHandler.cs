@@ -30,6 +30,13 @@ namespace ShrimpPond.Application.Feature.PondType.Commands.DeletePondType
                 throw new BadRequestException("Not found PondType");
             }
 
+            var pond = _unitOfWork.pondRepository.FindByCondition(x => x.PondTypeName == deletePondType.PondTypeName).ToList();
+
+            if (pond.Count != 0)
+            {
+                throw new BadRequestException("Pond still on list");
+            }
+
             _unitOfWork.pondTypeRepository.Remove(deletePondType);
             await _unitOfWork.SaveChangeAsync();
             //return 

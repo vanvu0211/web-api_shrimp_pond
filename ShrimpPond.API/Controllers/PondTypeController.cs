@@ -36,10 +36,9 @@ namespace ShrimpPond.API.Controllers
             return Ok(id);
         }
         [HttpDelete]
-        public async Task<IActionResult> DeletePondType([FromBody] string PondTypeId)
+        public async Task<IActionResult> DeletePondType([FromQuery] string PondTypeId)
         {
             var command = new DeletePondType { PondTypeId = PondTypeId };
-
             var IdReturn = await _mediator.Send(command);
             return Ok(IdReturn);
         }

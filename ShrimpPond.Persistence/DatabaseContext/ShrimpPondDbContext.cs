@@ -17,6 +17,8 @@ namespace ShrimpPond.Persistence.DatabaseContext
         public DbSet<Medicine> Medicine { get; set; }
         public DbSet<Certificate> Certificate {  get; set; } 
         public DbSet<PondType> PondType {  get; set; }
+        public DbSet<Feeding> Feeding {  get; set; }
+        public DbSet<FeedingFood> FeedingFood {  get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,10 +28,15 @@ namespace ShrimpPond.Persistence.DatabaseContext
             modelBuilder.Entity<Pond>().HasKey(n => n.PondId);
 
             modelBuilder.Entity<PondType>().HasKey(n => n.PondTypeId);
-  
+
+            modelBuilder.Entity<FeedingFood>().HasKey(n => n.FeedingFoodId);
+            modelBuilder.Entity<FeedingFood>().Property(x => x.FeedingFoodId).ValueGeneratedOnAdd();
+
+
+            modelBuilder.Entity<Feeding>().HasKey(n => n.FeedingId);
+            modelBuilder.Entity<Feeding>().Property(x => x.FeedingId).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<Food>().HasKey(n => n.FoodId);
-            modelBuilder.Entity<Food>().HasOne(p=>p.Pond).WithMany(p=>p.Foods).HasForeignKey(p=>p.PondId); 
             modelBuilder.Entity<Food>().Property(x => x.FoodId).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<Medicine>().HasKey(n => n.MedicineId);
