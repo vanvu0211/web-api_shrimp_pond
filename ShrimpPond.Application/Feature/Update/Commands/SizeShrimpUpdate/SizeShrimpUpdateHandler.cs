@@ -41,7 +41,7 @@ namespace ShrimpPond.Application.Feature.Update.Commands.SizeShrimpUpdate
             var updatesize = new SizeShrimp()
             {
                 PondId = request.PondId,
-                Value = request.SizeValue,
+                SizeValue = request.SizeValue,
                 UpdateDate = request.UpdateDate,
             }
 ;           _unitOfWork.sizeShrimpRepository.Add(updatesize);

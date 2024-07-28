@@ -277,15 +277,15 @@ namespace ShrimpPond.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LossShrimpId"), 1L, 1);
 
+                    b.Property<float>("LossValue")
+                        .HasColumnType("real");
+
                     b.Property<string>("PondId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<float>("Value")
-                        .HasColumnType("real");
 
                     b.HasKey("LossShrimpId");
 
@@ -318,11 +318,11 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<float>("SizeValue")
+                        .HasColumnType("real");
+
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
-
-                    b.Property<float>("Value")
-                        .HasColumnType("real");
 
                     b.HasKey("SizeShrimpId");
 

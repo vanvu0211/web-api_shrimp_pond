@@ -41,7 +41,7 @@ namespace ShrimpPond.Application.Feature.Update.Commands.LossShrimpUpdate
             var updateloss = new LossShrimp()
             {
                 PondId = request.PondId,
-                Value = request.LossValue,
+                LossValue = request.LossValue,
                 UpdateDate = request.UpdateDate,
             };           
             _unitOfWork.lossShrimpRepository.Add(updateloss);

@@ -1,7 +1,76 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getfoodfeeding\\getfoodfeeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getfoodfeeding\\getfoodfeeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getfoodfeeding\\getfoodfeedinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getfoodfeeding\\getfoodfeedinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getfoodfeeding\\getfoodfeedingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getfoodfeeding\\getfoodfeedingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\controllers\\updatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\updatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\controllers\\pondtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\pondtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\controllers\\pondcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\pondcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\commands\\foodfeeding\\foodfeedinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\commands\\foodfeeding\\foodfeedinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getsizeupdate\\getsizeupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getsizeupdate\\getsizeupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\commands\\foodfeeding\\foodfeeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\commands\\foodfeeding\\foodfeeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getlossupdate\\getlossupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getlossupdate\\getlossupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\mappingprofile\\lossshrimpprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\mappingprofile\\lossshrimpprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\mappingprofile\\sizeshrimpprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\mappingprofile\\sizeshrimpprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\commands\\sizeshrimpupdate\\sizeshrimpupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\commands\\sizeshrimpupdate\\sizeshrimpupdatehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getlossupdate\\getlossupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getlossupdate\\getlossupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getsizeupdate\\getsizeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getsizeupdate\\getsizeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getsizeupdate\\getsizeupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getsizeupdate\\getsizeupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.application\\feature\\update\\queries\\getlossupdate\\getlossupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\update\\queries\\getlossupdate\\getlossupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +78,232 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PondController.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\PondController.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\PondController.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\PondController.cs",
+              "RelativeToolTip": "ShrimpPond.API\\Controllers\\PondController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T13:13:23.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PondTypeController.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\PondTypeController.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\PondTypeController.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\PondTypeController.cs",
+              "RelativeToolTip": "ShrimpPond.API\\Controllers\\PondTypeController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T13:13:03.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FoodFeedingHandler.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Commands\\FoodFeeding\\FoodFeedingHandler.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Commands\\FoodFeeding\\FoodFeedingHandler.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Commands\\FoodFeeding\\FoodFeedingHandler.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Commands\\FoodFeeding\\FoodFeedingHandler.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:59:57.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FoodFeeding.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Commands\\FoodFeeding\\FoodFeeding.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Commands\\FoodFeeding\\FoodFeeding.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Commands\\FoodFeeding\\FoodFeeding.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Commands\\FoodFeeding\\FoodFeeding.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:58:22.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetFoodFeedingHandler.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeedingHandler.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeedingHandler.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeedingHandler.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeedingHandler.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvx8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:57:16.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetFoodFeedingDTO.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeedingDTO.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeedingDTO.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeedingDTO.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeedingDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:57:09.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetFoodFeeding.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeeding.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeeding.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeeding.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetFoodFeeding\\GetFoodFeeding.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:57:03.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateController.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\UpdateController.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\UpdateController.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\UpdateController.cs",
+              "RelativeToolTip": "ShrimpPond.API\\Controllers\\UpdateController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:54:41.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SizeShrimpProfile.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\MappingProfile\\SizeShrimpProfile.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\MappingProfile\\SizeShrimpProfile.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\MappingProfile\\SizeShrimpProfile.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\MappingProfile\\SizeShrimpProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:54:27.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LossShrimpProfile.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\MappingProfile\\LossShrimpProfile.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\MappingProfile\\LossShrimpProfile.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\MappingProfile\\LossShrimpProfile.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\MappingProfile\\LossShrimpProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:53:58.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SizeShrimpUpdateHandler.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Commands\\SizeShrimpUpdate\\SizeShrimpUpdateHandler.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Commands\\SizeShrimpUpdate\\SizeShrimpUpdateHandler.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Commands\\SizeShrimpUpdate\\SizeShrimpUpdateHandler.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Commands\\SizeShrimpUpdate\\SizeShrimpUpdateHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:53:10.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetSizeUpdateHandler.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateHandler.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateHandler.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateHandler.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateHandler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:52:16.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetSizeUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateDTO.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateDTO.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:51:57.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetSizeUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdate.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdate.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdate.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:51:28.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GetLossUpdateHandler.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdateHandler.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdateHandler.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdateHandler.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdateHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:51:25.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetLossUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdateDTO.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdateDTO.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdateDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:51:17.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetLossUpdate.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdate.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdate.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdate.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetLossUpdate\\GetLossUpdate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T12:51:10.749Z",
+              "EditorCaption": ""
             }
           ]
         }
