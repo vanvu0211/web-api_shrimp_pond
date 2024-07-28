@@ -26,6 +26,10 @@ namespace ShrimpPond.Persistence.DatabaseContext
 
         public DbSet<MedicineFeeding> MedicineFeeding { get; set; }
         public DbSet<MedicineForFeeding> MedicineForFeeding { get; set; }
+        public DbSet<SizeShrimp> SizeShrimp { get; set; }
+        public DbSet<LossShrimp> LossShrimp { get; set; }
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -60,15 +64,13 @@ namespace ShrimpPond.Persistence.DatabaseContext
             modelBuilder.Entity<Certificate>().Property(x => x.CertificateId).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<LossShrimp>().HasKey(n => n.LossShrimpId);
-            modelBuilder.Entity<LossShrimp>().HasOne(p => p.Pond).WithOne(p => p.LossShrimp);
             modelBuilder.Entity<LossShrimp>().Property(x => x.LossShrimpId).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<SizeShrimp>().HasKey(n => n.SizeShrimpId);
-            //modelBuilder.Entity<SizeShrimp>().HasOne(p => p.Pond).WithOne(p => p.sizeShrimp);
             modelBuilder.Entity<SizeShrimp>().Property(x => x.SizeShrimpId).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<Collect>().HasKey(n => n.CollectId);
-            modelBuilder.Entity<Collect>().HasOne(p => p.Pond).WithOne(p => p.Collect);
+            //modelBuilder.Entity<Collect>().HasOne(p => p.Pond).WithOne(p => p.Collect);
             modelBuilder.Entity<Collect>().Property(x => x.CollectId).ValueGeneratedOnAdd();
         }
     }
