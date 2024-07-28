@@ -5,8 +5,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ShrimpPond.Domain.PondData.Feeding.Food;
+using ShrimpPond.Domain.PondData.Feeding.Medicine;
 
-namespace ShrimpPond.Domain.PondData
+namespace ShrimpPond.Domain.PondData.Collect
 {
     public class Pond
     {

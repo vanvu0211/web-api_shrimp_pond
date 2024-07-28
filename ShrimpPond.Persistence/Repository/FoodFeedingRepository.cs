@@ -1,5 +1,5 @@
 ﻿using ShrimpPond.Application.Contract.Persistence;
-using ShrimpPond.Domain.PondData;
+using ShrimpPond.Domain.PondData.Feeding.Food;
 using ShrimpPond.Persistence.DatabaseContext;
 using ShrimpPond.Persistence.Repository.Generic;
 using System;
@@ -10,8 +10,11 @@ using System.Threading.Tasks;
 
 namespace ShrimpPond.Persistence.Repository
 {
-    public class FeedingFoodRepository : RepositoryBase<FeedingFood, int>, IFeedingFoodRepository
+    public class FoodFeedingRepository: RepositoryBase<FoodFeeding, int>, IFoodFeedingRepository
     {
-        public FeedingFoodRepository(ShrimpPondDbContext shrimpPondDbContext) : base(shrimpPondDbContext) { }
+        public FoodFeedingRepository(ShrimpPondDbContext shrimpPondDbContext) : base(shrimpPondDbContext)
+        {
+
+        }
     }
 }

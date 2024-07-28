@@ -2,28 +2,30 @@
 using MediatR;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Application.Exceptions;
+using ShrimpPond.Application.Feature.Feeding.Commands.Feeding;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond;
 using ShrimpPond.Application.Feature.Pond.Queries.GetAllPond;
 using ShrimpPond.Domain.PondData;
+using ShrimpPond.Domain.PondData.Feeding.Food;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShrimpPond.Application.Feature.Food.Commands.Feeding
+namespace ShrimpPond.Application.Feature.Feeding.Commands.Feeding
 {
-    public class FeedingHandler: IRequestHandler<Feeding,string>
+    public class FoodFeedingHandler : IRequestHandler<FoodFeeding, string>
     {
         private readonly IUnitOfWork _unitOfWork;
-        public FeedingHandler(IUnitOfWork unitOfWork)
+        public FoodFeedingHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
-        public async Task<string> Handle(Feeding request, CancellationToken cancellationToken)
+        public async Task<string> Handle(FoodFeeding request, CancellationToken cancellationToken)
         {
             //validate
-            var validator = new FeedingValidation();
+            var validator = new FoodFeedingValidation();
             var validatorResult = await validator.ValidateAsync(request);
             if (validatorResult.Errors.Any())
             {
@@ -31,20 +33,20 @@ namespace ShrimpPond.Application.Feature.Food.Commands.Feeding
             }
             //Handle
 
-            var pond = _unitOfWork.pondRepository.FindAll().Where(x=>x.PondId==request.PondId).Where(x=>x.Status == EPondStatus.InActive);
+            var pond = _unitOfWork.pondRepository.FindAll().Where(x => x.PondId == request.PondId).Where(x => x.Status == EPondStatus.InActive);
 
-            if(pond.Count() != 0)
+            if (pond.Count() != 0)
             {
                 throw new BadRequestException($"Ao {request.PondId} chưa kích hoạt", validatorResult);
             }
 
-            List<FeedingFood> feedingFoods = new List<FeedingFood>();
+            List<FoodForFeeding> feedingFoods = new List<FoodForFeeding>();
 
-            if(request.Foods != null)
+            if (request.Foods != null)
             {
-                foreach(var food in request.Foods)
+                foreach (var food in request.Foods)
                 {
-                    var foodfeeding = new Domain.PondData.FeedingFood()
+                    var foodfeeding = new FoodForFeeding()
                     {
                         Name = food.Name,
                         Type = food.Type,
@@ -54,15 +56,15 @@ namespace ShrimpPond.Application.Feature.Food.Commands.Feeding
                 }
             }
 
-            var feeding = new Domain.PondData.Feeding()
+            var feeding = new Domain.PondData.Feeding.Food.FoodFeeding()
             {
                 PondId = request.PondId,
                 FeedingDate = request.FeedlingDate,
                 Foods = feedingFoods
             };
-           
-            _unitOfWork.feedingRepository.Add(feeding);
-           await _unitOfWork.SaveChangeAsync();
+
+            _unitOfWork.foodFeedingRepository.Add(feeding);
+            await _unitOfWork.SaveChangeAsync();
             return request.PondId;
         }
     }

@@ -43,7 +43,7 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond
                 throw new BadRequestException("Not found PondType", validatorResult);
             }
 
-            var nurseryPond = new Domain.PondData.Pond()
+            var nurseryPond = new Domain.PondData.Collect.Pond()
             {
                 PondId = request.PondId,
                 Deep = request.Deep,

@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShrimpPond.Application.Feature.Food.Commands.Feeding
+namespace ShrimpPond.Application.Feature.Feeding.Commands.Feeding
 {
-    public class FeedingValidation: AbstractValidator<Feeding>
+    public class FoodFeedingValidation : AbstractValidator<FoodFeeding>
     {
-        public FeedingValidation() 
+        public FoodFeedingValidation()
         {
             RuleFor(p => p.PondId)
                 .NotEmpty().WithMessage("{property} is required")
                 .NotNull()
-                .MaximumLength(100);          
+                .MaximumLength(100);
         }
     }
 }
