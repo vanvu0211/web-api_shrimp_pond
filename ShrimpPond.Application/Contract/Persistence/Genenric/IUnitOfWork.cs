@@ -18,6 +18,7 @@ namespace ShrimpPond.Application.Contract.Persistence.Genenric
         IMedicineFeedingRepository medicineFeedingRepository { get; }
         IMedicineForFeedingRepository medicineForFeedingRepository { get;}
         IMedicineRepository medicineRepository { get; }
+        ILossShrimpRepository lossShrimpRepository { get; }
 
         Task<int> CommitAsync();
         Task SaveChangeAsync();

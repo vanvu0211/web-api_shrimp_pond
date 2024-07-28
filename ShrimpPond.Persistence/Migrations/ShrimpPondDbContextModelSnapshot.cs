@@ -82,8 +82,7 @@ namespace ShrimpPond.Persistence.Migrations
 
                     b.HasKey("CollectId");
 
-                    b.HasIndex("PondId")
-                        .IsUnique();
+                    b.HasIndex("PondId");
 
                     b.ToTable("Collect");
                 });
@@ -142,16 +141,11 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PondId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("FoodId");
-
-                    b.HasIndex("PondId");
 
                     b.ToTable("Food");
                 });
@@ -217,16 +211,11 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PondId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("MedicineId");
-
-                    b.HasIndex("PondId");
 
                     b.ToTable("Medicine");
                 });
@@ -290,7 +279,7 @@ namespace ShrimpPond.Persistence.Migrations
 
                     b.Property<string>("PondId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
@@ -299,9 +288,6 @@ namespace ShrimpPond.Persistence.Migrations
                         .HasColumnType("real");
 
                     b.HasKey("LossShrimpId");
-
-                    b.HasIndex("PondId")
-                        .IsUnique();
 
                     b.ToTable("LossShrimp");
                 });
@@ -330,7 +316,7 @@ namespace ShrimpPond.Persistence.Migrations
 
                     b.Property<string>("PondId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
@@ -339,9 +325,6 @@ namespace ShrimpPond.Persistence.Migrations
                         .HasColumnType("real");
 
                     b.HasKey("SizeShrimpId");
-
-                    b.HasIndex("PondId")
-                        .IsUnique();
 
                     b.ToTable("SizeShrimp");
                 });
@@ -364,8 +347,8 @@ namespace ShrimpPond.Persistence.Migrations
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Collect.Collect", b =>
                 {
                     b.HasOne("ShrimpPond.Domain.PondData.Collect.Pond", "Pond")
-                        .WithOne("Collect")
-                        .HasForeignKey("ShrimpPond.Domain.PondData.Collect.Collect", "PondId")
+                        .WithMany()
+                        .HasForeignKey("PondId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -381,13 +364,6 @@ namespace ShrimpPond.Persistence.Migrations
                     b.Navigation("PondType");
                 });
 
-            modelBuilder.Entity("ShrimpPond.Domain.PondData.Feeding.Food.Food", b =>
-                {
-                    b.HasOne("ShrimpPond.Domain.PondData.Collect.Pond", null)
-                        .WithMany("Foods")
-                        .HasForeignKey("PondId");
-                });
-
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Feeding.Food.FoodForFeeding", b =>
                 {
                     b.HasOne("ShrimpPond.Domain.PondData.Feeding.Food.FoodFeeding", null)
@@ -397,38 +373,11 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ShrimpPond.Domain.PondData.Feeding.Medicine.Medicine", b =>
-                {
-                    b.HasOne("ShrimpPond.Domain.PondData.Collect.Pond", null)
-                        .WithMany("Medicines")
-                        .HasForeignKey("PondId");
-                });
-
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Feeding.Medicine.MedicineForFeeding", b =>
                 {
                     b.HasOne("ShrimpPond.Domain.PondData.Feeding.Medicine.MedicineFeeding", null)
                         .WithMany("Medicines")
                         .HasForeignKey("MedicineFeedingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ShrimpPond.Domain.PondData.LossShrimp", b =>
-                {
-                    b.HasOne("ShrimpPond.Domain.PondData.Collect.Pond", "Pond")
-                        .WithOne("LossShrimp")
-                        .HasForeignKey("ShrimpPond.Domain.PondData.LossShrimp", "PondId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Pond");
-                });
-
-            modelBuilder.Entity("ShrimpPond.Domain.PondData.SizeShrimp", b =>
-                {
-                    b.HasOne("ShrimpPond.Domain.PondData.Collect.Pond", null)
-                        .WithOne("SizeShrimp")
-                        .HasForeignKey("ShrimpPond.Domain.PondData.SizeShrimp", "PondId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -441,16 +390,6 @@ namespace ShrimpPond.Persistence.Migrations
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Collect.Pond", b =>
                 {
                     b.Navigation("Certificates");
-
-                    b.Navigation("Collect");
-
-                    b.Navigation("Foods");
-
-                    b.Navigation("LossShrimp");
-
-                    b.Navigation("Medicines");
-
-                    b.Navigation("SizeShrimp");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Feeding.Food.FoodFeeding", b =>

@@ -30,13 +30,13 @@ namespace ShrimpPond.Domain.PondData.Collect
         public DateTime StartDate { get; set; }
 
         //Trong quá trình nuôi 
-        public SizeShrimp? SizeShrimp { get; set; } 
-        public LossShrimp? LossShrimp { get; set; }
-        public List<Food>? Foods { get; set; }
-        public List<Medicine>? Medicines { get; set; }
+        //public SizeShrimp? SizeShrimp { get; set; } 
+        //public LossShrimp? LossShrimp { get; set; }
+        //public List<Food>? Foods { get; set; }
+        //public List<Medicine>? Medicines { get; set; }
 
         //Thu hoạch
-        public Collect? Collect { get; set; }
+        //public Collect? Collect { get; set; }
 
     }
 }
