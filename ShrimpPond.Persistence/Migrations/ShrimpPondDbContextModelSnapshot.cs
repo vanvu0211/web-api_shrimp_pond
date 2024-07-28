@@ -88,6 +88,59 @@ namespace ShrimpPond.Persistence.Migrations
                     b.ToTable("Collect");
                 });
 
+            modelBuilder.Entity("ShrimpPond.Domain.PondData.Feeding", b =>
+                {
+                    b.Property<int>("FeedingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeedingId"), 1L, 1);
+
+                    b.Property<DateTime>("FeedingDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PondId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("FeedingId");
+
+                    b.ToTable("Feeding");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.PondData.FeedingFood", b =>
+                {
+                    b.Property<int>("FeedingFoodId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeedingFoodId"), 1L, 1);
+
+                    b.Property<float>("Amount")
+                        .HasColumnType("real");
+
+                    b.Property<int?>("FeedingId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PondId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("FeedingFoodId");
+
+                    b.HasIndex("FeedingId");
+
+                    b.ToTable("FeedingFood");
+                });
+
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Food", b =>
                 {
                     b.Property<int>("FoodId")
@@ -96,23 +149,16 @@ namespace ShrimpPond.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FoodId"), 1L, 1);
 
-                    b.Property<float>("Amount")
-                        .HasColumnType("real");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PondId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UsedDate")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("FoodId");
 
@@ -136,8 +182,8 @@ namespace ShrimpPond.Persistence.Migrations
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Value")
-                        .HasColumnType("int");
+                    b.Property<float>("Value")
+                        .HasColumnType("real");
 
                     b.HasKey("LossShrimpId");
 
@@ -185,17 +231,14 @@ namespace ShrimpPond.Persistence.Migrations
                     b.Property<string>("PondId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("AmountShrimp")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<float>("AmountShrimp")
+                        .HasColumnType("real");
 
-                    b.Property<string>("Deep")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<float>("Deep")
+                        .HasColumnType("real");
 
-                    b.Property<string>("Diameter")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<float>("Diameter")
+                        .HasColumnType("real");
 
                     b.Property<string>("OriginPondId")
                         .IsRequired()
@@ -254,9 +297,8 @@ namespace ShrimpPond.Persistence.Migrations
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Value")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<float>("Value")
+                        .HasColumnType("real");
 
                     b.HasKey("SizeShrimpId");
 
@@ -292,15 +334,18 @@ namespace ShrimpPond.Persistence.Migrations
                     b.Navigation("Pond");
                 });
 
+            modelBuilder.Entity("ShrimpPond.Domain.PondData.FeedingFood", b =>
+                {
+                    b.HasOne("ShrimpPond.Domain.PondData.Feeding", null)
+                        .WithMany("Foods")
+                        .HasForeignKey("FeedingId");
+                });
+
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Food", b =>
                 {
-                    b.HasOne("ShrimpPond.Domain.PondData.Pond", "Pond")
+                    b.HasOne("ShrimpPond.Domain.PondData.Pond", null)
                         .WithMany("Foods")
-                        .HasForeignKey("PondId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Pond");
+                        .HasForeignKey("PondId");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.PondData.LossShrimp", b =>
@@ -346,6 +391,11 @@ namespace ShrimpPond.Persistence.Migrations
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Collect", b =>
                 {
                     b.Navigation("Certificates");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.PondData.Feeding", b =>
+                {
+                    b.Navigation("Foods");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Pond", b =>

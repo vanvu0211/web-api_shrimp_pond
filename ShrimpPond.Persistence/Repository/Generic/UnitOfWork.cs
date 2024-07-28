@@ -20,12 +20,16 @@ namespace ShrimpPond.Persistence.Repository.Generic
             certificateRepository = new CertificateRepository(context);
             sizeShrimpRepository = new SizeShrimpRepository(context);
             pondTypeRepository = new PondTypeRepository(context);
+            feedingRepository = new FeedingRepository(context);
+            feedingFoodRepository = new FeedingFoodRepository(context);
             
         }
         public IPondRepository pondRepository { get; private set; }
         public ICertificateRepository certificateRepository { get; private set; }
         public ISizeShrimpRepository sizeShrimpRepository { get; private set; }
         public IPondTypeRepository pondTypeRepository { get; private set; }
+        public IFeedingRepository feedingRepository { get; private set; }
+        public IFeedingFoodRepository feedingFoodRepository { get; private set; }
 
 
         public async Task<int> CommitAsync()

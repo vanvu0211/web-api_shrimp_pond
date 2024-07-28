@@ -15,15 +15,12 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond
                 .NotEmpty().WithMessage("{property} is required")
                 .NotNull()
                 .MaximumLength(100);
-
             RuleFor(p => p.Deep)
                 .NotEmpty().WithMessage("{property} is required")
-                .NotNull()
-                .MaximumLength(100);
+                .NotNull();
             RuleFor(p => p.Diameter)
                 .NotEmpty().WithMessage("{property} is required")
-                .NotNull()
-                .MaximumLength(100);
+                .NotNull();
 
         }
     }

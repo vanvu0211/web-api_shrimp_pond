@@ -24,6 +24,9 @@ namespace ShrimpPond.Persistence
             services.AddScoped<IPondRepository, PondRepository>();
             services.AddScoped<ICertificateRepository, CertificateRepository>();
             services.AddScoped<ISizeShrimpRepository, SizeShrimpRepository>();
+            services.AddScoped<IFeedingRepository, FeedingRepository>();
+            services.AddScoped<IFeedingFoodRepository, FeedingFoodRepository>();
+
             return services;
         }
     }
