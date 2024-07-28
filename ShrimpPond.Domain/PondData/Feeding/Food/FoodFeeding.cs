@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShrimpPond.Domain.PondData
+namespace ShrimpPond.Domain.PondData.Feeding.Food
 {
-    public class Feeding
+    public class FoodFeeding
     {
-        public int FeedingId { get; set; }
-        public List<FeedingFood>? Foods { get; set; }
+        public int FoodFeedingId { get; set; }
+        public List<FoodForFeeding>? Foods { get; set; }
         public DateTime FeedingDate { get; set; }
         public string PondId { get; set; } = string.Empty;
     }

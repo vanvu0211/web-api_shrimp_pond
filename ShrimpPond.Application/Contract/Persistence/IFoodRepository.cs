@@ -1,5 +1,5 @@
 ﻿using ShrimpPond.Application.Contract.Persistence.Genenric;
-using ShrimpPond.Domain.PondData;
+using ShrimpPond.Domain.PondData.Feeding.Food;
 using System;
 using System.Collections.Generic;
 using System.Linq;

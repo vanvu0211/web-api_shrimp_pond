@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShrimpPond.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72457c5280279b32dc835c5623b9634171a749be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c570d0a1008439572a7d3acec5471c001453b63")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShrimpPond.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShrimpPond.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

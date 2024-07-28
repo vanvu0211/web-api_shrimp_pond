@@ -22,23 +22,30 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.DeletePond
         {
 
             //validate
-
             var deletePond = await _unitOfWork.pondRepository.GetByIdAsync(request.PondId);
-
             if (deletePond == null)
             {
                 throw new BadRequestException("Not found PondType");
             }
-             var feedings = _unitOfWork.feedingRepository.FindByCondition(x=> x.PondId == request.PondId);
-            _unitOfWork.feedingRepository.RemoveRange(feedings);
+            //Xóa danh sách cho ăn 
+             var foodfeedings = _unitOfWork.foodFeedingRepository.FindByCondition(x=> x.PondId == request.PondId);
+            _unitOfWork.foodFeedingRepository.RemoveRange(foodfeedings);
 
-            foreach (var feeding in feedings)
+            foreach (var foodfeeding in foodfeedings)
             {
-                var feedingFoods = _unitOfWork.feedingFoodRepository.FindByCondition(x => x.FeedingId == feeding.FeedingId);
-                _unitOfWork.feedingFoodRepository.RemoveRange(feedingFoods);
+                var foodforfeedings = _unitOfWork.foodForFeedingRepository.FindByCondition(x => x.FoodFeedingId == foodfeeding.FoodFeedingId);
+                _unitOfWork.foodForFeedingRepository.RemoveRange(foodforfeedings);
             }
+            //Xóa danh sách điều trị
+            var medicinefeedings = _unitOfWork.medicineFeedingRepository.FindByCondition(x => x.PondId == request.PondId);
+            _unitOfWork.medicineFeedingRepository.RemoveRange(medicinefeedings);
 
-
+            foreach (var medicinefeeding in medicinefeedings)
+            {
+                var medicineforfeedings = _unitOfWork.medicineForFeedingRepository.FindByCondition(x => x.MedicineFeedingId == medicinefeeding.MedicineFeedingId);
+                _unitOfWork.medicineForFeedingRepository.RemoveRange(medicineforfeedings);
+            }
+            //Xóa ao
             _unitOfWork.pondRepository.Remove(deletePond);
             await _unitOfWork.SaveChangeAsync();
             //return 

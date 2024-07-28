@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ShrimpPond.Domain.PondData;
+using ShrimpPond.Domain.PondData.Feeding.Medicine;
 
 namespace ShrimpPond.Persistence.Repository
 {

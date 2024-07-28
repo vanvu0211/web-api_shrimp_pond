@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShrimpPond.Domain.PondData
+namespace ShrimpPond.Domain.PondData.Collect
 {
     public enum ECollectType
     {

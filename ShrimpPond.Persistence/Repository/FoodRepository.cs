@@ -1,5 +1,5 @@
 ﻿using ShrimpPond.Application.Contract.Persistence;
-using ShrimpPond.Domain.PondData;
+using ShrimpPond.Domain.PondData.Feeding.Food;
 using ShrimpPond.Persistence.DatabaseContext;
 using ShrimpPond.Persistence.Repository.Generic;
 using System;

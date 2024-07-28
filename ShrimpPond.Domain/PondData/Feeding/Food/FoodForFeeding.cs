@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShrimpPond.Domain.PondData
+namespace ShrimpPond.Domain.PondData.Feeding.Food
 {
-    public class Food
+    public class FoodForFeeding
     {
-        public int FoodId { get; set; }
+        public int FoodForFeedingId { get; set; }
         public string Type { get; set; } = string.Empty;
         public string Name { get; set; } = string.Empty;
+        public float Amount { get; set; }
+        public int FoodFeedingId { get; set; }
+
     }
 }

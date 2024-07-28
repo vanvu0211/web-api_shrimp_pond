@@ -12,8 +12,11 @@ namespace ShrimpPond.Application.Contract.Persistence.Genenric
         ICertificateRepository certificateRepository {  get; }
         ISizeShrimpRepository sizeShrimpRepository {  get; }
         IPondTypeRepository pondTypeRepository {  get; }
-        IFeedingRepository feedingRepository {  get; }
-        IFeedingFoodRepository feedingFoodRepository {  get; }
+        IFoodFeedingRepository foodFeedingRepository {  get; }
+        IFoodForFeedingRepository foodForFeedingRepository {  get; }
+        IFoodRepository foodRepository {  get; }
+        IMedicineFeedingRepository medicineFeedingRepository { get; }
+        IMedicineForFeedingRepository medicineForFeedingRepository { get;}
 
         Task<int> CommitAsync();
         Task SaveChangeAsync();

@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShrimpPond.Domain.PondData;
+using ShrimpPond.Domain.PondData.Collect;
+using ShrimpPond.Domain.PondData.Feeding.Food;
+using ShrimpPond.Domain.PondData.Feeding.Medicine;
 
 
 namespace ShrimpPond.Persistence.DatabaseContext
@@ -17,8 +20,12 @@ namespace ShrimpPond.Persistence.DatabaseContext
         public DbSet<Medicine> Medicine { get; set; }
         public DbSet<Certificate> Certificate {  get; set; } 
         public DbSet<PondType> PondType {  get; set; }
-        public DbSet<Feeding> Feeding {  get; set; }
-        public DbSet<FeedingFood> FeedingFood {  get; set; }
+
+        public DbSet<FoodFeeding> FoodFeeding {  get; set; }
+        public DbSet<FoodForFeeding> FoodForFeeding {  get; set; }
+
+        public DbSet<MedicineFeeding> MedicineFeeding { get; set; }
+        public DbSet<MedicineForFeeding> MedicineForFeeding { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,21 +33,26 @@ namespace ShrimpPond.Persistence.DatabaseContext
             base.OnModelCreating(modelBuilder);
             // Xác định các thuộc tính làm key    
             modelBuilder.Entity<Pond>().HasKey(n => n.PondId);
-
             modelBuilder.Entity<PondType>().HasKey(n => n.PondTypeId);
 
-            modelBuilder.Entity<FeedingFood>().HasKey(n => n.FeedingFoodId);
-            modelBuilder.Entity<FeedingFood>().Property(x => x.FeedingFoodId).ValueGeneratedOnAdd();
 
+            //Cho ăn
+            modelBuilder.Entity<FoodForFeeding>().HasKey(n => n.FoodForFeedingId);
+            modelBuilder.Entity<FoodForFeeding>().Property(x => x.FoodForFeedingId).ValueGeneratedOnAdd();
+            modelBuilder.Entity<FoodFeeding>().HasKey(n => n.FoodFeedingId);
+            modelBuilder.Entity<FoodFeeding>().Property(x => x.FoodFeedingId).ValueGeneratedOnAdd();
 
-            modelBuilder.Entity<Feeding>().HasKey(n => n.FeedingId);
-            modelBuilder.Entity<Feeding>().Property(x => x.FeedingId).ValueGeneratedOnAdd();
+            //Điều trị
+            modelBuilder.Entity<MedicineFeeding>().HasKey(n => n.MedicineFeedingId);
+            modelBuilder.Entity<MedicineFeeding>().Property(x => x.MedicineFeedingId).ValueGeneratedOnAdd();
+            modelBuilder.Entity<MedicineForFeeding>().HasKey(n => n.MedicineForFeedingId);
+            modelBuilder.Entity<MedicineForFeeding>().Property(x => x.MedicineForFeedingId).ValueGeneratedOnAdd();
+
 
             modelBuilder.Entity<Food>().HasKey(n => n.FoodId);
             modelBuilder.Entity<Food>().Property(x => x.FoodId).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<Medicine>().HasKey(n => n.MedicineId);
-            modelBuilder.Entity<Medicine>().HasOne(p => p.Pond).WithMany(p => p.Medicines).HasForeignKey(p => p.PondId);
             modelBuilder.Entity<Medicine>().Property(x => x.MedicineId).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<Certificate>().HasKey(n => n.CertificateId);

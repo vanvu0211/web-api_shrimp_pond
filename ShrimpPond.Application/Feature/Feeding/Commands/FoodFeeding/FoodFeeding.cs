@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 using MediatR;
 using ShrimpPond.Domain.PondData;
 
-namespace ShrimpPond.Application.Feature.Food.Commands.Feeding
+namespace ShrimpPond.Application.Feature.Feeding.Commands.Feeding
 {
-    public class Feeding: IRequest<string>
+    public class FoodFeeding : IRequest<string>
     {
         public string PondId { get; set; } = string.Empty;
-        public List<FoodFeeding>? Foods { get; set; }
+        public List<Foods>? Foods { get; set; }
         public DateTime FeedlingDate { get; set; }
     }
 }
