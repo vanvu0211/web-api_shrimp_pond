@@ -29,6 +29,13 @@ namespace ShrimpPond.Application.Feature.Food.Commands.CreateNewFood
                 throw new BadRequestException("Invalid ET", validatorResult);
             }
             //Handle
+
+            var condition = _unitOfWork.foodRepository.FindAll().Where(f=>f.Name==request.Name).ToList();
+            if (condition.Count() != 0)
+            {
+                throw new BadRequestException("Food already exist", validatorResult);
+            }
+
             var newfood = new Domain.PondData.Feeding.Food.Food()
             {
                 Name = request.Name,

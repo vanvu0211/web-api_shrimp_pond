@@ -27,6 +27,7 @@ namespace ShrimpPond.Persistence
             services.AddScoped<IFoodFeedingRepository, FoodFeedingRepository>();
             services.AddScoped<IFoodForFeedingRepository, FoodForFeedingRepository>();
             services.AddScoped<IFoodRepository, FoodRepository>();
+            services.AddScoped<IMedicineRepository, MedicineRepository>();
 
             return services;
         }
