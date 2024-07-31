@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Feature\PondType\Commands\UpdatePondType\" />
-    <Folder Include="Feature\Update\Queries\GetMedicineFeeding\" />
   </ItemGroup>
 
 </Project>

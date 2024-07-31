@@ -1,4 +1,4 @@
-﻿using ShrimpPond.Domain.PondData.Collect;
+﻿using ShrimpPond.Domain.PondData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +13,7 @@ namespace ShrimpPond.Domain.PondData
         public float LossValue { get; set; }
         public DateTime UpdateDate { get; set; }
         public string PondId { get; set; } = string.Empty;
+        public Pond? Pond { get; set; }
+
     }
 }

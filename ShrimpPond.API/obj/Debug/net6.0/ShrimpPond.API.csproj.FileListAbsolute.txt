@@ -84,3 +84,4 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_Cle
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.API\bin\Debug\net6.0\MQTTnet.dll

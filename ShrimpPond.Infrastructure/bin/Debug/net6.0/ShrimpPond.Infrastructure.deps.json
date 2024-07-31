@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ShrimpPond.Infrastructure/1.0.0": {
         "dependencies": {
+          "MQTTnet": "4.3.6.1152",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
@@ -168,6 +169,14 @@
           }
         }
       },
+      "MQTTnet/4.3.6.1152": {
+        "runtime": {
+          "lib/net6.0/MQTTnet.dll": {
+            "assemblyVersion": "4.3.6.1152",
+            "fileVersion": "4.3.6.1152"
+          }
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "ShrimpPond.Application/1.0.0": {
         "dependencies": {
@@ -300,6 +309,13 @@
       "sha512": "sha512-9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
       "path": "microsoft.extensions.primitives/6.0.0",
       "hashPath": "microsoft.extensions.primitives.6.0.0.nupkg.sha512"
+    },
+    "MQTTnet/4.3.6.1152": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XBgqx60FIWiBqTiLNF40EIhENLrLDzE3I9ujzZ7343QCeAWTHP70fO0mN6LeElSfubzfRSugLpPnd0cZiccUOw==",
+      "path": "mqttnet/4.3.6.1152",
+      "hashPath": "mqttnet.4.3.6.1152.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",

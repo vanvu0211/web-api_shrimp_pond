@@ -1,17 +1,13 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.Feeding.Commands.Feeding;
 using ShrimpPond.Application.Feature.Feeding.Commands.MedicineFeeding;
-using ShrimpPond.Application.Feature.Food.Commands.CreateNewFood;
-using ShrimpPond.Application.Feature.Food.Queries.GetAllFood;
-using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
 using ShrimpPond.Application.Feature.Update.Commands.LossShrimpUpdate;
 using ShrimpPond.Application.Feature.Update.Commands.SizeShrimpUpdate;
 using ShrimpPond.Application.Feature.Update.Queries.GetFoodFeeding;
 using ShrimpPond.Application.Feature.Update.Queries.GetLossUpdate;
+using ShrimpPond.Application.Feature.Update.Queries.GetMedicineFeeding;
 using ShrimpPond.Application.Feature.Update.Queries.GetSizeUpdate;
-using ShrimpPond.Domain.PondData;
 
 namespace ShrimpPond.API.Controllers
 {
@@ -52,6 +48,12 @@ namespace ShrimpPond.API.Controllers
         {
             var FoodFeedings = await _mediator.Send(new GetFoodFeeding { PondId = PondId });
             return Ok(FoodFeedings);
+        }
+        [HttpGet("MedicineFeeding")]
+        public async Task<IActionResult> GetMedicineFeeding([FromQuery] string? PondId, int pageSize = 200, int pageNumber = 1)
+        {
+            var MedicineFeedings = await _mediator.Send(new GetMedicineFeeding { PondId = PondId });
+            return Ok(MedicineFeedings);
         }
         [HttpPost("Food")]
         public async Task<IActionResult> FoodFeeding([FromBody] FoodFeeding e)
