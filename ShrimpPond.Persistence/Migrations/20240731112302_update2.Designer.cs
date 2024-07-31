@@ -12,8 +12,8 @@ using ShrimpPond.Persistence.DatabaseContext;
 namespace ShrimpPond.Persistence.Migrations
 {
     [DbContext(typeof(ShrimpPondDbContext))]
-    [Migration("20240731031931_DbInit")]
-    partial class DbInit
+    [Migration("20240731112302_update2")]
+    partial class update2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -36,15 +36,16 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PonId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("PondId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<float>("Value")
-                        .HasColumnType("real");
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EnvironmentStatusId");
 
@@ -370,11 +371,11 @@ namespace ShrimpPond.Persistence.Migrations
 
             modelBuilder.Entity("ShrimpPond.Domain.Environments.EnvironmentStatus", b =>
                 {
-                    b.HasOne("ShrimpPond.Domain.PondData.Pond", "Pond")
+                    b.HasOne("ShrimpPond.Domain.PondData.Pond", null)
                         .WithMany("EnvironmentStatus")
-                        .HasForeignKey("PondId");
-
-                    b.Navigation("Pond");
+                        .HasForeignKey("PondId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Certificate", b =>

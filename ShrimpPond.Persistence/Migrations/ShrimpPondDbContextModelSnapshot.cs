@@ -34,15 +34,16 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("PonId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("PondId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<float>("Value")
-                        .HasColumnType("real");
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EnvironmentStatusId");
 
@@ -368,11 +369,11 @@ namespace ShrimpPond.Persistence.Migrations
 
             modelBuilder.Entity("ShrimpPond.Domain.Environments.EnvironmentStatus", b =>
                 {
-                    b.HasOne("ShrimpPond.Domain.PondData.Pond", "Pond")
+                    b.HasOne("ShrimpPond.Domain.PondData.Pond", null)
                         .WithMany("EnvironmentStatus")
-                        .HasForeignKey("PondId");
-
-                    b.Navigation("Pond");
+                        .HasForeignKey("PondId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Certificate", b =>

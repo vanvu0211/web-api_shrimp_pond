@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ShrimpPond.Persistence.Migrations
 {
-    public partial class DbInit : Migration
+    public partial class DBIinit : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -81,9 +81,9 @@ namespace ShrimpPond.Persistence.Migrations
                     EnvironmentStatusId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Value = table.Column<float>(type: "real", nullable: false),
-                    PonId = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PondId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                    Value = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Timestamp = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    PondId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -92,7 +92,8 @@ namespace ShrimpPond.Persistence.Migrations
                         name: "FK_EnvironmentStatus_Pond_PondId",
                         column: x => x.PondId,
                         principalTable: "Pond",
-                        principalColumn: "PondId");
+                        principalColumn: "PondId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

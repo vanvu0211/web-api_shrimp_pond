@@ -65,6 +65,6 @@ where T : class
         //{
         //	return await FindByCondition(x => x.Id.Equals(id), false, includeProperties).FirstOrDefaultAsync();
         //}
-
+     
     }
 }
