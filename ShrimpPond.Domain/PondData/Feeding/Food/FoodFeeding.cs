@@ -12,5 +12,7 @@ namespace ShrimpPond.Domain.PondData.Feeding.Food
         public List<FoodForFeeding>? Foods { get; set; }
         public DateTime FeedingDate { get; set; }
         public string PondId { get; set; } = string.Empty;
+        public Pond? Pond { get; set; }
+
     }
 }

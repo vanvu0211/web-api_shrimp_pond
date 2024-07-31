@@ -1,8 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ShrimpPond.Domain.Environments;
 using ShrimpPond.Domain.PondData;
-using ShrimpPond.Domain.PondData.Collect;
 using ShrimpPond.Domain.PondData.Feeding.Food;
 using ShrimpPond.Domain.PondData.Feeding.Medicine;
+using ShrimpPond.Domain.PondData.Harvest;
 
 
 namespace ShrimpPond.Persistence.DatabaseContext
@@ -18,16 +19,17 @@ namespace ShrimpPond.Persistence.DatabaseContext
         public DbSet<Pond> Pond { get; set; }
         public DbSet<Food> Food { get; set; }
         public DbSet<Medicine> Medicine { get; set; }
-        public DbSet<Certificate> Certificate {  get; set; } 
-        public DbSet<PondType> PondType {  get; set; }
+        public DbSet<Certificate> Certificate { get; set; }
+        public DbSet<PondType> PondType { get; set; }
 
-        public DbSet<FoodFeeding> FoodFeeding {  get; set; }
-        public DbSet<FoodForFeeding> FoodForFeeding {  get; set; }
+        public DbSet<FoodFeeding> FoodFeeding { get; set; }
+        public DbSet<FoodForFeeding> FoodForFeeding { get; set; }
 
         public DbSet<MedicineFeeding> MedicineFeeding { get; set; }
         public DbSet<MedicineForFeeding> MedicineForFeeding { get; set; }
         public DbSet<SizeShrimp> SizeShrimp { get; set; }
         public DbSet<LossShrimp> LossShrimp { get; set; }
+        public DbSet<EnvironmentStatus> EnvironmentStatus { get; set; }
 
 
 
@@ -69,9 +71,8 @@ namespace ShrimpPond.Persistence.DatabaseContext
             modelBuilder.Entity<SizeShrimp>().HasKey(n => n.SizeShrimpId);
             modelBuilder.Entity<SizeShrimp>().Property(x => x.SizeShrimpId).ValueGeneratedOnAdd();
 
-            modelBuilder.Entity<Collect>().HasKey(n => n.CollectId);
-            //modelBuilder.Entity<Collect>().HasOne(p => p.Pond).WithOne(p => p.Collect);
-            modelBuilder.Entity<Collect>().Property(x => x.CollectId).ValueGeneratedOnAdd();
+            modelBuilder.Entity<EnvironmentStatus>().HasKey(n => n.EnvironmentStatusId);
+            modelBuilder.Entity<EnvironmentStatus>().Property(x => x.EnvironmentStatusId).ValueGeneratedOnAdd();
         }
     }
 }

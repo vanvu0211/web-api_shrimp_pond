@@ -7,8 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using ShrimpPond.Domain.PondData.Feeding.Food;
 using ShrimpPond.Domain.PondData.Feeding.Medicine;
+using Microsoft.VisualBasic;
+using ShrimpPond.Domain.Environments;
 
-namespace ShrimpPond.Domain.PondData.Collect
+namespace ShrimpPond.Domain.PondData
 {
     public class Pond
     {
@@ -25,18 +27,20 @@ namespace ShrimpPond.Domain.PondData.Collect
         public string OriginPondId { get; set; } = string.Empty;
         public string SeedId { get; set; } = string.Empty;
         [Column(TypeName = "VARBINARY(MAX)")]
-        public List<Certificate>? Certificates { get; set; } = new();
+        public List<Certificate>? Certificates { get; set; } 
         public float AmountShrimp { get; set; }
         public DateTime StartDate { get; set; }
 
         //Trong quá trình nuôi 
-        //public SizeShrimp? SizeShrimp { get; set; } 
-        //public LossShrimp? LossShrimp { get; set; }
-        //public List<Food>? Foods { get; set; }
-        //public List<Medicine>? Medicines { get; set; }
+        public List<SizeShrimp>? SizeShrimps { get; set; } 
+        public List<LossShrimp>? LossShrimps { get; set; }
+        public List<FoodFeeding>? FoodFeedings { get; set; }
+        public List<MedicineFeeding>? MedicineFeedings { get; set; }
+        public List<EnvironmentStatus>? EnvironmentStatus { get; set; }
+
 
         //Thu hoạch
-        //public Collect? Collect { get; set; }
+        public List<Harvest.Harvest>? Harvests { get; set; }    
 
     }
 }

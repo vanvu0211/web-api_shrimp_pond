@@ -13,6 +13,7 @@ namespace ShrimpPond.Domain.PondData.Feeding.Food
         public string Name { get; set; } = string.Empty;
         public float Amount { get; set; }
         public int FoodFeedingId { get; set; }
+        public FoodFeeding? FoodFeeding { get; set; }    
 
     }
 }

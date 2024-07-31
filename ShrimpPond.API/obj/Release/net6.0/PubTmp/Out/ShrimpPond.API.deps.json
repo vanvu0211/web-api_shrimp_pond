@@ -405,6 +405,14 @@
           }
         }
       },
+      "MQTTnet/4.3.6.1152": {
+        "runtime": {
+          "lib/net6.0/MQTTnet.dll": {
+            "assemblyVersion": "4.3.6.1152",
+            "fileVersion": "4.3.6.1152"
+          }
+        }
+      },
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -618,6 +626,7 @@
       },
       "ShrimpPond.Infrastructure/1.0.0": {
         "dependencies": {
+          "MQTTnet": "4.3.6.1152",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0",
@@ -939,6 +948,13 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "MQTTnet/4.3.6.1152": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XBgqx60FIWiBqTiLNF40EIhENLrLDzE3I9ujzZ7343QCeAWTHP70fO0mN6LeElSfubzfRSugLpPnd0cZiccUOw==",
+      "path": "mqttnet/4.3.6.1152",
+      "hashPath": "mqttnet.4.3.6.1152.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.3": {
       "type": "package",

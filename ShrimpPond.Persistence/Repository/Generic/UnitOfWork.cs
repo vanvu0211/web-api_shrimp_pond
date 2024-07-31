@@ -27,6 +27,7 @@ namespace ShrimpPond.Persistence.Repository.Generic
             medicineForFeedingRepository = new MedicineForFeedingRepository(context);
             medicineRepository = new MedicineRepository(context);
             lossShrimpRepository = new LossShrimpRepository(context);
+            environmentStatusRepository = new EnvironmentStatusRepository(context);
 
         }
         public IPondRepository pondRepository { get; private set; }
@@ -40,6 +41,7 @@ namespace ShrimpPond.Persistence.Repository.Generic
         public IMedicineForFeedingRepository medicineForFeedingRepository { get; }
         public IMedicineRepository medicineRepository { get; private set; }
         public ILossShrimpRepository lossShrimpRepository { get; private set; }
+        public IEnvironmentStatusRepository environmentStatusRepository { get; private set; }
 
         public async Task<int> CommitAsync()
         {

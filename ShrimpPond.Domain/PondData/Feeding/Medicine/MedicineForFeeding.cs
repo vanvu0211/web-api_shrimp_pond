@@ -14,5 +14,6 @@ namespace ShrimpPond.Domain.PondData.Feeding.Medicine
         public string Name { get; set; } = string.Empty;
         public float Amount { get; set; }
         public int MedicineFeedingId { get; set; }
+        public MedicineFeeding? MedicineFeeding { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using ShrimpPond.Domain.PondData.Collect;
+﻿using ShrimpPond.Domain.PondData;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
