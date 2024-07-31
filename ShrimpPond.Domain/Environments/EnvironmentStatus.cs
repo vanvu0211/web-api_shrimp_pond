@@ -11,10 +11,10 @@ namespace ShrimpPond.Domain.Environments
     {
         public int EnvironmentStatusId {  get; set; }
         public string Name { get; set; } = string.Empty;
-        public float Value { get; set; }
+        public string Value { get; set; } = string.Empty;
         public DateTime Timestamp   { get; set; }
 
-        public string PonId { get; set; } = string.Empty;
-        public Pond? Pond { get; set; }
+        public string PondId { get; set; } = string.Empty;
+
     }
 }

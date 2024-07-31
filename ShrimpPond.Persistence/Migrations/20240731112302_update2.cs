@@ -4,7 +4,7 @@
 
 namespace ShrimpPond.Persistence.Migrations
 {
-    public partial class updateSignalR : Migration
+    public partial class update2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

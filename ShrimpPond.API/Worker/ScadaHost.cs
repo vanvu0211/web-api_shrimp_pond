@@ -6,6 +6,7 @@ using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Infrastructure.Communication;
 using System.Text.Json.Nodes;
 using ShrimpPond.API.Hubs;
+using ShrimpPond.Domain.Environments;
 
 
 namespace ShrimpPond.API.Worker
@@ -91,16 +92,37 @@ namespace ShrimpPond.API.Worker
                         //var envirBuffer = new TagChangedNotification(topicSegments[1], topicSegments[3], jsonEnvironment);
                         //_buffer.Update(envirBuffer);
                         await _hubContext.Clients.All.SendAsync("EnvironmentChanged", jsonEnvironment);
-                             //Console.WriteLine(jsonEnvironment);
-                        break;
+
+                        //Lưu vào database
+                        using (var scope = _scopeFactory.CreateScope())
+                        {
+                            var _unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
+
+                            var data = new EnvironmentStatus()
+                            {
+                                PondId = topic1,
+                                Name = environment.name,
+                                Value = environment.value,
+                                Timestamp = DateTime.Parse(environment.timestamp),
+
+                            };
+
+                            var pond = _unitOfWork.pondRepository.FindAll().Where(x => x.PondId == data.PondId).ToList();
+                            if(pond.Count() != 0)
+                            {
+                                _unitOfWork.environmentStatusRepository.Add(data);
+                                await _unitOfWork.SaveChangeAsync();
+                            }
+                
+                            break;
+                        }
+
                     }
 
+
+
+
             }
-
-
-
-
-
 
 
         }
