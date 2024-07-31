@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\mqttmodels\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\mqttmodels\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\worker\\scadahost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\worker\\scadahost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\controllers\\environmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\environmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.api\\worker\\scadahost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\worker\\scadahost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\shrimppond_cleanarchitecture\\shrimppond.domain\\environments\\environmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -238,7 +242,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -246,7 +250,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\MQTTModels\\Class.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\MQTTModels\\Class.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\MQTTModels\\Class.cs",
+              "RelativeToolTip": "ShrimpPond.API\\MQTTModels\\Class.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T14:50:38.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\Genenric\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\Genenric\\IUnitOfWork.cs",
@@ -258,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\Generic\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\Generic\\UnitOfWork.cs",
@@ -270,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ShrimpPondDbContext.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\DatabaseContext\\ShrimpPondDbContext.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\DatabaseContext\\ShrimpPondDbContext.cs",
@@ -282,20 +299,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ScadaHost.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Worker\\ScadaHost.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Worker\\ScadaHost.cs",
               "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Worker\\ScadaHost.cs",
               "RelativeToolTip": "ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAiwHMAAAAAAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAiwFwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-31T00:40:18.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "20240731112021_DBIinit.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240731112021_DBIinit.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Migrations\\20240731112021_DBIinit.cs",
@@ -307,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EnvironmentStatus.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\Environments\\EnvironmentStatus.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\Environments\\EnvironmentStatus.cs",
@@ -319,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Program.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Program.cs",
@@ -327,25 +344,24 @@
               "RelativeToolTip": "ShrimpPond.API\\Program.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAqwEMAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T00:51:58.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-31T00:51:58.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\appsettings.json",
               "RelativeDocumentMoniker": "ShrimpPond.API\\appsettings.json",
               "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\appsettings.json",
               "RelativeToolTip": "ShrimpPond.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-07-31T00:51:27.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GetEnvironmentHandler.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Environment\\Queries\\GetEnvironment\\GetEnvironmentHandler.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Environment\\Queries\\GetEnvironment\\GetEnvironmentHandler.cs",
@@ -353,12 +369,11 @@
               "RelativeToolTip": "ShrimpPond.Application\\Feature\\Environment\\Queries\\GetEnvironment\\GetEnvironmentHandler.cs",
               "ViewState": "AQIAABEAAAAAAAAAAADwvxoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T10:22:14.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-31T10:22:14.246Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EnvironmentController.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\EnvironmentController.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\EnvironmentController.cs",
@@ -370,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "20240731112302_update2.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240731112302_update2.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Migrations\\20240731112302_update2.cs",
@@ -382,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "EnvironmentProfile.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\MappingProfile\\EnvironmentProfile.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\MappingProfile\\EnvironmentProfile.cs",
@@ -394,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "20240731111713_update1.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240731111713_update1.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Migrations\\20240731111713_update1.cs",
@@ -406,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TagChangedNotification.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Worker\\TagChangedNotification.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Worker\\TagChangedNotification.cs",
@@ -418,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "GetEnvironment.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Environment\\Queries\\GetEnvironment\\GetEnvironment.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Environment\\Queries\\GetEnvironment\\GetEnvironment.cs",
@@ -430,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "GetPondType.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\PondType\\Queries\\GetPondType\\GetPondType.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\PondType\\Queries\\GetPondType\\GetPondType.cs",
@@ -442,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "GetEnvironmentDTO.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Environment\\Queries\\GetEnvironment\\GetEnvironmentDTO.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Environment\\Queries\\GetEnvironment\\GetEnvironmentDTO.cs",
@@ -454,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "PondTypeDTO.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\PondType\\Queries\\GetPondType\\PondTypeDTO.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\PondType\\Queries\\GetPondType\\PondTypeDTO.cs",
@@ -466,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "20240731110918_update1.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240731110918_update1.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Migrations\\20240731110918_update1.cs",
@@ -478,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PondTypeController.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\PondTypeController.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\PondTypeController.cs",
@@ -490,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "PondController.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\PondController.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\PondController.cs",
@@ -502,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "GetPondTypeHandler.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\PondType\\Queries\\GetPondType\\GetPondTypeHandler.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\PondType\\Queries\\GetPondType\\GetPondTypeHandler.cs",
@@ -514,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "FoodController.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Controllers\\FoodController.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\FoodController.cs",
@@ -526,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IRepositoryBaseAsync.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\Genenric\\IRepositoryBaseAsync.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\Genenric\\IRepositoryBaseAsync.cs",
@@ -538,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "MedicineProfile.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\MappingProfile\\MedicineProfile.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\MappingProfile\\MedicineProfile.cs",
@@ -550,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "GetSizeUpdateHandler.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateHandler.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateHandler.cs",
@@ -562,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "RepositoryQueryBase.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\Generic\\RepositoryQueryBase.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\Generic\\RepositoryQueryBase.cs",
@@ -574,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "PondProfile.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\MappingProfile\\PondProfile.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\MappingProfile\\PondProfile.cs",
@@ -586,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "GetSizeUpdate.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdate.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdate.cs",
@@ -598,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "GetSizeUpdateDTO.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateDTO.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Update\\Queries\\GetSizeUpdate\\GetSizeUpdateDTO.cs",
@@ -610,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "EnviromentSend.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\MQTTModels\\EnviromentSend.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\MQTTModels\\EnviromentSend.cs",
@@ -622,7 +637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "TempleteObject.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\MQTTModels\\TempleteObject.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\MQTTModels\\TempleteObject.cs",
@@ -634,7 +649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "EnvironmentStatusRepository.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\EnvironmentStatusRepository.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\EnvironmentStatusRepository.cs",
@@ -646,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "NotificationHub.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\Hubs\\NotificationHub.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Hubs\\NotificationHub.cs",
@@ -654,12 +669,11 @@
               "RelativeToolTip": "ShrimpPond.API\\Hubs\\NotificationHub.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-31T00:49:33.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-31T00:49:33.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "ICertificateRepository.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\ICertificateRepository.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\ICertificateRepository.cs",
@@ -671,7 +685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "CertificateRepository.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\CertificateRepository.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\CertificateRepository.cs",
@@ -683,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "FoodFeedingRepository.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\FoodFeedingRepository.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\FoodFeedingRepository.cs",
@@ -695,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "20240731031023_update1009.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240731031023_update1009.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Migrations\\20240731031023_update1009.cs",
@@ -707,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "20240731031700_DbInit.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240731031700_DbInit.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Migrations\\20240731031700_DbInit.cs",
@@ -719,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "IEnvironmentStatusRepository.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\IEnvironmentStatusRepository.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\IEnvironmentStatusRepository.cs",
@@ -731,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "PondRepository.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Repository\\PondRepository.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Repository\\PondRepository.cs",
@@ -743,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "20240731031809_AddEnvir.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\Migrations\\20240731031809_AddEnvir.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Persistence\\Migrations\\20240731031809_AddEnvir.cs",
@@ -755,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "INurseryPondRepository.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Contract\\Persistence\\INurseryPondRepository.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\Persistence\\INurseryPondRepository.cs",
@@ -767,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "Medicine.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Feeding\\Medicine\\Medicine.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Feeding\\Medicine\\Medicine.cs",
@@ -779,7 +793,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "MedicineForFeeding.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Feeding\\Medicine\\MedicineForFeeding.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Feeding\\Medicine\\MedicineForFeeding.cs",
@@ -791,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "FoodForFeeding.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Feeding\\Food\\FoodForFeeding.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Feeding\\Food\\FoodForFeeding.cs",
@@ -803,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "MedicineFeeding.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Feeding\\Medicine\\MedicineFeeding.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Feeding\\Medicine\\MedicineFeeding.cs",
@@ -815,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "FoodFeeding.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Feeding\\Food\\FoodFeeding.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Feeding\\Food\\FoodFeeding.cs",
@@ -827,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "EHarvest.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Harvest\\EHarvest.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Harvest\\EHarvest.cs",
@@ -839,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Harvest.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Harvest\\Harvest.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Harvest\\Harvest.cs",
@@ -851,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "CreataPondHandler.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\Feature\\Pond\\Commands\\CreatePond\\CreataPondHandler.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Pond\\Commands\\CreatePond\\CreataPondHandler.cs",
@@ -863,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "PondType.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\PondType.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\PondType.cs",
@@ -875,7 +889,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "LossShrimp.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\LossShrimp.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\LossShrimp.cs",
@@ -887,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "SizeShrimp.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\SizeShrimp.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\SizeShrimp.cs",
@@ -899,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "Certificate.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Certificate.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Certificate.cs",
@@ -911,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Pond.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Domain\\PondData\\Pond.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Pond.cs",
@@ -923,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "InfrastructureServicesRegistration.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
