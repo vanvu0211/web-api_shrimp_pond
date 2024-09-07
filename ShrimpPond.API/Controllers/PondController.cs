@@ -21,21 +21,25 @@ namespace ShrimpPond.API.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public async Task<IActionResult> GetPonds([FromQuery] string? search, int pageSize = 200, int pageNumber = 1)
+        public async Task<IActionResult> GetPonds([FromQuery] string? pondId, string? pondTypeName, int pageSize = 200, int pageNumber = 1)
         {
-            var pondType = await _mediator.Send(new GetAllPond());
-            if (search != null)
+            var ponds = await _mediator.Send(new GetAllPond());
+            if (pondId != null)
             {
-                pondType = pondType.Where(x => x.PondId == search).ToList();
+                ponds = ponds.Where(x => x.PondId == pondId).ToList();
             }
-            pondType = pondType.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
-            return Ok(pondType);
+            if (pondTypeName != null)
+            {
+                ponds = ponds.Where(x => x.PondTypeName == pondTypeName).ToList();
+            }
+            ponds = ponds.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
+            return Ok(ponds);
         }
         [HttpPost]
         public async Task<IActionResult> CreatePond([FromBody] CreatePond e)
         {
             var id = await _mediator.Send(e);
-            return Ok(id);
+            return Ok(e);
         }
 
         [HttpPut]

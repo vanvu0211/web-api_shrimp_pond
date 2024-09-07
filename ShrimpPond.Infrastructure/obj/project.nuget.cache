@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XeZFHPnoTTw=",
+  "dgSpecHash": "D3rsMW3vLaU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vu343\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\vu343\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

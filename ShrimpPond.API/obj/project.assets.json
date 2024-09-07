@@ -2994,11 +2994,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\ShrimpPond.API.csproj",
+      "projectUniqueName": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\ShrimpPond.API.csproj",
       "projectName": "ShrimpPond.API",
-      "projectPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\ShrimpPond.API.csproj",
+      "projectPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\ShrimpPond.API.csproj",
       "packagesPath": "C:\\Users\\vu343\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.API\\obj\\",
+      "outputPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vu343\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3016,14 +3016,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\ShrimpPond.Application.csproj": {
-              "projectPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Application\\ShrimpPond.Application.csproj"
+            "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\ShrimpPond.Application.csproj": {
+              "projectPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\ShrimpPond.Application.csproj"
             },
-            "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj"
+            "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj"
             },
-            "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj": {
-              "projectPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\ShrimpPond_CleanArchitecture\\ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj"
+            "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj": {
+              "projectPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj"
             }
           }
         }

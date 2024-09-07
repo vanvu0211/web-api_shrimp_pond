@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ShrimpPond.Application
-build_property.ProjectDir = C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\ShrimpPond_CleanArchitecture\ShrimpPond.Application\
+build_property.ProjectDir = C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.Application\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
