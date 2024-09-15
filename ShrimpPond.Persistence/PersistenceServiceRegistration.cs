@@ -31,6 +31,7 @@ namespace ShrimpPond.Persistence
             services.AddScoped<ILossShrimpRepository, LossShrimpRepository>();
             services.AddScoped<IEnvironmentStatusRepository, EnvironmentStatusRepository>();
             services.AddScoped<IHarvestRepository, HarvestRepository>();
+            services.AddScoped<IFarmRepository, FarmRepository>();
 
             return services;
         }

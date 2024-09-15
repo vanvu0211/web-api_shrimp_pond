@@ -33,14 +33,14 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond
 
             if (Condition1 != null)
             {
-                throw new BadRequestException("PondId already exist", validatorResult);
+                throw new BadRequestException("PondId already exist");
             }
 
             var Condition2 = _unitOfWork.pondTypeRepository.FindAll().SingleOrDefault(p => p.PondTypeName == request.PondTypeName);
 
             if (Condition2 == null)
             {
-                throw new BadRequestException("Not found PondType", validatorResult);
+                throw new BadRequestException("Not found PondType");
             }
 
             var nurseryPond = new Domain.PondData.Pond()

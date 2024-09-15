@@ -25,7 +25,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.DeletePond
             var deletePond = await _unitOfWork.pondRepository.GetByIdAsync(request.PondId);
             if (deletePond == null)
             {
-                throw new BadRequestException("Not found PondType");
+                throw new BadRequestException("Not found Pond");
             }
             //Xóa danh sách cho ăn 
              var foodfeedings = _unitOfWork.foodFeedingRepository.FindByCondition(x=> x.PondId == request.PondId);

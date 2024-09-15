@@ -30,11 +30,19 @@ namespace ShrimpPond.Application.Feature.PondType.Commands.CreatePondType
                 throw new BadRequestException("Invalid ET", validatorResult);
             }
 
+            var farm = _unitOfWork.farmRepository.FindByCondition(x=>x.FarmName == request.FarmName).FirstOrDefault();
+            if(farm == null)
+            {
+                throw new BadRequestException("Not Found Farm");
+            }
+
             var createPondType = new Domain.PondData.PondType()
             {
                 PondTypeId = request.PondTypeId,
                 PondTypeName = request.PondTypeName,
+                FarmName = request.FarmName,
             };
+
            _unitOfWork.pondTypeRepository.Add(createPondType);
             await _unitOfWork.SaveChangeAsync();
             //return 

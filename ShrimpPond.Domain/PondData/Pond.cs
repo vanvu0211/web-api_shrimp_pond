@@ -17,7 +17,7 @@ namespace ShrimpPond.Domain.PondData
         //Khởi tạo ao
         public string PondId { get; set; } = string.Empty;
         public float Deep { get; set; } 
-        public float Diameter { get; set; } 
+        public float Diameter { get; set; }       
         public string PondTypeName { get; set; } = string.Empty;
         public PondType? PondType { get; set; }
 

@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Feature\PondType\Commands\UpdatePondType\**" />
+    <EmbeddedResource Remove="Feature\PondType\Commands\UpdatePondType\**" />
+    <None Remove="Feature\PondType\Commands\UpdatePondType\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation" Version="11.9.2" />
@@ -21,7 +27,6 @@
 
   <ItemGroup>
     <Folder Include="Feature\Environment\Commands\" />
-    <Folder Include="Feature\PondType\Commands\UpdatePondType\" />
   </ItemGroup>
 
 </Project>

@@ -52,6 +52,27 @@ namespace ShrimpPond.Persistence.Migrations
                     b.ToTable("EnvironmentStatus");
                 });
 
+            modelBuilder.Entity("ShrimpPond.Domain.Farm.Farm", b =>
+                {
+                    b.Property<int>("FarmId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FarmId"), 1L, 1);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FarmName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("FarmId");
+
+                    b.ToTable("Farms");
+                });
+
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Certificate", b =>
                 {
                     b.Property<int>("CertificateId")
@@ -333,11 +354,20 @@ namespace ShrimpPond.Persistence.Migrations
                     b.Property<string>("PondTypeId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int?>("FarmId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FarmName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PondTypeName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("PondTypeId");
+
+                    b.HasIndex("FarmId");
 
                     b.ToTable("PondType");
                 });
@@ -464,6 +494,15 @@ namespace ShrimpPond.Persistence.Migrations
                         .HasForeignKey("PondTypeId");
 
                     b.Navigation("PondType");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.PondData.PondType", b =>
+                {
+                    b.HasOne("ShrimpPond.Domain.Farm.Farm", "Farm")
+                        .WithMany()
+                        .HasForeignKey("FarmId");
+
+                    b.Navigation("Farm");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.PondData.SizeShrimp", b =>
