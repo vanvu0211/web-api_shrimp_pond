@@ -59,13 +59,13 @@ namespace ShrimpPond.API.Controllers
         public async Task<IActionResult> FoodFeeding([FromBody] FoodFeeding e)
         {
             var id = await _mediator.Send(e);
-            return Ok(id);
+            return Ok(e);
         }
         [HttpPost("Medicine")]
         public async Task<IActionResult> MedicineFeeding([FromBody] MedicineFeeding e)
         {
             var id = await _mediator.Send(e);
-            return Ok(id);
+            return Ok(e);
         }
         [HttpPost("SizeShrimp")]
         public async Task<IActionResult> SizeShrimpUpdate([FromBody] SizeShrimpUpdate sizeShrimpUpdate)

@@ -23,7 +23,7 @@ namespace ShrimpPond.Application.Feature.PondType.Commands.DeletePondType
 
             //validate
 
-            var deletePondType = await _unitOfWork.pondTypeRepository.GetByIdAsync(request.PondTypeId);
+            var deletePondType =  _unitOfWork.pondTypeRepository.FindByCondition(p=>p.PondTypeName == request.PondTypeName).FirstOrDefault();
             
             if(deletePondType == null)
             {
@@ -40,7 +40,7 @@ namespace ShrimpPond.Application.Feature.PondType.Commands.DeletePondType
             _unitOfWork.pondTypeRepository.Remove(deletePondType);
             await _unitOfWork.SaveChangeAsync();
             //return 
-            return request.PondTypeId;
+            return request.PondTypeName;
         }
     }
 }

@@ -42,7 +42,7 @@ namespace ShrimpPond.API.Controllers
         {
             var command = new DeleteFood { FoodName = FoodName };
             var IdReturn = await _mediator.Send(command);
-            return Ok(IdReturn);
+            return Ok(command);
         }
     }
 }

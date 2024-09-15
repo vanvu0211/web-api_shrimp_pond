@@ -12,10 +12,10 @@ namespace ShrimpPond.Domain.PondData.Harves
     {
         [Display(Name = "ApartCollect")]
         [Description("ApartCollect")]
-        Active = 0,
+        ApartCollect = 0,
 
         [Display(Name = "TotalCollect")]
         [Description("TotalCollect")]
-        Inactive = 1,
+        TotalCollect = 1,
     }
 }

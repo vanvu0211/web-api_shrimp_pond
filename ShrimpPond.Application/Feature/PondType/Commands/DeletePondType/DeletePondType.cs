@@ -9,6 +9,6 @@ namespace ShrimpPond.Application.Feature.PondType.Commands.DeletePondType
 {
     public class DeletePondType : IRequest<string>
     {
-        public string PondTypeId { get; set; } = string.Empty;
+        public string PondTypeName { get; set; } = string.Empty;
     }
 }

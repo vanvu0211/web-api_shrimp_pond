@@ -43,7 +43,7 @@ namespace ShrimpPond.API.Controllers
         {
             var command = new DeleteMedicine { MedicineName = MedicineName };
             var IdReturn = await _mediator.Send(command);
-            return Ok(IdReturn);
+            return Ok(command);
         }
     }
 }

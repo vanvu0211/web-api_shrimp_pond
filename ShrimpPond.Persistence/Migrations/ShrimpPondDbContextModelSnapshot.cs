@@ -258,7 +258,7 @@ namespace ShrimpPond.Persistence.Migrations
 
                     b.HasIndex("PondId");
 
-                    b.ToTable("Harvest");
+                    b.ToTable("Harvests");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.PondData.LossShrimp", b =>

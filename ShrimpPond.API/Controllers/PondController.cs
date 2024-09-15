@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
 using ShrimpPond.Application.Feature.Pond.Commands.DeletePond;
+using ShrimpPond.Application.Feature.Pond.Commands.HarvestPond;
 using ShrimpPond.Application.Feature.Pond.Queries.GetAllPond;
 using ShrimpPond.Application.Feature.PondType.Commands.DeletePondType;
 using ShrimpPond.Application.Feature.PondType.Queries.GetPondType;
@@ -35,25 +36,31 @@ namespace ShrimpPond.API.Controllers
             ponds = ponds.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
             return Ok(ponds);
         }
-        [HttpPost]
+        [HttpPost("CreatePond")]
         public async Task<IActionResult> CreatePond([FromBody] CreatePond e)
         {
             var id = await _mediator.Send(e);
             return Ok(e);
         }
+        [HttpPost("HarvestPond")]
+        public async Task<IActionResult> HarvestPond([FromBody] HarvestPond e)
+        {
+            var id = await _mediator.Send(e);
+            return Ok(e);
+        }
 
-        [HttpPut]
+        [HttpPut("ActivePond")]
         public async Task<IActionResult> ActivePond([FromBody] ActivePond e)
         {
             var id = await _mediator.Send(e);
-            return Ok(id);
+            return Ok(e);
         }
         [HttpDelete]
         public async Task<IActionResult> DeletePond([FromQuery] string PondId)
         {
             var command = new DeletePond { PondId = PondId };
             var IdReturn = await _mediator.Send(command);
-            return Ok(IdReturn);
+            return Ok(command);
         }
     }
 }
