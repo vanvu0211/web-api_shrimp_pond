@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{64B74D2F-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B9F53966-94D8-446D-929B-F7C975FA21D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShrimpPond.API", "ShrimpPond.API\ShrimpPond.API.csproj", "{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShrimpPond.API", "ShrimpPond.API\ShrimpPond.API.csproj", "{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{956627D8-5CF4-4FEE-A541-FD243F8B65A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShrimpPond.Infrastructure", "ShrimpPond.Infrastructure\ShrimpPond.Infrastructure.csproj", "{4278C228-38AF-41C3-9E62-5F46E6910A0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShrimpPond.Infrastructure", "ShrimpPond.Infrastructure\ShrimpPond.Infrastructure.csproj", "{4278C228-38AF-41C3-9E62-5F46E6910A0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShrimpPond.Persistence", "ShrimpPond.Persistence\ShrimpPond.Persistence.csproj", "{06FE33CA-739A-47BB-83D3-01AE4821224F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShrimpPond.Persistence", "ShrimpPond.Persistence\ShrimpPond.Persistence.csproj", "{06FE33CA-739A-47BB-83D3-01AE4821224F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{3F6DE7A4-A2AD-4D53-BEFE-40D55C0863CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

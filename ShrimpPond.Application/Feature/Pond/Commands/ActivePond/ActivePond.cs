@@ -13,6 +13,8 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
     {
         public string PondId { get; set; } = string.Empty;
         public string SeedId { get; set; } = string.Empty;
+        public string SeedName { get; set; } = string.Empty;
+
         public string? OriginPondId { get; set; } = string.Empty;
         public List<string>? Certificates { get; set; }
         public float SizeShrimp { get; set; }

@@ -272,6 +272,10 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("SeedId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<float>("Size")
                         .HasColumnType("real");
 
@@ -333,6 +337,10 @@ namespace ShrimpPond.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SeedId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SeedName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -29,9 +29,9 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
                 throw new BadRequestException("Invalid ET", validatorResult);
             }
             //convert
-            var pond = _unitOfWork.pondRepository.FindAll().Where(x => x.PondId == request.PondId).Where(x => x.Status == EPondStatus.InActive);
+            var pond = _unitOfWork.pondRepository.FindByCondition(p=>p.PondId == request.PondId).Where(p=>p.Status == EPondStatus.Active).FirstOrDefault();
 
-            if (pond.Count() != 0)
+            if (pond == null)
             {
                 throw new BadRequestException($"Ao {request.PondId} chưa kích hoạt", validatorResult);
             }
@@ -61,6 +61,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
                 PondId = request.PondId,
                 HarvestType = request.HarvestType,
                 HarvestTime = TimeHarvest,
+                SeedId = pond.SeedId
             };
             _unitOfWork.harvestRepository.Add(harvest);
 
@@ -73,7 +74,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
                     {
                         var certificate = new Certificate()
                         {
-                            CertificateName = "Giấy xét nghiệm kháng sinh",
+                            CertificateName = $"Giấy xét nghiệm kháng sinh lần thu {TimeHarvest}" ,
                             FileData = Convert.FromBase64String(cer),
                             PondId = request.PondId
                         };

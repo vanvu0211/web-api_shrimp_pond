@@ -27,8 +27,12 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.DeletePond
             {
                 throw new BadRequestException("Not found Pond");
             }
+            if (deletePond.Status == Domain.PondData.EPondStatus.Active)
+            {
+                throw new BadRequestException("Pond is active");
+            }
             //Xóa danh sách cho ăn 
-             var foodfeedings = _unitOfWork.foodFeedingRepository.FindByCondition(x=> x.PondId == request.PondId);
+            var foodfeedings = _unitOfWork.foodFeedingRepository.FindByCondition(x=> x.PondId == request.PondId);
             _unitOfWork.foodFeedingRepository.RemoveRange(foodfeedings);
 
             foreach (var foodfeeding in foodfeedings)

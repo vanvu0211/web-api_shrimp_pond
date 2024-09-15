@@ -25,7 +25,10 @@ namespace ShrimpPond.Domain.PondData
         [EnumDataType(typeof(EPondStatus))]
         public EPondStatus Status { get; set; }
         public string OriginPondId { get; set; } = string.Empty;
+
+        public string SeedName { get; set; } = string.Empty;
         public string SeedId { get; set; } = string.Empty;
+
         [Column(TypeName = "VARBINARY(MAX)")]
         public List<Certificate>? Certificates { get; set; } 
         public float AmountShrimp { get; set; }

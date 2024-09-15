@@ -12,6 +12,7 @@ namespace ShrimpPond.Domain.PondData.Harvest
         public int HarvestId { get; set; }
         public int HarvestTime { get; set; }
         public EHarvest HarvestType { get; set; }
+        public string SeedId { get; set; } = string.Empty;
 
         public List<Certificate>? Certificates { get; set; }
         public float Size { get; set; }
