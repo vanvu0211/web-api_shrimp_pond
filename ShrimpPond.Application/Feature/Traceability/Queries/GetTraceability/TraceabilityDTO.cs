@@ -11,9 +11,9 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetTraceability
     {
         public string SeedId { get; set; } = string.Empty;
         public string HarvestPondId { get; set; } = string.Empty;
-        public float Amount {  get; set; }
+        public float TotalAmount {  get; set; }
         public int HarvestTime { get; set; }
-        public float Size { get; set; }
+        public string Size { get; set; } = string.Empty;
         public List<byte[]> Certificates { get; set; } = new List<byte[]>();
         public int DaysOfRearing { get; set; }
         public string FarmName { get; set; } = string.Empty;

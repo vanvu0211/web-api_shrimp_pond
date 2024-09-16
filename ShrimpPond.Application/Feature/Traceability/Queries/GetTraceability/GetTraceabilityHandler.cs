@@ -29,69 +29,94 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetTraceability
         public async Task<TraceabilityDTO> Handle(GetTraceability request, CancellationToken cancellationToken)
         {
             //query
-            TraceabilityDTO traceabilitie = new();
+            TraceabilityDTO Traceabilitie = new();
 
-            var harvests = _unitOfWork.harvestRepository.FindByCondition(x=>x.SeedId == request.SeedId).Where(x=>x.HarvestTime == request.HarvestTime).ToList();
-            foreach(var harvest in harvests)
+            var harvestPonds = _unitOfWork.harvestRepository.FindByCondition(x=>x.SeedId == request.SeedId).Where(x=>x.HarvestTime == request.HarvestTime).ToList();
+
+            if(harvestPonds.Count == 0)
             {
-                var pond = _unitOfWork.pondRepository.FindByCondition(p => p.PondId == harvest.PondId).FirstOrDefault();
+                throw new BadRequestException("Not found");
+            }
+
+            List<string> HarvestPondIds = new List<string>();
+            List<string> HarvestSizes = new List<string>();
+            float Size = 0;
+
+            foreach (var harvestPond in harvestPonds)
+            {
+                var pond = _unitOfWork.pondRepository.FindByCondition(p => p.PondId == harvestPond.PondId).FirstOrDefault();
                 if(pond == null)
                 {
                     throw new BadRequestException("Not found Pond");
                 }
-                traceabilitie.DaysOfRearing =(harvest.HarvestDate - pond.StartDate).Days;
+                Traceabilitie.DaysOfRearing =(harvestPond.HarvestDate - pond.StartDate).Days;
+
+                //Lấy trung bình size tôm
+                HarvestSizes.Add(harvestPond.PondId + "-" + harvestPond.Size.ToString());
+                Size += harvestPond.Size;
+
                 //tổng số lượng tôm các ao
-                traceabilitie.Amount += harvest.Amount;
-                traceabilitie.Size = harvest.Size;
-                traceabilitie.HarvestPondId = traceabilitie.HarvestPondId + "-" + harvest.PondId;
-                var certificates =  _unitOfWork.certificateRepository.FindByCondition(x=>x.PondId == harvest.PondId).Where(x=>x.CertificateName== $"Giấy xét nghiệm kháng sinh lần thu {request.HarvestTime}").ToList();
-                
-                foreach(var certificate in certificates)
+                Traceabilitie.TotalAmount += harvestPond.Amount;
+
+                //Danh sách ao thu hoạch
+                HarvestPondIds.Add(pond.OriginPondId+ "-" + harvestPond.PondId);
+
+                //Danh sách giấy xét nghiệm
+                var certificates =  _unitOfWork.certificateRepository.FindByCondition(x=>x.PondId == harvestPond.PondId).Where(x=>x.CertificateName== $"Giấy xét nghiệm kháng sinh lần thu {request.HarvestTime}").ToList();
+
+                foreach (var certificate in certificates)
                 {
-                    traceabilitie.Certificates.Add(certificate.FileData);
+                    Traceabilitie.Certificates.Add(certificate.FileData);
                 }
                 
-                var pondType = _unitOfWork.pondTypeRepository.FindByCondition(x=>x.PondTypeName==pond.PondTypeName).FirstOrDefault();
+                var pondType =  _unitOfWork.pondTypeRepository.FindByCondition(x=>x.PondTypeName==pond.PondTypeName).FirstOrDefault();
                 if(pondType == null)
                 {
                     throw new BadRequestException("Not found PondType");
                 }
 
-                traceabilitie.FarmName = pondType.FarmName;
+                Traceabilitie.FarmName = pondType.FarmName;
 
                 var farm = _unitOfWork.farmRepository.FindByCondition(x=>x.FarmName == pondType.FarmName).FirstOrDefault();
                 if (farm == null)
                 {
                     throw new BadRequestException("Not found Farm");
                 }
-                traceabilitie.Address = farm.Address;
+                Traceabilitie.Address = farm.Address;
             }
-           
-            traceabilitie.SeedId = request.SeedId;
-            traceabilitie.HarvestTime = request.HarvestTime;
+            Traceabilitie.SeedId = request.SeedId;
+            Traceabilitie.HarvestTime = request.HarvestTime;
             
+            //Tạo mã ao thu hoạch theo đúng format
+            foreach(var HarvestPondId in HarvestPondIds)
+            {
+                Traceabilitie.HarvestPondId += HarvestPondId + ";";
+            }
 
+            if (Traceabilitie.HarvestPondId.EndsWith(";"))
+            {
+                Traceabilitie.HarvestPondId = Traceabilitie.HarvestPondId.Remove(Traceabilitie.HarvestPondId.Length - 1);
+            }
 
+            //Tạo size theo format
 
-            //if (pond == null)
-            //{
-            //    throw new BadRequestException("Not Found pond");
-            //}
+            foreach (var HarvestSize in HarvestSizes)
+            {
+                Traceabilitie.Size += HarvestSize + ";";
+            }
 
-            //TraceabilityDTO traceabilityDTO = new TraceabilityDTO();
-            //traceabilityDTO.SeedId = request.SeedId;
-            //traceabilityDTO.HarvestPondId = pond.OriginPondId + "-" + pond.PondId;
+            if (Traceabilitie.Size.EndsWith(";"))
+            {
+                Traceabilitie.Size = Traceabilitie.Size.Remove(Traceabilitie.Size.Length - 1);
+            }
 
+            Traceabilitie.Size = $"[{(Size / harvestPonds.Count())}]" +"["+ Traceabilitie.Size+"]";
 
+            _logger.LogInformation("Get traceabilitie successfully");
 
-
-
-            //logging
-            _logger.LogInformation("Get location successfully");
-            // convert
             
             //return
-            return traceabilitie;
+            return Traceabilitie;
         }
     }
 }
