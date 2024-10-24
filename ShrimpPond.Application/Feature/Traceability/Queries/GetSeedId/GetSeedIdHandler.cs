@@ -2,12 +2,7 @@
 using MediatR;
 using ShrimpPond.Application.Contract.Logging;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ShrimpPond.Application.Feature.Traceability.Queries.GetSeedId
 {
