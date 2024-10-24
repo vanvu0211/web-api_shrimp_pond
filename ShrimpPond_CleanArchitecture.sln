@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B9F53966-94D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShrimpPond.API", "ShrimpPond.API\ShrimpPond.API.csproj", "{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{956627D8-5CF4-4FEE-A541-FD243F8B65A2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infastructure", "Infastructure", "{956627D8-5CF4-4FEE-A541-FD243F8B65A2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShrimpPond.Infrastructure", "ShrimpPond.Infrastructure\ShrimpPond.Infrastructure.csproj", "{4278C228-38AF-41C3-9E62-5F46E6910A0E}"
 EndProject
