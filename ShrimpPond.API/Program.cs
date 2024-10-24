@@ -1,10 +1,13 @@
 using EquipmentManagement.Infrastructure;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using ShrimpPond.API.Hubs;
 using ShrimpPond.API.Middleware;
 using ShrimpPond.API.Worker;
 using ShrimpPond.Application;
 using ShrimpPond.Infrastructure.Communication;
 using ShrimpPond.Persistence;
+using System.Text;
 using Buffer = ShrimpPond.API.Worker.Buffer;
 
 
@@ -22,6 +25,8 @@ namespace ShrimpPond.API
             builder.Services.AddApplicationServices();
             builder.Services.AddInfrastructureServices(builder.Configuration);
             builder.Services.AddPersistenceServices(builder.Configuration);
+
+          
 
             builder.Services.AddControllers();
             builder.Services.AddCors(options =>

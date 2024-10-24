@@ -54,8 +54,6 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
             {
                 foreach (var pic in request.Certificates)
                 {
-
-
                     var certificate= new  Domain.PondData.Certificate()
                     {
                         CertificateName = "Giấy xét nghiệm tôm thương phẩm",
@@ -66,6 +64,7 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
                 }
             }
             activePond.SeedId = request.SeedId;
+            activePond.SeedName = request.SeedName;
 
             _unitOfWork.pondRepository.Update(activePond);
             await _unitOfWork.SaveChangeAsync();

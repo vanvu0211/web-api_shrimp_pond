@@ -10,5 +10,6 @@ namespace ShrimpPond.Application.Feature.PondType.Queries.GetPondType
     {
         public string PondTypeId { get; set; } = string.Empty;
         public string PondTypeName { get; set; } = string.Empty;
+        public string FarmName {  get; set; } = string.Empty;
     }
 }

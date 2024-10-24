@@ -2,6 +2,7 @@
 using MediatR;
 using ShrimpPond.Application.Contract.Logging;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
+using ShrimpPond.Application.Exceptions;
 using ShrimpPond.Application.Feature.PondType.Queries.GetPondType;
 using System;
 using System.Collections.Generic;
@@ -38,12 +39,28 @@ namespace ShrimpPond.Application.Feature.Pond.Queries.GetAllPond
                     PondTypeName = pond.PondTypeName,
                     OriginPondId = pond.OriginPondId,
                     SeedId = pond.SeedId,
-                    StartDate = pond.StartDate,
                     AmountShrimp = pond.AmountShrimp,
                     Deep = pond.Deep,
                     Diameter = pond.Diameter,
                     Status = pond.Status
                 };
+
+                if(pond.OriginPondId == "")
+                {
+                    dt.StartDate = pond.StartDate;
+                }
+                else
+                {
+                    var originPond = await _unitOfWork.pondRepository.GetByIdAsync(pond.OriginPondId);
+                    if (originPond == null)
+                    {
+                        throw new BadRequestException("Not Found Pond");
+                    }
+                    dt.StartDate = originPond.StartDate;
+                }
+                
+
+
                 data.Add(dt);
             }
             //logging

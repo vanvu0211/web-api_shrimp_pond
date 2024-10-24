@@ -11,5 +11,6 @@ namespace ShrimpPond.Application.Feature.PondType.Commands.CreatePondType
     {
         public string PondTypeId { get; set; } = string.Empty;
         public string PondTypeName {  get; set; } = string.Empty;
+        public string FarmName { get; set; } = string.Empty;
     }
 }

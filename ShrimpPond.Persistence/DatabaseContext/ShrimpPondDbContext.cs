@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShrimpPond.Domain.Environments;
+using ShrimpPond.Domain.Farm;
 using ShrimpPond.Domain.PondData;
 using ShrimpPond.Domain.PondData.Feeding.Food;
 using ShrimpPond.Domain.PondData.Feeding.Medicine;
@@ -30,6 +31,8 @@ namespace ShrimpPond.Persistence.DatabaseContext
         public DbSet<SizeShrimp> SizeShrimp { get; set; }
         public DbSet<LossShrimp> LossShrimp { get; set; }
         public DbSet<EnvironmentStatus> EnvironmentStatus { get; set; }
+        public DbSet<Harvest> Harvests { get; set; }
+        public DbSet<Farm> Farms { get; set; }
 
 
 
@@ -73,6 +76,12 @@ namespace ShrimpPond.Persistence.DatabaseContext
 
             modelBuilder.Entity<EnvironmentStatus>().HasKey(n => n.EnvironmentStatusId);
             modelBuilder.Entity<EnvironmentStatus>().Property(x => x.EnvironmentStatusId).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Harvest>().HasKey(n => n.HarvestId);
+            modelBuilder.Entity<Harvest>().Property(x => x.HarvestId).ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Farm>().HasKey(n => n.FarmId);
+            modelBuilder.Entity<Farm>().Property(x => x.FarmId).ValueGeneratedOnAdd();
         }
     }
 }

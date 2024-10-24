@@ -19,6 +19,10 @@ namespace ShrimpPond.Application.Feature.PondType.Commands.CreatePondType
              .NotEmpty().WithMessage("{property} is required")
              .NotNull()
              .MaximumLength(100);
+            RuleFor(p => p.FarmName)
+             .NotEmpty().WithMessage("{property} is required")
+             .NotNull()
+             .MaximumLength(100);
         }
     }
 }
