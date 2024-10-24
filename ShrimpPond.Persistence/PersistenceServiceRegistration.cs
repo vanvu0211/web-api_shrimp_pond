@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ShrimpPond.Application.Contract.Persistence;
@@ -18,6 +19,7 @@ namespace ShrimpPond.Persistence
             services.AddDbContext<ShrimpPondDbContext>(options => {
                 options.UseSqlServer(configuration.GetConnectionString("ShrimpPond"));
             });
+           
 
             services.AddScoped(typeof(IRepositoryBaseAsync<,>), typeof(RepositoryBase<,>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();

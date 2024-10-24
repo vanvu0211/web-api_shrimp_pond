@@ -172,3 +172,10 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.pdb
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Debug\net6.0\ShrimpPond.API.genruntimeconfig.cache
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Debug\net6.0\ref\ShrimpPond.API.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

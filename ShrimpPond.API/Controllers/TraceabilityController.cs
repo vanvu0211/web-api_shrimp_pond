@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.Pond.Queries.GetAllPond;
+using ShrimpPond.Application.Feature.Traceability.Queries.GetSeedId;
+using ShrimpPond.Application.Feature.Traceability.Queries.GetTimeHarvest;
 using ShrimpPond.Application.Feature.Traceability.Queries.GetTraceability;
 
 namespace ShrimpPond.API.Controllers
@@ -26,6 +28,23 @@ namespace ShrimpPond.API.Controllers
 
             });
             
+            return Ok(et);
+
+        }
+        [HttpGet("GetSeedId")]
+        public async Task<IActionResult> GetSeedId([FromQuery] int pageSize = 200, int pageNumber = 1)
+        {
+            var et = await _mediator.Send(new GetSeedId());
+
+            return Ok(et);
+
+        }
+
+        [HttpGet("GetTimeHarvest")]
+        public async Task<IActionResult> GetTimeHarvest([FromQuery] int pageSize = 200, int pageNumber = 1)
+        {
+            var et = await _mediator.Send(new GetTimeHarvest());
+
             return Ok(et);
 
         }

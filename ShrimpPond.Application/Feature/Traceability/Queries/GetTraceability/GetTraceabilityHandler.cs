@@ -40,6 +40,7 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetTraceability
 
             List<string> HarvestPondIds = new List<string>();
             List<string> HarvestSizes = new List<string>();
+            DateTime EndDate = DateTime.Now;
             float Size = 0;
 
             foreach (var harvestPond in harvestPonds)
@@ -49,7 +50,17 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetTraceability
                 {
                     throw new BadRequestException("Not found Pond");
                 }
-                Traceabilitie.DaysOfRearing =(harvestPond.HarvestDate - pond.StartDate).Days;
+                //Nếu có ao gốc
+                if(pond.OriginPondId != null)
+                {
+                    var _originPond = _unitOfWork.pondRepository.FindByCondition(p=>p.PondId==pond.OriginPondId).FirstOrDefault();
+                    if(_originPond != null)
+                    {
+                        EndDate = _originPond.StartDate;
+                    } 
+                } 
+                EndDate = pond.StartDate;
+                Traceabilitie.DaysOfRearing =(harvestPond.HarvestDate - EndDate).Days;
 
                 //Lấy trung bình size tôm
                 HarvestSizes.Add(harvestPond.PondId + "-" + harvestPond.Size.ToString());

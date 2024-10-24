@@ -11,6 +11,10 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\MediatR.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\MediatR.Contracts.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -19,7 +23,10 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Identity.Core.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.Identity.Client.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll
