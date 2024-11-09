@@ -22,6 +22,8 @@ namespace ShrimpPond.Application.Contract.Persistence.Genenric
         IEnvironmentStatusRepository environmentStatusRepository { get; }
         IHarvestRepository harvestRepository { get; }
         IFarmRepository farmRepository { get; }
+        ITimeSettingRepository timeSettingRepository { get; }
+        ITimeSettingObjectRepository timeSettingObjectRepository { get; }
         Task<int> CommitAsync();
         Task SaveChangeAsync();
     }

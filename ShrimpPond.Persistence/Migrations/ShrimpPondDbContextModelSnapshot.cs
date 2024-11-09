@@ -17,10 +17,35 @@ namespace ShrimpPond.Persistence.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.32")
+                .HasAnnotation("ProductVersion", "6.0.33")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("ShrimpPond.Application.Feature.TimeSetting.Command.CreateTimeSetting.TimeSettingObject", b =>
+                {
+                    b.Property<int>("TimeSettingObjectId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TimeSettingObjectId"), 1L, 1);
+
+                    b.Property<int>("Index")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Time")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TimeSettingId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TimeSettingObjectId");
+
+                    b.HasIndex("TimeSettingId");
+
+                    b.ToTable("TimeSettingObject");
+                });
 
             modelBuilder.Entity("ShrimpPond.Domain.Environments.EnvironmentStatus", b =>
                 {
@@ -405,6 +430,30 @@ namespace ShrimpPond.Persistence.Migrations
                     b.ToTable("SizeShrimp");
                 });
 
+            modelBuilder.Entity("ShrimpPond.Domain.TimeSetting.TimeSetting", b =>
+                {
+                    b.Property<int>("TimeSettingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TimeSettingId"), 1L, 1);
+
+                    b.HasKey("TimeSettingId");
+
+                    b.ToTable("TimeSettings");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Application.Feature.TimeSetting.Command.CreateTimeSetting.TimeSettingObject", b =>
+                {
+                    b.HasOne("ShrimpPond.Domain.TimeSetting.TimeSetting", "TimeSetting")
+                        .WithMany("timeSettingObjects")
+                        .HasForeignKey("TimeSettingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TimeSetting");
+                });
+
             modelBuilder.Entity("ShrimpPond.Domain.Environments.EnvironmentStatus", b =>
                 {
                     b.HasOne("ShrimpPond.Domain.PondData.Pond", null)
@@ -554,6 +603,11 @@ namespace ShrimpPond.Persistence.Migrations
                     b.Navigation("MedicineFeedings");
 
                     b.Navigation("SizeShrimps");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.TimeSetting.TimeSetting", b =>
+                {
+                    b.Navigation("timeSettingObjects");
                 });
 #pragma warning restore 612, 618
         }

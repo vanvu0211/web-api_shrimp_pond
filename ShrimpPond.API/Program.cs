@@ -5,8 +5,10 @@ using ShrimpPond.API.Hubs;
 using ShrimpPond.API.Middleware;
 using ShrimpPond.API.Worker;
 using ShrimpPond.Application;
+using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Infrastructure.Communication;
 using ShrimpPond.Persistence;
+using ShrimpPond.Persistence.Repository.Generic;
 using System.Text;
 using Buffer = ShrimpPond.API.Worker.Buffer;
 
@@ -53,6 +55,7 @@ namespace ShrimpPond.API
             builder.Services.AddSingleton<ManagedMqttClient>();
             builder.Services.AddSingleton<Buffer>();
             builder.Services.AddHostedService<ScadaHost>();
+            
 
             var app = builder.Build();
             app.UseMiddleware<ExceptionMiddleware>();
