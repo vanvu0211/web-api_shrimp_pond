@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.Feeding.Commands.Feeding;
 using ShrimpPond.Application.Feature.Feeding.Commands.MedicineFeeding;
@@ -13,6 +14,7 @@ namespace ShrimpPond.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class UpdateController : ControllerBase
     {
         private readonly IMediator _mediator;

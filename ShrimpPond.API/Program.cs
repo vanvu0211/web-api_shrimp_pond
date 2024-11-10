@@ -30,23 +30,35 @@ namespace ShrimpPond.API
 
           
 
-            builder.Services.AddControllers();
+
             builder.Services.AddCors(options =>
             {
+                //     options.AddPolicy("AllowAll",
+                //        builder =>
+                //        {
+                //            builder
+                ////.AllowAnyOrigin()
+                //.WithOrigins(
+                //"https://shrimppond.runasp.net",
+                //"https://localhost:5173",
+                //"https://localhost:7220",
+                //"https://localhost:3000",
+                //"https://192.168.123.199:3000")
+                //.AllowAnyMethod()
+                //.AllowAnyHeader()
+                //.AllowCredentials();
+                //        });
+
                 options.AddPolicy("AllowAll",
-                   builder =>
-                   {
-                       builder
-           //.AllowAnyOrigin()
-           .WithOrigins("localhost",
-           "http://localhost:5173",
-           "http://localhost:3000",
-           "http://192.168.123.199:3000")
-           .AllowAnyMethod()
-           .AllowAnyHeader()
-           .AllowCredentials();
-                   });
+                           builder =>
+                           {
+                               builder.AllowAnyOrigin()
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader();
+                           });
             });
+
+
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -55,7 +67,8 @@ namespace ShrimpPond.API
             builder.Services.AddSingleton<ManagedMqttClient>();
             builder.Services.AddSingleton<Buffer>();
             builder.Services.AddHostedService<ScadaHost>();
-            
+
+            builder.Services.AddControllers();
 
             var app = builder.Build();
             app.UseMiddleware<ExceptionMiddleware>();
