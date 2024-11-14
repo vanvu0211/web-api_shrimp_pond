@@ -24,6 +24,9 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
             RuleFor(p => p.HarvestDate)
                 .NotEmpty().WithMessage("{property} is required")
                 .NotNull();
+            //RuleFor(p => p.Unit)
+            //   .NotEmpty().WithMessage("{property} is required")
+            //   .NotNull();
 
         }
     }

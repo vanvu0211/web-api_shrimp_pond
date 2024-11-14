@@ -57,6 +57,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
             {
                 HarvestDate = request.HarvestDate,
                 Amount = request.Amount,
+                //Unit = request.Unit,
                 Size = request.Size,
                 PondId = request.PondId,
                 HarvestType = request.HarvestType,

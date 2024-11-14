@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShrimpPond.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89ae7ae3bf1de95444142c34da3344034a6d23ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+191f9590d9f3077126f86c4134930b508f06edf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShrimpPond.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShrimpPond.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

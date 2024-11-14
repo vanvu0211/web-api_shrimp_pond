@@ -32,6 +32,7 @@ namespace ShrimpPond.Domain.PondData
         [Column(TypeName = "VARBINARY(MAX)")]
         public List<Certificate>? Certificates { get; set; } 
         public float AmountShrimp { get; set; }
+        //public string UnitAmountShrimp { get; set; } = string.Empty ;
         public DateTime StartDate { get; set; }
 
         //Trong quá trình nuôi 
