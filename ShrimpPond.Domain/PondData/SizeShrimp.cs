@@ -11,6 +11,7 @@ namespace ShrimpPond.Domain.PondData
     {
         public int SizeShrimpId { get; set; }
         public float SizeValue { get; set; }
+
         public DateTime UpdateDate { get; set; }
         public string PondId { get; set; } = string.Empty;
         public Pond? Pond { get; set; }

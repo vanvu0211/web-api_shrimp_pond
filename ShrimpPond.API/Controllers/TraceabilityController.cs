@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.Pond.Queries.GetAllPond;
@@ -10,6 +11,7 @@ namespace ShrimpPond.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class TraceabilityController : ControllerBase
     {
         private readonly IMediator _mediator;

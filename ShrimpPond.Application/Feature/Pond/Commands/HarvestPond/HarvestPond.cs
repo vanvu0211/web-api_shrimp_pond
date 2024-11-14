@@ -13,6 +13,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
         public EHarvest HarvestType { get; set; }
         public DateTime HarvestDate { get; set; }
         public float Amount { get; set; }
+        //public string Unit { get; set; } = string.Empty;
         public float Size { get; set; }
         public List<string>? Certificates { get; set; }
 

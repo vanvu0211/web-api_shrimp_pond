@@ -30,6 +30,8 @@ namespace ShrimpPond.Persistence.Repository.Generic
             environmentStatusRepository = new EnvironmentStatusRepository(context);
             harvestRepository = new HarvestRepository(context);
             farmRepository = new FarmRepository(context);
+            timeSettingRepository = new TimeSettingRepository(context);
+            timeSettingObjectRepository = new TimeSettingObjectRepository(context);
 
         }
         public IPondRepository pondRepository { get; private set; }
@@ -46,6 +48,8 @@ namespace ShrimpPond.Persistence.Repository.Generic
         public IEnvironmentStatusRepository environmentStatusRepository { get; private set; }
         public IHarvestRepository harvestRepository { get; private set; }
         public IFarmRepository farmRepository { get; private set; }
+        public ITimeSettingRepository timeSettingRepository { get; private set; }
+        public ITimeSettingObjectRepository timeSettingObjectRepository { get; private set; }
 
         public async Task<int> CommitAsync()
         {

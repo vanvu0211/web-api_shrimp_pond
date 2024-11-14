@@ -2,12 +2,7 @@
 using MediatR;
 using ShrimpPond.Application.Contract.Logging;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ShrimpPond.Application.Feature.Traceability.Queries.GetSeedId
 {
@@ -32,7 +27,7 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetSeedId
             foreach (var pond in ponds) 
             {
 
-                if (pond.SeedId == "" || result.Where(x=>x.SeedId==pond.SeedId).Count()!=0) continue;
+                if (pond.SeedId == "" || result.Count(x => x.SeedId==pond.SeedId)!=0) continue;
 
                 result.Add(new SeedIdDTO() { SeedId = pond.SeedId });
             }

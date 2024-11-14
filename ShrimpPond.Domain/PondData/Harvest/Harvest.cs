@@ -17,6 +17,7 @@ namespace ShrimpPond.Domain.PondData.Harvest
         public List<Certificate>? Certificates { get; set; }
         public float Size { get; set; }
         public float Amount { get; set; }
+        //public string Unit { get; set; } = string.Empty;
         public DateTime HarvestDate { get; set; }
 
         public string PondId { get; set; } = string.Empty;

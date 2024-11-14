@@ -35,6 +35,10 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
             RuleFor(p => p.AmountShrimp)
                .NotEmpty().WithMessage("{property} is required")
                .NotNull();
+
+            //RuleFor(p => p.UnitAmountShrimp)
+            //   .NotEmpty().WithMessage("{property} is required")
+            //   .NotNull();
         }
     }
 }

@@ -49,6 +49,7 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
             activePond.StartDate = DateTime.Now;
             activePond.Status = EPondStatus.Active;
             activePond.AmountShrimp = request.AmountShrimp;
+            //activePond.UnitAmountShrimp = request.UnitAmountShrimp;
             activePond.OriginPondId = request.OriginPondId;
             if (request.Certificates != null)
             {
