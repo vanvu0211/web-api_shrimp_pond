@@ -106,7 +106,7 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetTraceability
 
             if (Traceabilitie.HarvestPondId.EndsWith(";"))
             {
-                Traceabilitie.HarvestPondId = Traceabilitie.HarvestPondId.Remove(Traceabilitie.HarvestPondId.Length - 1);
+                Traceabilitie.HarvestPondId =  Traceabilitie.HarvestPondId.Remove(Traceabilitie.HarvestPondId.Length - 1);
             }
 
             //Tạo size theo format
@@ -121,7 +121,7 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetTraceability
                 Traceabilitie.Size = Traceabilitie.Size.Remove(Traceabilitie.Size.Length - 1);
             }
 
-            Traceabilitie.Size = $"[{(Size / harvestPonds.Count())}]" +"["+ Traceabilitie.Size+"]";
+            Traceabilitie.Size =  $"[{(Size / harvestPonds.Count())}]" +"["+ Traceabilitie.Size+"]";
 
             _logger.LogInformation("Get traceabilitie successfully");
 

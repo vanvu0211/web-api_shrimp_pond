@@ -28,27 +28,8 @@ namespace ShrimpPond.API
             builder.Services.AddInfrastructureServices(builder.Configuration);
             builder.Services.AddPersistenceServices(builder.Configuration);
 
-          
-
-
             builder.Services.AddCors(options =>
             {
-                //     options.AddPolicy("AllowAll",
-                //        builder =>
-                //        {
-                //            builder
-                ////.AllowAnyOrigin()
-                //.WithOrigins(
-                //"https://shrimppond.runasp.net",
-                //"https://localhost:5173",
-                //"https://localhost:7220",
-                //"https://localhost:3000",
-                //"https://192.168.123.199:3000")
-                //.AllowAnyMethod()
-                //.AllowAnyHeader()
-                //.AllowCredentials();
-                //        });
-
                 options.AddPolicy("AllowAll",
                            builder =>
                            {
