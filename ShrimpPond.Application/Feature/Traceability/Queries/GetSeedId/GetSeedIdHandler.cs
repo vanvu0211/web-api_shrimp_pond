@@ -19,9 +19,9 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetSeedId
             _logger = logger;
         }
 
-        public async Task<List<SeedIdDTO>> Handle(GetSeedId request, CancellationToken cancellationToken)
+        public Task<List<SeedIdDTO>> Handle(GetSeedId request, CancellationToken cancellationToken)
         {
-            List<SeedIdDTO> result = new List<SeedIdDTO>();
+            var result = new List<SeedIdDTO>();
 
             var ponds = _unitOfWork.pondRepository.FindAll();
             foreach (var pond in ponds) 
@@ -33,7 +33,7 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetSeedId
             }
 
          
-            return result;
+            return Task.FromResult(result);
         }
     }
 }

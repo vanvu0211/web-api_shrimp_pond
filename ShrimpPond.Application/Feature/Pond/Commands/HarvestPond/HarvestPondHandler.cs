@@ -23,22 +23,22 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
         {
             //validate
             var validator = new HarvestPondValidation();
-            var validatorResult = await validator.ValidateAsync(request);
+            var validatorResult = await validator.ValidateAsync(request, cancellationToken);
             if (validatorResult.Errors.Any())
             {
                 throw new BadRequestException("Invalid ET", validatorResult);
             }
             //convert
-            var pond = _unitOfWork.pondRepository.FindByCondition(p=>p.PondId == request.PondId).Where(p=>p.Status == EPondStatus.Active).FirstOrDefault();
+            var pond = _unitOfWork.pondRepository.FindByCondition(p=>p.PondId == request.PondId).FirstOrDefault(p => p.Status == EPondStatus.Active);
 
             if (pond == null)
             {
                 throw new BadRequestException($"Ao {request.PondId} chưa kích hoạt", validatorResult);
             }
 
-            int TimeHarvest = _unitOfWork.harvestRepository.FindAll().Where(p => p.PondId == request.PondId).Count() + 1;// Tự động tăng số lần thu hoạch
+            var timeHarvest = _unitOfWork.harvestRepository.FindAll().Count(p => p.PondId == request.PondId) + 1;// Tự động tăng số lần thu hoạch
 
-            Harvest harvest = new Harvest();
+           
 
             //Thu toàn bộ
             if (request.HarvestType == Domain.PondData.Harves.EHarvest.TotalCollect)
@@ -53,7 +53,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
 
             }
             //Thu tỉa
-            harvest = new Harvest()
+            var  harvest = new Harvest()
             {
                 HarvestDate = request.HarvestDate,
                 Amount = request.Amount,
@@ -61,12 +61,13 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
                 Size = request.Size,
                 PondId = request.PondId,
                 HarvestType = request.HarvestType,
-                HarvestTime = TimeHarvest,
+                HarvestTime = timeHarvest,
                 SeedId = pond.SeedId
             };
             _unitOfWork.harvestRepository.Add(harvest);
 
-            List<Certificate> certificates = new List<Certificate>();
+            var certificates = new List<Certificate>();
+            if (certificates == null) throw new ArgumentNullException(nameof(certificates));
             if (request.Certificates != null)
             {
                 foreach (var cer in request.Certificates)
@@ -75,7 +76,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
                     {
                         var certificate = new Certificate()
                         {
-                            CertificateName = $"Giấy xét nghiệm kháng sinh lần thu {TimeHarvest}" ,
+                            CertificateName = $"Giấy xét nghiệm kháng sinh lần thu {timeHarvest}" ,
                             FileData = Convert.FromBase64String(cer),
                             PondId = request.PondId
                         };
@@ -84,7 +85,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
                     }
                     catch
                     {
-
+                        // ignored
                     }
                 }
             }

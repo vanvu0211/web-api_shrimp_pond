@@ -1,17 +1,12 @@
 ﻿using MediatR;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Application.Exceptions;
-using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
+using ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond;
 using ShrimpPond.Domain.PondData;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
+namespace ShrimpPond.Application.Feature.Pond.Commands.ActivePond
 {
-    public class ActivePondHandler: IRequestHandler<ActivePond, string>
+    public class ActivePondHandler: IRequestHandler<NurseryPond.Commands.ActiveNurseryPond.ActivePond, string>
     
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -20,11 +15,11 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<string> Handle(ActivePond request, CancellationToken cancellationToken)
+        public async Task<string> Handle(NurseryPond.Commands.ActiveNurseryPond.ActivePond request, CancellationToken cancellationToken)
         {
             //validate
             var validator = new ActivePondValidation();
-            var validatorResult = await validator.ValidateAsync(request);
+            var validatorResult = await validator.ValidateAsync(request, cancellationToken);
             if (validatorResult.Errors.Any())
             {
                 throw new BadRequestException("Invalid ET", validatorResult);

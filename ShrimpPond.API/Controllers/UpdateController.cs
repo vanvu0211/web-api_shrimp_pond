@@ -37,25 +37,25 @@ namespace ShrimpPond.API.Controllers
         [HttpGet("LossShrimp")]
         public async Task<IActionResult> GetLossShrimp([FromQuery] string? PondId, int pageSize = 200, int pageNumber = 1)
         {
-            var LossShrimps = await _mediator.Send(new GetLossUpdate());
+            var lossShrimps = await _mediator.Send(new GetLossUpdate());
             if (PondId != null)
             {
-                LossShrimps = LossShrimps.Where(x => x.PondId == PondId).ToList();
+                lossShrimps = lossShrimps.Where(x => x.PondId == PondId).ToList();
             }
-            LossShrimps = LossShrimps.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
-            return Ok(LossShrimps);
+            lossShrimps = lossShrimps.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
+            return Ok(lossShrimps);
         }
         [HttpGet("FoodFeeding")]
-        public async Task<IActionResult> GetFoodFeeding([FromQuery] string? PondId, int pageSize = 200, int pageNumber = 1)
+        public async Task<IActionResult> GetFoodFeeding([FromQuery] string? pondId, int pageSize = 200, int pageNumber = 1)
         {
-            var FoodFeedings = await _mediator.Send(new GetFoodFeeding { PondId = PondId });
-            return Ok(FoodFeedings);
+            var foodFeedings = await _mediator.Send(new GetFoodFeeding { PondId = pondId });
+            return Ok(foodFeedings);
         }
         [HttpGet("MedicineFeeding")]
-        public async Task<IActionResult> GetMedicineFeeding([FromQuery] string? PondId, int pageSize = 200, int pageNumber = 1)
+        public async Task<IActionResult> GetMedicineFeeding([FromQuery] string? pondId, int pageSize = 200, int pageNumber = 1)
         {
-            var MedicineFeedings = await _mediator.Send(new GetMedicineFeeding { PondId = PondId });
-            return Ok(MedicineFeedings);
+            var medicineFeedings = await _mediator.Send(new GetMedicineFeeding { PondId = pondId });
+            return Ok(medicineFeedings);
         }
         [HttpPost("Food")]
         public async Task<IActionResult> FoodFeeding([FromBody] FoodFeeding e)

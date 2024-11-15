@@ -4,14 +4,8 @@ using ShrimpPond.API.Hubs;
 using ShrimpPond.API.MQTTModels;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Infrastructure.Communication;
-using System.Text.Json.Nodes;
 using ShrimpPond.Domain.Environments;
-using static System.DateTime;
-using System.Timers;
 using Timer = System.Timers.Timer;
-using Microsoft.Extensions.Hosting;
-using ShrimpPond.Application.Exceptions;
-using ShrimpPond.Domain.Traceability;
 
 
 namespace ShrimpPond.API.Worker
@@ -20,12 +14,14 @@ namespace ShrimpPond.API.Worker
     {
         private readonly ManagedMqttClient _mqttClient;
         private readonly Buffer _buffer;
+
         private readonly IHubContext<NotificationHub> _hubContext;
+
         //private readonly IGmailSender _gmailSender;
         //private readonly IEmailSender _emailSender;
         //private readonly IUnitOfWork _unitOfWork;
         private readonly IServiceScopeFactory _scopeFactory;
-        private static Timer timer;
+        private static Timer? _timer;
 
         public ScadaHost(ManagedMqttClient mqttClient, Buffer buffer,
             IHubContext<NotificationHub> hubContext,
@@ -33,7 +29,7 @@ namespace ShrimpPond.API.Worker
             //IGmailSender gmailSender
             //IEmailSender emailSender,
             //IUnitOfWork unitOfWork
-            )
+        )
         {
             _mqttClient = mqttClient;
             _buffer = buffer;
@@ -42,59 +38,48 @@ namespace ShrimpPond.API.Worker
             //_emailSender = emailSender;
             //_unitOfWork = unitOfWork;
             _scopeFactory = scopeFactory;
-            timer = new Timer(60000);
-            timer.Elapsed += async (sender, e) => await CheckTimeToStart();
-            timer.Start();
+            _timer = new Timer(60000);
+            _timer.Elapsed += async (_, _) => await CheckTimeToStart();
+            _timer.Start();
 
             Console.WriteLine("Đang chạy...");
-
         }
-
 
 
         private async Task CheckTimeToStart()
         {
-
-
             using (var scope = _scopeFactory.CreateScope())
             {
                 var now = DateTime.UtcNow.AddHours(7);
-                string DataPonds = "";
+                string dataPonds = "";
 
-                List<string> timedatas = new List<string>();
-                var _unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
+                var unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
 
-                var ponds = _unitOfWork.pondRepository.FindAll().Where(x => x.Status == Domain.PondData.EPondStatus.Active).ToList();
+                var ponds = unitOfWork.pondRepository.FindAll()
+                    .Where(x => x.Status == Domain.PondData.EPondStatus.Active).ToList();
                 foreach (var pond in ponds)
                 {
-                    DataPonds += pond.PondId.ToString() + ",";
+                    dataPonds += pond.PondId + ",";
                 }
-                if (DataPonds.EndsWith(","))
+
+                if (dataPonds.EndsWith(","))
                 {
-                    DataPonds = DataPonds.Remove(DataPonds.Length - 1);
+                    dataPonds = dataPonds.Remove(dataPonds.Length - 1);
                 }
 
 
-                var timeSettingId = _unitOfWork.timeSettingRepository.FindAll().Count();
-                var timeSettingObjects = _unitOfWork.timeSettingObjectRepository.FindAll().Where(x => x.TimeSettingId == timeSettingId).ToList();
+                var timeSettingId = unitOfWork.timeSettingRepository.FindAll().Count();
+                var timeSettingObjects = unitOfWork.timeSettingObjectRepository.FindAll()
+                    .Where(x => x.TimeSettingId == timeSettingId).ToList();
 
-                foreach (var timeSettingObject in timeSettingObjects)
+                foreach (var unused in timeSettingObjects
+                             .Select(timeSettingObject => Convert.ToDateTime(timeSettingObject.Time))
+                             .Where(time => now.Hour == time.Hour && now.Minute == time.Minute))
                 {
-                    var time = Convert.ToDateTime(timeSettingObject.Time);
-
-                    if (now.Hour == time.Hour && now.Minute == time.Minute)
-                    {
-                        await _mqttClient.Publish($"SHRIMP_POND/SELECT_POND", DataPonds, true);
-                        Thread.Sleep(1000);
-                        await _mqttClient.Publish($"SHRIMP_POND/START", "START", true);
-
-                       
-                    }
+                    await _mqttClient.Publish($"SHRIMP_POND/SELECT_POND", dataPonds, true);
+                    Thread.Sleep(1000);
+                    await _mqttClient.Publish($"SHRIMP_POND/START", "START", true);
                 }
-
-
-
-
             }
         }
 
@@ -110,7 +95,6 @@ namespace ShrimpPond.API.Worker
             _mqttClient.MessageReceived += OnMqttClientMessageReceivedAsync;
             await _mqttClient.ConnectAsync();
             await _mqttClient.Subscribe("SHRIMP_POND/+/+");
-
         }
 
         private async Task OnMqttClientMessageReceivedAsync(MqttMessage e)
@@ -121,11 +105,10 @@ namespace ShrimpPond.API.Worker
             {
                 return;
             }
+
             var topicSegments = topic.Split('/');
             var topic1 = topicSegments[1];
             var topic2 = topicSegments[2];
-
-
 
 
             payloadMessage = payloadMessage.Replace("false", "\"FALSE\"");
@@ -137,58 +120,44 @@ namespace ShrimpPond.API.Worker
             switch (topic1)
             {
                 case "ENVIRONMENT":
-                    {
-                        if (payloadMessage is null) { return; }
-                        List<EnviromentData> environments = JsonConvert.DeserializeObject<List<EnviromentData>>(payloadMessage).ToList();
-                        if (environments is null) { return; }
+                {
+                    var environments = JsonConvert.DeserializeObject<List<EnviromentData>>(payloadMessage)!.ToList();
 
-                        foreach (var environment in environments)
-                        {
+                    foreach (var environment in environments)
+                    {
 #pragma warning disable CS8601 // Possible null reference assignment.
-                            var environmentSend = new EnviromentSend
-                            {
-                                PondId = topic2,
-                                name = environment.name,
-                                timestamp = (DateTime.UtcNow.AddHours(7)).ToString("yyyy-MM-dd HH:mm:ss"),
-                                value = environment.value,
-                            };
+                        var environmentSend = new EnviromentSend
+                        {
+                            PondId = topic2,
+                            name = environment.name,
+                            timestamp = (DateTime.UtcNow.AddHours(7)).ToString("yyyy-MM-dd HH:mm:ss"),
+                            value = environment.value,
+                        };
 #pragma warning restore CS8601 // Possible null reference assignment.
 
-                            string jsonEnvironment = JsonConvert.SerializeObject(environmentSend);
+                        string jsonEnvironment = JsonConvert.SerializeObject(environmentSend);
 
-                            await _hubContext.Clients.All.SendAsync("EnvironmentChanged", jsonEnvironment);
+                        await _hubContext.Clients.All.SendAsync("EnvironmentChanged", jsonEnvironment);
 
-                            //Lưu vào database
-                            using (var scope = _scopeFactory.CreateScope())
-                            {
-                                var _unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
+                        //Lưu vào database
+                        using var scope = _scopeFactory.CreateScope();
+                        var unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
 
-                                var data = new EnvironmentStatus()
-                                {
-                                    PondId = topic2,
-                                    Name = environment.name,
-                                    Value = environment.value,
-                                    Timestamp = (DateTime.UtcNow.AddHours(7))
+                        var data = new EnvironmentStatus()
+                        {
+                            PondId = topic2,
+                            Name = environment.name,
+                            Value = environment.value,
+                            Timestamp = (DateTime.UtcNow.AddHours(7))
+                        };
 
-                                };
-
-                                _unitOfWork.environmentStatusRepository.Add(data);
-                                await _unitOfWork.SaveChangeAsync();
-
-
-                            }
-                        }
-                        break;
-
-
+                        unitOfWork.environmentStatusRepository.Add(data);
+                        await unitOfWork.SaveChangeAsync();
                     }
 
-
-
-
+                    break;
+                }
             }
-
-
         }
     }
 }

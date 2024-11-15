@@ -1,0 +1,79 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1" date="1731681443653" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 11/15/2024 9:37 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.API/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.API/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.API.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.Persistence.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/ShrimpPond_CleanArchitecture/DesignTimeBuild/.dtbcache.v2" />
+    <option name="AFTER_PATH" value=".vs/ShrimpPond_CleanArchitecture/DesignTimeBuild/.dtbcache.v2" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/.dtbcache.v2" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/ShrimpPond_CleanArchitecture/v17/.futdcache.v2" />
+    <option name="AFTER_PATH" value=".vs/ShrimpPond_CleanArchitecture/v17/.futdcache.v2" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/.futdcache.v2" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.API.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.Domain.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.metadata.v8.bin" />
+    <option name="AFTER_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.metadata.v8.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/shrimppond_cleanarchitecture.metadata.v8.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.projects.v8.bin" />
+    <option name="AFTER_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.projects.v8.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/shrimppond_cleanarchitecture.projects.v8.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.Persistence.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".vs/ShrimpPond_CleanArchitecture/v17/.suo" />
+    <option name="AFTER_PATH" value=".vs/ShrimpPond_CleanArchitecture/v17/.suo" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/.suo" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.Application.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_15_2024_9_37_PM_[Changes]1/ShrimpPond.Application.csproj.AssemblyReference.cache" />
+  </binary>
+</changelist>

@@ -16,17 +16,15 @@ public class CreateTimeSettingHandler: IRequestHandler<CreateTimeSetting, string
     {
 
 
-        List<TimeSettingObject> timeSettingObjects = new List<TimeSettingObject>();
-        foreach (var timeSetting in request.timeSettingObjects)
+        var timeSettingObjects = new List<TimeSettingObject>();
+        foreach (var timeSettingObject in request.timeSettingObjects.Select(timeSetting => new TimeSettingObject() 
+                 {
+                     Index = timeSetting.Index,
+                     Time = timeSetting.Time,
+                 }))
         {
-            var timeSettingObject = new TimeSettingObject() 
-            {
-                Index = timeSetting.Index,
-                Time = timeSetting.Time,
-            };
             timeSettingObjects.Add(timeSettingObject);
             _unitOfWork.timeSettingObjectRepository.Add(timeSettingObject);
-
         }
         var data = new Domain.TimeSetting.TimeSetting() 
         { 
@@ -37,6 +35,6 @@ public class CreateTimeSettingHandler: IRequestHandler<CreateTimeSetting, string
         _unitOfWork.timeSettingRepository.Add(data);
         await _unitOfWork.SaveChangeAsync();
        
-        return "Succesfully!";
+        return "Successfully!";
     }
 }

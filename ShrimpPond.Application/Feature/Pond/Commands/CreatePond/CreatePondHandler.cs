@@ -1,44 +1,40 @@
 ﻿using MediatR;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Application.Exceptions;
+using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
 using ShrimpPond.Domain.PondData;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond
+namespace ShrimpPond.Application.Feature.Pond.Commands.CreatePond
 {
-    public class CreataPondHandler: IRequestHandler<CreatePond, string>
+    public class CreatePondHandler: IRequestHandler<NurseryPond.Commands.CreatePond.CreatePond, string>
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public CreataPondHandler(IUnitOfWork unitOfWork)
+        public CreatePondHandler(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
-        public async Task<string> Handle(CreatePond request, CancellationToken cancellationToken)
+        public async Task<string> Handle(NurseryPond.Commands.CreatePond.CreatePond request, CancellationToken cancellationToken)
         {
             //validate
             var validator = new CreatePondValidation();
-            var validatorResult = await validator.ValidateAsync(request);
+            var validatorResult = await validator.ValidateAsync(request, cancellationToken);
             if (validatorResult.Errors.Any())
             {
                 throw new BadRequestException("Invalid ET", validatorResult);
             }
             //convert
 
-            var Condition1 =  _unitOfWork.pondRepository.FindAll().SingleOrDefault(p=>p.PondId == request.PondId);
+            var condition1 =  _unitOfWork.pondRepository.FindAll().SingleOrDefault(p=>p.PondId == request.PondId);
 
-            if (Condition1 != null)
+            if (condition1 != null)
             {
                 throw new BadRequestException("PondId already exist");
             }
 
-            var Condition2 = _unitOfWork.pondTypeRepository.FindAll().SingleOrDefault(p => p.PondTypeName == request.PondTypeName);
+            var condition2 = _unitOfWork.pondTypeRepository.FindAll().SingleOrDefault(p => p.PondTypeName == request.PondTypeName);
 
-            if (Condition2 == null)
+            if (condition2 == null)
             {
                 throw new BadRequestException("Not found PondType");
             }

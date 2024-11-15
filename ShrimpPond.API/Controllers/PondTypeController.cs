@@ -1,8 +1,5 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
 using ShrimpPond.Application.Feature.PondType.Commands.CreatePondType;
 using ShrimpPond.Application.Feature.PondType.Commands.DeletePondType;
 using ShrimpPond.Application.Feature.PondType.Queries.GetPondType;
@@ -40,7 +37,7 @@ namespace ShrimpPond.API.Controllers
         public async Task<IActionResult> DeletePondType([FromQuery] string PondTypeName)
         {
             var command = new DeletePondType { PondTypeName = PondTypeName };
-            var IdReturn = await _mediator.Send(command);
+            var idReturn = await _mediator.Send(command);
             return Ok(command);
         }
 

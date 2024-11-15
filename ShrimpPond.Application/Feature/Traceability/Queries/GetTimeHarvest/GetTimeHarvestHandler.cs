@@ -23,19 +23,19 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetTimeHarvest
             _logger = logger;
         }
 
-        public async Task<List<TimeHarvest>> Handle(GetTimeHarvest request, CancellationToken cancellationToken)
+        public Task<List<TimeHarvest>> Handle(GetTimeHarvest request, CancellationToken cancellationToken)
         {
-            List<TimeHarvest> result = new List<TimeHarvest>();
+            var result = new List<TimeHarvest>();
 
             var harverts = _unitOfWork.harvestRepository.FindAll();
             foreach (var harvert in harverts)
             {
-                if (result.Where(x=>x.HarvestTime == harvert.HarvestTime).Count()!=0) continue;
+                if (result.Count(x => x.HarvestTime == harvert.HarvestTime)!=0) continue;
 
                 result.Add(new TimeHarvest() { HarvestTime = harvert.HarvestTime});
             }
 
-            return result;
+            return Task.FromResult(result);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace ShrimpPond.Application.Feature.Pond.Queries.GetAllPond
         //Kích hoạt ao (Thêm SizeShrimp)
         [EnumDataType(typeof(EPondStatus))]
         public EPondStatus Status { get; set; }
-        public string OriginPondId { get; set; } = string.Empty;
+        public string? OriginPondId { get; set; } = string.Empty;
         public string SeedId { get; set; } = string.Empty;
         [Column(TypeName = "VARBINARY(MAX)")]
         public float AmountShrimp { get; set; }

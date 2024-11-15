@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@db7989.public.databaseasp.net" uuid="55f236e0-5901-4673-9d6b-828715e0d174">
+    <data-source source="LOCAL" name="@db7989.public.databaseasp.net [2]" uuid="873f6772-0a0b-499d-b5ca-c8fdb1e95a18">
       <driver-ref>sqlserver.jb</driver-ref>
       <synchronize>true</synchronize>
       <configured-by-url>true</configured-by-url>

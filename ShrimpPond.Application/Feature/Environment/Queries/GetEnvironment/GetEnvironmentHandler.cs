@@ -23,7 +23,7 @@ namespace ShrimpPond.Application.Feature.Environment.Queries.GetEnvironment
             _logger = logger;
             _mapper = mapper;
         }
-        public async Task<List<GetEnvironmentDTO>> Handle(GetEnvironment request, CancellationToken cancellationToken)
+        public Task<List<GetEnvironmentDTO>> Handle(GetEnvironment request, CancellationToken cancellationToken)
         {
             //query
             var environments = _unitOfWork.environmentStatusRepository.FindAll();
@@ -33,7 +33,7 @@ namespace ShrimpPond.Application.Feature.Environment.Queries.GetEnvironment
             // convert
             var data = _mapper.Map<List<GetEnvironmentDTO>>(environments);
             //return
-            return data;
+            return Task.FromResult(data);
         }
     }
 }

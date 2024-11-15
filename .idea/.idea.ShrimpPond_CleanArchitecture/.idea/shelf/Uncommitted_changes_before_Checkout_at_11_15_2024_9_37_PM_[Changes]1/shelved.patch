@@ -1,0 +1,1385 @@
+Index: .idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shelved.patch b/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shelved.patch
+deleted file mode 100644
+--- a/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shelved.patch	(revision e982534ee7159e56f59d7c3f64425f5739b2b77d)
++++ /dev/null	(revision e982534ee7159e56f59d7c3f64425f5739b2b77d)
+@@ -1,859 +0,0 @@
+-Index: AuthorizationServer/AuthorizationServer/appsettings.json
+-===================================================================
+-diff --git a/AuthorizationServer/AuthorizationServer/appsettings.json b/AuthorizationServer/AuthorizationServer/appsettings.json
+-deleted file mode 100644
+---- a/AuthorizationServer/AuthorizationServer/appsettings.json	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,9 +0,0 @@
+--{
+--  "Logging": {
+--    "LogLevel": {
+--      "Default": "Information",
+--      "Microsoft.AspNetCore": "Warning"
+--    }
+--  },
+--  "AllowedHosts": "*"
+--}
+-Index: AuthorizationServer/AuthorizationServer/Properties/launchSettings.json
+-===================================================================
+-diff --git a/AuthorizationServer/AuthorizationServer/Properties/launchSettings.json b/AuthorizationServer/AuthorizationServer/Properties/launchSettings.json
+-deleted file mode 100644
+---- a/AuthorizationServer/AuthorizationServer/Properties/launchSettings.json	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,31 +0,0 @@
+--{
+--  "$schema": "https://json.schemastore.org/launchsettings.json",
+--  "iisSettings": {
+--    "windowsAuthentication": false,
+--    "anonymousAuthentication": true,
+--    "iisExpress": {
+--      "applicationUrl": "http://localhost:29539",
+--      "sslPort": 44325
+--    }
+--  },
+--  "profiles": {
+--    "AuthorizationServer": {
+--      "commandName": "Project",
+--      "dotnetRunMessages": true,
+--      "launchBrowser": true,
+--      "launchUrl": "swagger",
+--      "applicationUrl": "https://localhost:7245;http://localhost:5031",
+--      "environmentVariables": {
+--        "ASPNETCORE_ENVIRONMENT": "Development"
+--      }
+--    },
+--    "IIS Express": {
+--      "commandName": "IISExpress",
+--      "launchBrowser": true,
+--      "launchUrl": "swagger",
+--      "environmentVariables": {
+--        "ASPNETCORE_ENVIRONMENT": "Development"
+--      }
+--    }
+--  }
+--}
+-Index: AuthorizationServer/Models/Login.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/Models/Login.cs b/AuthorizationServer/Models/Login.cs
+-deleted file mode 100644
+---- a/AuthorizationServer/Models/Login.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,14 +0,0 @@
+--using System;
+--using System.Collections.Generic;
+--using System.Linq;
+--using System.Text;
+--using System.Threading.Tasks;
+--
+--namespace ShrimpPond.Domain.Authenrization
+--{
+--    public class Login
+--    {
+--        public string Username { get; set; } = string.Empty;
+--        public string Password { get; set; } = string.Empty;
+--    }
+--}
+-Index: AuthorizationServer/appsettings.json
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/appsettings.json b/AuthorizationServer/appsettings.json
+-deleted file mode 100644
+---- a/AuthorizationServer/appsettings.json	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,19 +0,0 @@
+--{
+--  "Logging": {
+--    "LogLevel": {
+--      "Default": "Information",
+--      "Microsoft.AspNetCore": "Warning"
+--    }
+--  },
+--
+--  "Jwt": {
+--    "Issuer": "FreeTrained",
+--    "ExpiryMinutes": 3600,
+--    "Key": "YourSuperSecretKeyYourSuperSecretKeyYourSuperSecretKey"
+--  },
+--  "ConnectionStrings": {
+--    "AuthenrizationDb": "Data Source=LAPTOP-PVLM46L3\\VANVU;Initial Catalog=AuthenrizationDb;Integrated Security=True"
+--
+--  },
+--  "AllowedHosts": "*"
+--}
+-Index: AuthorizationServer/AccountController.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/AccountController.cs b/AuthorizationServer/AccountController.cs
+-deleted file mode 100644
+---- a/AuthorizationServer/AccountController.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,106 +0,0 @@
+--using Microsoft.AspNetCore.Http;
+--using Microsoft.AspNetCore.Identity;
+--using Microsoft.AspNetCore.Mvc;
+--using Microsoft.IdentityModel.Tokens;
+--using ShrimpPond.Domain.Authenrization;
+--using System.IdentityModel.Tokens.Jwt;
+--using System.Security.Claims;
+--using System.Text;
+--
+--namespace AuthorizationServer
+--{
+--    [Route("api/[controller]")]
+--    [ApiController]
+--    public class AccountController : ControllerBase
+--    {
+--        private readonly UserManager<IdentityUser> _userManager;
+--        private readonly RoleManager<IdentityRole> _roleManager;
+--        private readonly IConfiguration _configuration;
+--
+--        public AccountController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+--        {
+--            _userManager = userManager;
+--            _roleManager = roleManager;
+--            _configuration = configuration;
+--        }
+--
+--        [HttpPost("register")]
+--        public async Task<IActionResult> Register([FromBody] Register model)
+--        {
+--            var user = new IdentityUser { UserName = model.Username, Email = model.Email };
+--            var result = await _userManager.CreateAsync(user, model.Password);
+--
+--            if (result.Succeeded)
+--            {
+--                //await _userManager.AddToRoleAsync(user, "User");
+--                return Ok(new { message = "User registered successfully" });
+--            }
+--
+--            return BadRequest(result.Errors);
+--        }
+--
+--        [HttpPost("login")]
+--        public async Task<IActionResult> Login([FromBody] Login model)
+--        {
+--            var user = await _userManager.FindByNameAsync(model.Username);
+--            if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
+--            {
+--                var userRoles = await _userManager.GetRolesAsync(user);
+--
+--                var authClaims = new List<Claim>
+--                {
+--                    new Claim(JwtRegisteredClaimNames.Sub, user.UserName!),
+--                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+--                };
+--
+--                authClaims.AddRange(userRoles.Select(role => new Claim(ClaimTypes.Role, role)));
+--
+--                var token = new JwtSecurityToken(
+--                    issuer: _configuration["Jwt:Issuer"],
+--                    expires: DateTime.Now.AddMinutes(double.Parse(_configuration["Jwt:ExpiryMinutes"]!)),
+--                    claims: authClaims,
+--                    signingCredentials: new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!)),
+--                    SecurityAlgorithms.HmacSha256));
+--
+--                return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token) });
+--            }
+--
+--            return Unauthorized();
+--        }
+--
+--        [HttpPost("add-role")]
+--        public async Task<IActionResult> AddRole([FromBody] string role)
+--        {
+--            if (!await _roleManager.RoleExistsAsync(role))
+--            {
+--                var result = await _roleManager.CreateAsync(new IdentityRole(role));
+--                if (result.Succeeded)
+--                {
+--                    return Ok(new { message = "Role added successfully" });
+--                }
+--
+--                return BadRequest(result.Errors);
+--            }
+--
+--            return BadRequest("Role already exists");
+--        }
+--
+--        [HttpPost("assign-role")]
+--        public async Task<IActionResult> AssignRole([FromBody] UserRole model)
+--        {
+--            var user = await _userManager.FindByNameAsync(model.Username);
+--            if (user == null)
+--            {
+--                return BadRequest("User not found");
+--            }
+--
+--            var result = await _userManager.AddToRoleAsync(user, model.Role);
+--            if (result.Succeeded)
+--            {
+--                return Ok(new { message = "Role assigned successfully" });
+--            }
+--
+--            return BadRequest(result.Errors);
+--        }
+--    }
+--}
+-Index: AuthorizationServer/AuthorizationServer/appsettings.Development.json
+-===================================================================
+-diff --git a/AuthorizationServer/AuthorizationServer/appsettings.Development.json b/AuthorizationServer/AuthorizationServer/appsettings.Development.json
+-deleted file mode 100644
+---- a/AuthorizationServer/AuthorizationServer/appsettings.Development.json	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,8 +0,0 @@
+--{
+--  "Logging": {
+--    "LogLevel": {
+--      "Default": "Information",
+--      "Microsoft.AspNetCore": "Warning"
+--    }
+--  }
+--}
+-Index: AuthorizationServer/Models/Register.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/Models/Register.cs b/AuthorizationServer/Models/Register.cs
+-deleted file mode 100644
+---- a/AuthorizationServer/Models/Register.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,15 +0,0 @@
+--using System;
+--using System.Collections.Generic;
+--using System.Linq;
+--using System.Text;
+--using System.Threading.Tasks;
+--
+--namespace ShrimpPond.Domain.Authenrization
+--{
+--    public class Register
+--    {
+--        public string Username { get; set; } = string.Empty;
+--        public string Email { get; set; } = string.Empty;
+--        public string Password { get; set; } = string.Empty;
+--    }
+--}
+-Index: AuthorizationServer/AuthorizationServer/Program.cs
+-===================================================================
+-diff --git a/AuthorizationServer/AuthorizationServer/Program.cs b/AuthorizationServer/AuthorizationServer/Program.cs
+-deleted file mode 100644
+---- a/AuthorizationServer/AuthorizationServer/Program.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,25 +0,0 @@
+--var builder = WebApplication.CreateBuilder(args);
+--
+--// Add services to the container.
+--
+--builder.Services.AddControllers();
+--// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+--builder.Services.AddEndpointsApiExplorer();
+--builder.Services.AddSwaggerGen();
+--
+--var app = builder.Build();
+--
+--// Configure the HTTP request pipeline.
+--if (app.Environment.IsDevelopment())
+--{
+--    app.UseSwagger();
+--    app.UseSwaggerUI();
+--}
+--
+--app.UseHttpsRedirection();
+--
+--app.UseAuthorization();
+--
+--app.MapControllers();
+--
+--app.Run();
+-\ No newline at end of file
+-Index: AuthorizationServer/Data/AuthenrizationDbContext.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/Data/AuthenrizationDbContext.cs b/AuthorizationServer/Data/AuthenrizationDbContext.cs
+-deleted file mode 100644
+---- a/AuthorizationServer/Data/AuthenrizationDbContext.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,19 +0,0 @@
+--using Microsoft.AspNetCore.Identity;
+--using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+--using Microsoft.EntityFrameworkCore;
+--using System;
+--using System.Collections.Generic;
+--using System.Linq;
+--using System.Text;
+--using System.Threading.Tasks;
+--
+--namespace ShrimpPond.Persistence.DatabaseContext
+--{
+--    public class AuthenrizationDbContext : IdentityDbContext<IdentityUser>
+--    {
+--        public AuthenrizationDbContext(DbContextOptions options) : base(options)
+--        {
+--        }
+--    }
+--
+--}
+-Index: AuthorizationServer/Properties/launchSettings.json
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/Properties/launchSettings.json b/AuthorizationServer/Properties/launchSettings.json
+-deleted file mode 100644
+---- a/AuthorizationServer/Properties/launchSettings.json	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,31 +0,0 @@
+--{
+--  "$schema": "https://json.schemastore.org/launchsettings.json",
+--  "iisSettings": {
+--    "windowsAuthentication": false,
+--    "anonymousAuthentication": true,
+--    "iisExpress": {
+--      "applicationUrl": "http://localhost:63626",
+--      "sslPort": 44357
+--    }
+--  },
+--  "profiles": {
+--    "AuthorizationServer": {
+--      "commandName": "Project",
+--      "dotnetRunMessages": true,
+--      "launchBrowser": true,
+--      "launchUrl": "swagger",
+--      "applicationUrl": "https://localhost:7211;http://localhost:5198",
+--      "environmentVariables": {
+--        "ASPNETCORE_ENVIRONMENT": "Development"
+--      }
+--    },
+--    "IIS Express": {
+--      "commandName": "IISExpress",
+--      "launchBrowser": true,
+--      "launchUrl": "swagger",
+--      "environmentVariables": {
+--        "ASPNETCORE_ENVIRONMENT": "Development"
+--      }
+--    }
+--  }
+--}
+-Index: AuthorizationServer/Models/UserRole.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/Models/UserRole.cs b/AuthorizationServer/Models/UserRole.cs
+-deleted file mode 100644
+---- a/AuthorizationServer/Models/UserRole.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,14 +0,0 @@
+--using System;
+--using System.Collections.Generic;
+--using System.Linq;
+--using System.Text;
+--using System.Threading.Tasks;
+--
+--namespace ShrimpPond.Domain.Authenrization
+--{
+--    public class UserRole
+--    {
+--        public string Username { get; set; } = string.Empty;
+--        public string Role { get; set; } = string.Empty;
+--    }
+--}
+-Index: AuthorizationServer/appsettings.Development.json
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/appsettings.Development.json b/AuthorizationServer/appsettings.Development.json
+-deleted file mode 100644
+---- a/AuthorizationServer/appsettings.Development.json	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,8 +0,0 @@
+--{
+--  "Logging": {
+--    "LogLevel": {
+--      "Default": "Information",
+--      "Microsoft.AspNetCore": "Warning"
+--    }
+--  }
+--}
+-Index: AuthorizationServer/Program.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/Program.cs b/AuthorizationServer/Program.cs
+-deleted file mode 100644
+---- a/AuthorizationServer/Program.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,74 +0,0 @@
+--using Microsoft.AspNetCore.Authentication.JwtBearer;
+--using Microsoft.AspNetCore.Identity;
+--using Microsoft.EntityFrameworkCore;
+--using Microsoft.IdentityModel.Tokens;
+--using ShrimpPond.Persistence.DatabaseContext;
+--using System;
+--using System.Text;
+--
+--var builder = WebApplication.CreateBuilder(args);
+--
+--// Add services to the container.
+--
+--builder.Services.AddControllers();
+--// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+--builder.Services.AddEndpointsApiExplorer();
+--builder.Services.AddSwaggerGen();
+--
+--var app = builder.Build();
+--
+--// Configure the HTTP request pipeline.
+--if (app.Environment.IsDevelopment())
+--{
+--    app.UseSwagger();
+--    app.UseSwaggerUI();
+--}
+--
+--builder.Services.AddDbContext<AuthenrizationDbContext>(options =>
+--options.UseSqlServer(builder.Configuration.GetConnectionString("AuthenrizationDb")));
+--
+--builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+--{
+--    options.Password.RequiredLength = 6;
+--    options.Password.RequireNonAlphanumeric = false;
+--    options.Password.RequireDigit = false;
+--    options.Password.RequireUppercase = false;
+--    options.Password.RequireLowercase = false;
+--})
+--    .AddEntityFrameworkStores<AuthenrizationDbContext>()
+--    .AddDefaultTokenProviders();
+--
+--
+--
+--builder.Services.AddAuthentication(options =>
+--{
+--    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+--    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+--    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+--})
+--.AddJwtBearer(options =>
+--{
+--    options.TokenValidationParameters = new TokenValidationParameters
+--    {
+--        ValidateIssuer = true,
+--        ValidateAudience = false,
+--        ValidateLifetime = true,
+--        ValidateIssuerSigningKey = true,
+--        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+--        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
+--    };
+--});
+--
+--builder.Services.AddAuthorization(options =>
+--{
+--    options.AddPolicy("AdminPolicy", policy => policy.RequireRole("Admin"));
+--    options.AddPolicy("UserPolicy", policy => policy.RequireRole("User"));
+--});
+--
+--app.UseHttpsRedirection();
+--
+--app.UseAuthorization();
+--
+--app.MapControllers();
+--
+--app.Run();
+-Index: AuthorizationServer/AuthorizationServer.csproj
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/AuthorizationServer/AuthorizationServer.csproj b/AuthorizationServer/AuthorizationServer.csproj
+-deleted file mode 100644
+---- a/AuthorizationServer/AuthorizationServer.csproj	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ /dev/null	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-@@ -1,26 +0,0 @@
+--<Project Sdk="Microsoft.NET.Sdk.Web">
+--
+--  <PropertyGroup>
+--    <TargetFramework>net6.0</TargetFramework>
+--    <Nullable>enable</Nullable>
+--    <ImplicitUsings>enable</ImplicitUsings>
+--  </PropertyGroup>
+--
+--  <ItemGroup>
+--    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.33" />
+--    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.33" />
+--    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />
+--    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.33">
+--      <PrivateAssets>all</PrivateAssets>
+--      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+--    </PackageReference>
+--    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.33" />
+--    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.33">
+--      <PrivateAssets>all</PrivateAssets>
+--      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+--    </PackageReference>
+--    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.17" />
+--    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+--  </ItemGroup>
+--
+--</Project>
+-Index: .vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>{\r\n  \"Version\": 1,\r\n  \"WorkspaceRootPath\": \"C:\\\\Users\\\\vu343\\\\OneDrive\\\\Dokumen\\\\Fablab Projects\\\\ShrimpPond.WebAPI\\\\web-api_shrimp_pond\\\\\",\r\n  \"Documents\": [],\r\n  \"DocumentGroupContainers\": [\r\n    {\r\n      \"Orientation\": 0,\r\n      \"VerticalTabListWidth\": 256,\r\n      \"DocumentGroups\": [\r\n        {\r\n          \"DockedWidth\": 200,\r\n          \"SelectedChildIndex\": -1,\r\n          \"Children\": [\r\n            {\r\n              \"$type\": \"Bookmark\",\r\n              \"Name\": \"ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}\"\r\n            }\r\n          ]\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json b/.vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json
+---- a/.vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ b/.vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json	(date 1730225180671)
+-@@ -1,7 +1,16 @@
+- {
+-   "Version": 1,
+-   "WorkspaceRootPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\",
+--  "Documents": [],
+-+  "Documents": [
+-+    {
+-+      "AbsoluteMoniker": "D:0:0:{F65FC103-C2B9-4D6B-822B-67B711F756B3}|ShrimpPond.Server\\ShrimpPond.Server.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+-+      "RelativeMoniker": "D:0:0:{F65FC103-C2B9-4D6B-822B-67B711F756B3}|ShrimpPond.Server\\ShrimpPond.Server.csproj|solutionrelative:shrimppond.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+-+    },
+-+    {
+-+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+-+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+-+    }
+-+  ],
+-   "DocumentGroupContainers": [
+-     {
+-       "Orientation": 0,
+-@@ -9,11 +18,53 @@
+-       "DocumentGroups": [
+-         {
+-           "DockedWidth": 200,
+--          "SelectedChildIndex": -1,
+-+          "SelectedChildIndex": 6,
+-           "Children": [
+-             {
+-               "$type": "Bookmark",
+-               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+-+            },
+-+            {
+-+              "$type": "Bookmark",
+-+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+-+            },
+-+            {
+-+              "$type": "Bookmark",
+-+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+-+            },
+-+            {
+-+              "$type": "Bookmark",
+-+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+-+            },
+-+            {
+-+              "$type": "Bookmark",
+-+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+-+            },
+-+            {
+-+              "$type": "Document",
+-+              "DocumentIndex": 1,
+-+              "Title": "appsettings.json",
+-+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\appsettings.json",
+-+              "RelativeDocumentMoniker": "ShrimpPond.API\\appsettings.json",
+-+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\appsettings.json",
+-+              "RelativeToolTip": "ShrimpPond.API\\appsettings.json",
+-+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+-+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+-+              "WhenOpened": "2024-10-29T18:05:50.823Z",
+-+              "EditorCaption": ""
+-+            },
+-+            {
+-+              "$type": "Document",
+-+              "DocumentIndex": 0,
+-+              "Title": "appsettings.json",
+-+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Server\\appsettings.json",
+-+              "RelativeDocumentMoniker": "ShrimpPond.Server\\appsettings.json",
+-+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Server\\appsettings.json",
+-+              "RelativeToolTip": "ShrimpPond.Server\\appsettings.json",
+-+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+-+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+-+              "WhenOpened": "2024-10-29T18:05:31.982Z",
+-+              "EditorCaption": ""
+-             }
+-           ]
+-         }
+-Index: ShrimpPond.API/Controllers/FoodController.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>using MediatR;\r\nusing Microsoft.AspNetCore.Http;\r\nusing Microsoft.AspNetCore.Mvc;\r\nusing ShrimpPond.Application.Feature.Food.Commands.CreateNewFood;\r\nusing ShrimpPond.Application.Feature.Food.Commands.DeleteFood;\r\nusing ShrimpPond.Application.Feature.Food.Queries.GetAllFood;\r\nusing ShrimpPond.Application.Feature.Pond.Commands.DeletePond;\r\nusing ShrimpPond.Application.Feature.PondType.Queries.GetPondType;\r\n\r\nnamespace ShrimpPond.API.Controllers\r\n{\r\n    [Route(\"api/[controller]\")]\r\n    [ApiController]\r\n    public class FoodController : ControllerBase\r\n    {\r\n        private readonly IMediator _mediator;\r\n\r\n        public FoodController(IMediator mediator)\r\n        {\r\n            _mediator = mediator;\r\n        }\r\n        [HttpGet]\r\n        public async Task<IActionResult> GetFood([FromQuery] string? search, int pageSize = 200, int pageNumber = 1)\r\n        {\r\n            var foods = await _mediator.Send(new GetAllFood());\r\n            if (search != null)\r\n            {\r\n                foods = foods.Where(x => x.Name == search).ToList();\r\n            }\r\n            foods = foods.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();\r\n            return Ok(foods);\r\n        }\r\n        [HttpPost]\r\n        public async Task<IActionResult> CreateNewFood([FromBody] CreateNewFood e)\r\n        {\r\n            var id = await _mediator.Send(e);\r\n            return Ok(e);\r\n        }\r\n\r\n        [HttpDelete]\r\n        public async Task<IActionResult> DeleteFood([FromQuery] string FoodName)\r\n        {\r\n            var command = new DeleteFood { FoodName = FoodName };\r\n            var IdReturn = await _mediator.Send(command);\r\n            return Ok(command);\r\n        }\r\n    }\r\n}\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/ShrimpPond.API/Controllers/FoodController.cs b/ShrimpPond.API/Controllers/FoodController.cs
+---- a/ShrimpPond.API/Controllers/FoodController.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ b/ShrimpPond.API/Controllers/FoodController.cs	(date 1729931790975)
+-@@ -1,11 +1,8 @@
+- using MediatR;
+--using Microsoft.AspNetCore.Http;
+- using Microsoft.AspNetCore.Mvc;
+- using ShrimpPond.Application.Feature.Food.Commands.CreateNewFood;
+- using ShrimpPond.Application.Feature.Food.Commands.DeleteFood;
+- using ShrimpPond.Application.Feature.Food.Queries.GetAllFood;
+--using ShrimpPond.Application.Feature.Pond.Commands.DeletePond;
+--using ShrimpPond.Application.Feature.PondType.Queries.GetPondType;
+- 
+- namespace ShrimpPond.API.Controllers
+- {
+-Index: .dockerignore
+-===================================================================
+-diff --git a/.dockerignore b/.dockerignore
+-new file mode 100644
+---- /dev/null	(date 1730215142033)
+-+++ b/.dockerignore	(date 1730215142033)
+-@@ -0,0 +1,25 @@
+-+**/.dockerignore
+-+**/.env
+-+**/.git
+-+**/.gitignore
+-+**/.project
+-+**/.settings
+-+**/.toolstarget
+-+**/.vs
+-+**/.vscode
+-+**/.idea
+-+**/*.*proj.user
+-+**/*.dbmdl
+-+**/*.jfm
+-+**/azds.yaml
+-+**/bin
+-+**/charts
+-+**/docker-compose*
+-+**/Dockerfile*
+-+**/node_modules
+-+**/npm-debug.log
+-+**/obj
+-+**/secrets.dev.yaml
+-+**/values.dev.yaml
+-+LICENSE
+-+README.md
+-\ No newline at end of file
+-Index: ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>//------------------------------------------------------------------------------\r\n// <auto-generated>\r\n//     This code was generated by a tool.\r\n//\r\n//     Changes to this file may cause incorrect behavior and will be lost if\r\n//     the code is regenerated.\r\n// </auto-generated>\r\n//------------------------------------------------------------------------------\r\n\r\nusing System;\r\nusing System.Reflection;\r\n\r\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"ShrimpPond.Persistence\")]\r\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\r\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\r\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0+5f4f4a645ff9d0b803552072d763ca13f3f34b6a\")]\r\n[assembly: System.Reflection.AssemblyProductAttribute(\"ShrimpPond.Persistence\")]\r\n[assembly: System.Reflection.AssemblyTitleAttribute(\"ShrimpPond.Persistence\")]\r\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\r\n\r\n// Generated by the MSBuild WriteCodeFragment class.\r\n\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs b/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs
+---- a/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ b/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs	(date 1729931005894)
+-@@ -13,7 +13,7 @@
+- [assembly: System.Reflection.AssemblyCompanyAttribute("ShrimpPond.Persistence")]
+- [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+- [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+--[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f4f4a645ff9d0b803552072d763ca13f3f34b6a")]
+-+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+546059b0c828014f5d61eaade7d2d3e26825f30b")]
+- [assembly: System.Reflection.AssemblyProductAttribute("ShrimpPond.Persistence")]
+- [assembly: System.Reflection.AssemblyTitleAttribute("ShrimpPond.Persistence")]
+- [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+-Index: ShrimpPond_CleanArchitecture.sln
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>\r\nMicrosoft Visual Studio Solution File, Format Version 12.00\r\n# Visual Studio Version 17\r\nVisualStudioVersion = 17.10.35013.160\r\nMinimumVisualStudioVersion = 10.0.40219.1\r\n<<<<<<< Updated upstream\r\nProject(\"{9A19103F-16F7-4668-BE54-9A1E7A4F7556}\") = \"ShrimpPond.Domain\", \"ShrimpPond.Domain\\ShrimpPond.Domain.csproj\", \"{90F233B1-3C67-4907-8A34-0F1F768AE7D9}\"\r\nEndProject\r\nProject(\"{9A19103F-16F7-4668-BE54-9A1E7A4F7556}\") = \"ShrimpPond.Application\", \"ShrimpPond.Application\\ShrimpPond.Application.csproj\", \"{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}\"\r\nEndProject\r\nProject(\"{2150E333-8FDC-42A3-9474-1A3956D46DE8}\") = \"Core\", \"Core\", \"{64B74D2F-D0B3-408B-A6D5-8561E4DE7F91}\"\r\nEndProject\r\nProject(\"{2150E333-8FDC-42A3-9474-1A3956D46DE8}\") = \"API\", \"API\", \"{B9F53966-94D8-446D-929B-F7C975FA21D2}\"\r\nEndProject\r\nProject(\"{9A19103F-16F7-4668-BE54-9A1E7A4F7556}\") = \"ShrimpPond.API\", \"ShrimpPond.API\\ShrimpPond.API.csproj\", \"{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}\"\r\nEndProject\r\nProject(\"{2150E333-8FDC-42A3-9474-1A3956D46DE8}\") = \"Infrastructure\", \"Infrastructure\", \"{956627D8-5CF4-4FEE-A541-FD243F8B65A2}\"\r\nEndProject\r\nProject(\"{9A19103F-16F7-4668-BE54-9A1E7A4F7556}\") = \"ShrimpPond.Infrastructure\", \"ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj\", \"{4278C228-38AF-41C3-9E62-5F46E6910A0E}\"\r\nEndProject\r\nProject(\"{9A19103F-16F7-4668-BE54-9A1E7A4F7556}\") = \"ShrimpPond.Persistence\", \"ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj\", \"{06FE33CA-739A-47BB-83D3-01AE4821224F}\"\r\nEndProject\r\nProject(\"{2150E333-8FDC-42A3-9474-1A3956D46DE8}\") = \"src\", \"src\", \"{6519E2CF-7503-4B6F-9097-A3AADB2BA0A2}\"\r\n=======\r\nEndProject\r\nProject(\"{2150E333-8FDC-42A3-9474-1A3956D46DE8}\") = \"AuthorizationServer\", \"AuthorizationServer\", \"{5E608CE4-CC4B-4C42-BB66-D7373FB17856}\"\r\nEndProject\r\nProject(\"{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}\") = \"AuthorizationServer\", \"AuthorizationServer\\AuthorizationServer\\AuthorizationServer.csproj\", \"{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}\"\r\nEndProject\r\nGlobal\r\n\tGlobalSection(SolutionProperties) = preSolution\r\n\t\tHideSolutionNode = FALSE\r\n\tEndGlobalSection\r\n<<<<<<< Updated upstream\r\n\tGlobalSection(NestedProjects) = preSolution\r\n\t\t{90F233B1-3C67-4907-8A34-0F1F768AE7D9} = {64B74D2F-D0B3-408B-A6D5-8561E4DE7F91}\r\n\t\t{849466C0-CD17-4E51-A6DC-F1CC7EE78F61} = {64B74D2F-D0B3-408B-A6D5-8561E4DE7F91}\r\n\t\t{64B74D2F-D0B3-408B-A6D5-8561E4DE7F91} = {6519E2CF-7503-4B6F-9097-A3AADB2BA0A2}\r\n\t\t{B9F53966-94D8-446D-929B-F7C975FA21D2} = {6519E2CF-7503-4B6F-9097-A3AADB2BA0A2}\r\n\t\t{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8} = {B9F53966-94D8-446D-929B-F7C975FA21D2}\r\n\t\t{956627D8-5CF4-4FEE-A541-FD243F8B65A2} = {6519E2CF-7503-4B6F-9097-A3AADB2BA0A2}\r\n\t\t{4278C228-38AF-41C3-9E62-5F46E6910A0E} = {956627D8-5CF4-4FEE-A541-FD243F8B65A2}\r\n\t\t{06FE33CA-739A-47BB-83D3-01AE4821224F} = {956627D8-5CF4-4FEE-A541-FD243F8B65A2}\r\n\t\t{5E608CE4-CC4B-4C42-BB66-D7373FB17856} = {6519E2CF-7503-4B6F-9097-A3AADB2BA0A2}\r\n\t\t{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1} = {5E608CE4-CC4B-4C42-BB66-D7373FB17856}\r\n\tEndGlobalSection\r\n=======\r\n>>>>>>> Stashed changes\r\n\tGlobalSection(ExtensibilityGlobals) = postSolution\r\n\t\tSolutionGuid = {6766C565-562E-4E89-BA18-C651C121A49F}\r\n\tEndGlobalSection\r\n\tGlobalSection(ProjectConfigurationPlatforms) = postSolution\r\n\t\t{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU\r\n\t\t{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU\r\n\t\t{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU\r\n\t\t{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}.Release|Any CPU.Build.0 = Release|Any CPU\r\n\t\t{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU\r\n\t\t{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU\r\n\t\t{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU\r\n\t\t{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Release|Any CPU.Build.0 = Release|Any CPU\r\n\t\t{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU\r\n\t\t{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Debug|Any CPU.Build.0 = Debug|Any CPU\r\n\t\t{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Release|Any CPU.ActiveCfg = Release|Any CPU\r\n\t\t{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Release|Any CPU.Build.0 = Release|Any CPU\r\n\t\t{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU\r\n\t\t{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU\r\n\t\t{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU\r\n\t\t{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Release|Any CPU.Build.0 = Release|Any CPU\r\n\t\t{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU\r\n\t\t{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU\r\n\t\t{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU\r\n\t\t{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Release|Any CPU.Build.0 = Release|Any CPU\r\n\t\t{06FE33CA-739A-47BB-83D3-01AE4821224F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU\r\n\t\t{06FE33CA-739A-47BB-83D3-01AE4821224F}.Debug|Any CPU.Build.0 = Debug|Any CPU\r\n\t\t{06FE33CA-739A-47BB-83D3-01AE4821224F}.Release|Any CPU.ActiveCfg = Release|Any CPU\r\n\t\t{06FE33CA-739A-47BB-83D3-01AE4821224F}.Release|Any CPU.Build.0 = Release|Any CPU\r\n\tEndGlobalSection\r\n\tGlobalSection(SolutionConfigurationPlatforms) = preSolution\r\n\t\tDebug|Any CPU = Debug|Any CPU\r\n\t\tRelease|Any CPU = Release|Any CPU\r\n\tEndGlobalSection\r\nEndGlobal\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/ShrimpPond_CleanArchitecture.sln b/ShrimpPond_CleanArchitecture.sln
+---- a/ShrimpPond_CleanArchitecture.sln	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ b/ShrimpPond_CleanArchitecture.sln	(date 1730218895764)
+-@@ -3,7 +3,6 @@
+- # Visual Studio Version 17
+- VisualStudioVersion = 17.10.35013.160
+- MinimumVisualStudioVersion = 10.0.40219.1
+--<<<<<<< Updated upstream
+- Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShrimpPond.Domain", "ShrimpPond.Domain\ShrimpPond.Domain.csproj", "{90F233B1-3C67-4907-8A34-0F1F768AE7D9}"
+- EndProject
+- Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShrimpPond.Application", "ShrimpPond.Application\ShrimpPond.Application.csproj", "{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}"
+-@@ -21,17 +20,45 @@
+- Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShrimpPond.Persistence", "ShrimpPond.Persistence\ShrimpPond.Persistence.csproj", "{06FE33CA-739A-47BB-83D3-01AE4821224F}"
+- EndProject
+- Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6519E2CF-7503-4B6F-9097-A3AADB2BA0A2}"
+--=======
+- EndProject
+--Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthorizationServer", "AuthorizationServer", "{5E608CE4-CC4B-4C42-BB66-D7373FB17856}"
+-+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{5E608CE4-CC4B-4C42-BB66-D7373FB17856}"
+- EndProject
+--Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationServer", "AuthorizationServer\AuthorizationServer\AuthorizationServer.csproj", "{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}"
+-+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShrimpPond.Server", "ShrimpPond.Server\ShrimpPond.Server.csproj", "{F65FC103-C2B9-4D6B-822B-67B711F756B3}"
+- EndProject
+- Global
+-+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+-+		Debug|Any CPU = Debug|Any CPU
+-+		Release|Any CPU = Release|Any CPU
+-+	EndGlobalSection
+-+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+-+		{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+-+		{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+-+		{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+-+		{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+-+		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+-+		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+-+		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+-+		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Release|Any CPU.Build.0 = Release|Any CPU
+-+		{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+-+		{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+-+		{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+-+		{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+-+		{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+-+		{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+-+		{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+-+		{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+-+		{06FE33CA-739A-47BB-83D3-01AE4821224F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+-+		{06FE33CA-739A-47BB-83D3-01AE4821224F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+-+		{06FE33CA-739A-47BB-83D3-01AE4821224F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+-+		{06FE33CA-739A-47BB-83D3-01AE4821224F}.Release|Any CPU.Build.0 = Release|Any CPU
+-+		{F65FC103-C2B9-4D6B-822B-67B711F756B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+-+		{F65FC103-C2B9-4D6B-822B-67B711F756B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+-+		{F65FC103-C2B9-4D6B-822B-67B711F756B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+-+		{F65FC103-C2B9-4D6B-822B-67B711F756B3}.Release|Any CPU.Build.0 = Release|Any CPU
+-+	EndGlobalSection
+- 	GlobalSection(SolutionProperties) = preSolution
+- 		HideSolutionNode = FALSE
+- 	EndGlobalSection
+--<<<<<<< Updated upstream
+- 	GlobalSection(NestedProjects) = preSolution
+- 		{90F233B1-3C67-4907-8A34-0F1F768AE7D9} = {64B74D2F-D0B3-408B-A6D5-8561E4DE7F91}
+- 		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61} = {64B74D2F-D0B3-408B-A6D5-8561E4DE7F91}
+-@@ -42,41 +69,9 @@
+- 		{4278C228-38AF-41C3-9E62-5F46E6910A0E} = {956627D8-5CF4-4FEE-A541-FD243F8B65A2}
+- 		{06FE33CA-739A-47BB-83D3-01AE4821224F} = {956627D8-5CF4-4FEE-A541-FD243F8B65A2}
+- 		{5E608CE4-CC4B-4C42-BB66-D7373FB17856} = {6519E2CF-7503-4B6F-9097-A3AADB2BA0A2}
+--		{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1} = {5E608CE4-CC4B-4C42-BB66-D7373FB17856}
+-+		{F65FC103-C2B9-4D6B-822B-67B711F756B3} = {5E608CE4-CC4B-4C42-BB66-D7373FB17856}
+- 	EndGlobalSection
+--=======
+-->>>>>>> Stashed changes
+- 	GlobalSection(ExtensibilityGlobals) = postSolution
+- 		SolutionGuid = {6766C565-562E-4E89-BA18-C651C121A49F}
+--	EndGlobalSection
+--	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+--		{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+--		{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+--		{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+--		{3A5CDEBD-01DE-4A3E-B76D-08DBC019E5E1}.Release|Any CPU.Build.0 = Release|Any CPU
+--		{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+--		{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+--		{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+--		{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+--		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+--		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+--		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+--		{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}.Release|Any CPU.Build.0 = Release|Any CPU
+--		{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+--		{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+--		{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+--		{90F233B1-3C67-4907-8A34-0F1F768AE7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+--		{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+--		{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+--		{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+--		{4278C228-38AF-41C3-9E62-5F46E6910A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+--		{06FE33CA-739A-47BB-83D3-01AE4821224F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+--		{06FE33CA-739A-47BB-83D3-01AE4821224F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+--		{06FE33CA-739A-47BB-83D3-01AE4821224F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+--		{06FE33CA-739A-47BB-83D3-01AE4821224F}.Release|Any CPU.Build.0 = Release|Any CPU
+--	EndGlobalSection
+--	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+--		Debug|Any CPU = Debug|Any CPU
+--		Release|Any CPU = Release|Any CPU
+- 	EndGlobalSection
+- EndGlobal
+-Index: ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>{\"documents\":{\"C:\\\\Users\\\\vu343\\\\OneDrive\\\\Dokumen\\\\Fablab Projects\\\\ShrimpPond.WebAPI\\\\web-api_shrimp_pond\\\\*\":\"https://raw.githubusercontent.com/vanvu0211/web-api_shrimp_pond/5f4f4a645ff9d0b803552072d763ca13f3f34b6a/*\"}}
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json b/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json
+---- a/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ b/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json	(date 1730216081083)
+-@@ -1,1 +1,1 @@
+--{"documents":{"C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\*":"https://raw.githubusercontent.com/vanvu0211/web-api_shrimp_pond/5f4f4a645ff9d0b803552072d763ca13f3f34b6a/*"}}
+-\ No newline at end of file
+-+{"documents":{"C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\*":"https://raw.githubusercontent.com/vanvu0211/web-api_shrimp_pond/546059b0c828014f5d61eaade7d2d3e26825f30b/*"}}
+-\ No newline at end of file
+-Index: ShrimpPond.Server/Dockerfile
+-===================================================================
+-diff --git a/ShrimpPond.Server/Dockerfile b/ShrimpPond.Server/Dockerfile
+-new file mode 100644
+---- /dev/null	(date 1730217846656)
+-+++ b/ShrimpPond.Server/Dockerfile	(date 1730217846656)
+-@@ -0,0 +1,22 @@
+-+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+-+WORKDIR /app
+-+EXPOSE 80
+-+EXPOSE 443
+-+
+-+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+-+ARG BUILD_CONFIGURATION=Release
+-+WORKDIR /src
+-+COPY ["ShrimpPondServer/ShrimpPondServer.csproj", "ShrimpPondServer/"]
+-+RUN dotnet restore "ShrimpPondServer/ShrimpPondServer.csproj"
+-+COPY . .
+-+WORKDIR "/src/ShrimpPondServer"
+-+RUN dotnet build "ShrimpPondServer.csproj" -c $BUILD_CONFIGURATION -o /app/build
+-+
+-+FROM build AS publish
+-+ARG BUILD_CONFIGURATION=Release
+-+RUN dotnet publish "ShrimpPondServer.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+-+
+-+FROM base AS final
+-+WORKDIR /app
+-+COPY --from=publish /app/publish .
+-+ENTRYPOINT ["dotnet", "ShrimpPondServer.dll"]
+-Index: ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>//------------------------------------------------------------------------------\r\n// <auto-generated>\r\n//     This code was generated by a tool.\r\n//\r\n//     Changes to this file may cause incorrect behavior and will be lost if\r\n//     the code is regenerated.\r\n// </auto-generated>\r\n//------------------------------------------------------------------------------\r\n\r\nusing System;\r\nusing System.Reflection;\r\n\r\n[assembly: System.Reflection.AssemblyCompanyAttribute(\"ShrimpPond.Domain\")]\r\n[assembly: System.Reflection.AssemblyConfigurationAttribute(\"Debug\")]\r\n[assembly: System.Reflection.AssemblyFileVersionAttribute(\"1.0.0.0\")]\r\n[assembly: System.Reflection.AssemblyInformationalVersionAttribute(\"1.0.0+5f4f4a645ff9d0b803552072d763ca13f3f34b6a\")]\r\n[assembly: System.Reflection.AssemblyProductAttribute(\"ShrimpPond.Domain\")]\r\n[assembly: System.Reflection.AssemblyTitleAttribute(\"ShrimpPond.Domain\")]\r\n[assembly: System.Reflection.AssemblyVersionAttribute(\"1.0.0.0\")]\r\n\r\n// Generated by the MSBuild WriteCodeFragment class.\r\n\r\n
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs b/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs
+---- a/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs	(revision 546059b0c828014f5d61eaade7d2d3e26825f30b)
+-+++ b/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs	(date 1729931004511)
+-@@ -13,7 +13,7 @@
+- [assembly: System.Reflection.AssemblyCompanyAttribute("ShrimpPond.Domain")]
+- [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+- [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+--[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f4f4a645ff9d0b803552072d763ca13f3f34b6a")]
+-+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+546059b0c828014f5d61eaade7d2d3e26825f30b")]
+- [assembly: System.Reflection.AssemblyProductAttribute("ShrimpPond.Domain")]
+- [assembly: System.Reflection.AssemblyTitleAttribute("ShrimpPond.Domain")]
+- [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+Index: .idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM__Changes_1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM__Changes_1.xml b/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM__Changes_1.xml
+deleted file mode 100644
+--- a/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM__Changes_1.xml	(revision e982534ee7159e56f59d7c3f64425f5739b2b77d)
++++ /dev/null	(revision e982534ee7159e56f59d7c3f64425f5739b2b77d)
+@@ -1,139 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1" date="1730519803536" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 11/2/2024 10:55 AM [Changes]" />
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.pdb" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.pdb" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Domain.pdb" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Persistence.csproj.AssemblyReference.cache" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.pdb" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.pdb" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.API.pdb" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ref/ShrimpPond.API.dll" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ref/ShrimpPond.API.dll" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.API.dll" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Infrastructure.pdb" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.dll" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.dll" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Domain.dll" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/refint/ShrimpPond.Infrastructure.dll" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/refint/ShrimpPond.Infrastructure.dll" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Infrastructure.dll" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.pdb" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.pdb" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Persistence.pdb" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.strings.v8.bin" />
+-    <option name="AFTER_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.strings.v8.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shrimppond_cleanarchitecture.strings.v8.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".vs/ShrimpPond_CleanArchitecture/v17/.futdcache.v2" />
+-    <option name="AFTER_PATH" value=".vs/ShrimpPond_CleanArchitecture/v17/.futdcache.v2" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/.futdcache.v2" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.dll" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.dll" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Application.dll" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Domain.AssemblyInfoInputs.cache" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.metadata.v8.bin" />
+-    <option name="AFTER_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.metadata.v8.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shrimppond_cleanarchitecture.metadata.v8.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.projects.v8.bin" />
+-    <option name="AFTER_PATH" value=".vs/ProjectEvaluation/shrimppond_cleanarchitecture.projects.v8.bin" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shrimppond_cleanarchitecture.projects.v8.bin" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".vs/ShrimpPond_CleanArchitecture/v17/.suo" />
+-    <option name="AFTER_PATH" value=".vs/ShrimpPond_CleanArchitecture/v17/.suo" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/.suo" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Application.AssemblyInfoInputs.cache" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Application.csproj.AssemblyReference.cache" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ref/ShrimpPond.Persistence.dll" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ref/ShrimpPond.Persistence.dll" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Persistence.dll" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.API.csproj.AssemblyReference.cache" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.exe" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.exe" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.API.exe" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value=".vs/ShrimpPond_CleanArchitecture/DesignTimeBuild/.dtbcache.v2" />
+-    <option name="AFTER_PATH" value=".vs/ShrimpPond_CleanArchitecture/DesignTimeBuild/.dtbcache.v2" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/.dtbcache.v2" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.pdb" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.pdb" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Application.pdb" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.API.AssemblyInfoInputs.cache" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.API/obj/Debug/net6.0/apphost.exe" />
+-    <option name="AFTER_PATH" value="ShrimpPond.API/obj/Debug/net6.0/apphost.exe" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/apphost.exe" />
+-  </binary>
+-  <binary>
+-    <option name="BEFORE_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache" />
+-    <option name="AFTER_PATH" value="ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache" />
+-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Persistence.AssemblyInfoInputs.cache" />
+-  </binary>
+-</changelist>
+\ No newline at end of file
+Index: .idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoGeneratedRunConfigurationManager\">\r\n    <projectFile profileName=\"AuthorizationServer\">AuthorizationServer/AuthorizationServer.csproj</projectFile>\r\n    <projectFile profileName=\"IIS Express\">AuthorizationServer/AuthorizationServer.csproj</projectFile>\r\n    <projectFile profileName=\"AuthorizationServer\">AuthorizationServer/AuthorizationServer/AuthorizationServer.csproj</projectFile>\r\n    <projectFile profileName=\"IIS Express\">AuthorizationServer/AuthorizationServer/AuthorizationServer.csproj</projectFile>\r\n    <projectFile profileName=\"IIS Express\">ShrimpPond.API/ShrimpPond.API.csproj</projectFile>\r\n    <projectFile profileName=\"ShrimpPond.API\">ShrimpPond.API/ShrimpPond.API.csproj</projectFile>\r\n    <projectFile pubXmlPath=\"ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy.pubxml\">ShrimpPond.API/ShrimpPond.API.csproj</projectFile>\r\n    <projectFile profileName=\"IIS Express\">ShrimpPondServer/ShrimpPondServer.csproj</projectFile>\r\n    <projectFile profileName=\"ShrimpPondServer\">ShrimpPondServer/ShrimpPondServer.csproj</projectFile>\r\n    <projectFile profileName=\"IIS Express\">WebApplication1/WebApplication1.csproj</projectFile>\r\n    <projectFile profileName=\"WebApplication1\">WebApplication1/WebApplication1.csproj</projectFile>\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"bada3325-cd22-4a51-83e0-ee29d02ba4bd\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/ShrimpPond.API/Controllers/TimeSettingController.cs\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ShrimpPond.API/MQTTModels/EnviromentData.cs\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ShrimpPond.API/MQTTModels/SelectPond.cs\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/Feature/TimeSetting/Command/CreateTimeSetting/CreateTimeSetting.cs\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/Feature/TimeSetting/Command/CreateTimeSetting/CreateTimeSettingHandler.cs\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/Feature/TimeSetting/Command/CreateTimeSetting/CreateTimeSettingValidation.cs\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/Feature/TimeSetting/Command/CreateTimeSetting/TimeSettingData.cs\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/TimeSetting/TimeSettingObject.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.metadata.v8.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.metadata.v8.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.projects.v8.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.projects.v8.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.strings.v8.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.strings.v8.bin\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/DesignTimeBuild/.dtbcache.v2\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/DesignTimeBuild/.dtbcache.v2\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/.futdcache.v2\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/.futdcache.v2\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/.suo\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/.suo\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/AccountController.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/AccountController.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/AuthorizationServer.csproj\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/AuthorizationServer.csproj\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/Data/AuthenrizationDbContext.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/Data/AuthenrizationDbContext.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/Models/Login.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/Models/Login.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/Models/Register.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/Models/Register.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/Models/UserRole.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/Models/UserRole.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/Program.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/Program.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/Properties/launchSettings.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/Properties/launchSettings.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/appsettings.Development.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/appsettings.Development.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/AuthorizationServer/appsettings.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/AuthorizationServer/appsettings.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy.pubxml.user\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy.pubxml.user\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/Worker/ScadaHost.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/Worker/ScadaHost.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/appsettings.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/appsettings.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.exe\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.exe\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/appsettings.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/appsettings.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.exe\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.exe\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Infrastructure.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Infrastructure.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Persistence.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Persistence.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/appsettings.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/appsettings.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.MvcApplicationPartsAssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.MvcApplicationPartsAssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.CoreCompileInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.CoreCompileInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/apphost.exe\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/apphost.exe\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ref/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ref/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/refint/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/refint/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.exe\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.exe\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Infrastructure.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Infrastructure.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Persistence.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Persistence.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/appsettings.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/appsettings.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.csproj.CoreCompileInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.csproj.CoreCompileInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/apphost.exe\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/apphost.exe\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ref/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ref/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/refint/ShrimpPond.API.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/refint/ShrimpPond.API.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/Contract/Persistence/Genenric/IUnitOfWork.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/Contract/Persistence/Genenric/IUnitOfWork.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.CoreCompileInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.CoreCompileInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ref/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ref/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/refint/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/refint/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.csproj.CoreCompileInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.csproj.CoreCompileInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ref/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ref/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/refint/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/refint/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/bin/Debug/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/bin/Debug/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/bin/Release/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/bin/Release/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/bin/Release/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/bin/Release/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.csproj.CoreCompileInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.csproj.CoreCompileInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ref/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ref/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/refint/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/refint/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.csproj.CoreCompileInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.csproj.CoreCompileInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ref/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ref/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/refint/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/refint/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Infrastructure.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Infrastructure.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ref/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ref/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/refint/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/refint/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ref/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ref/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/refint/ShrimpPond.Infrastructure.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/refint/ShrimpPond.Infrastructure.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/DatabaseContext/ShrimpPondDbContext.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/DatabaseContext/ShrimpPondDbContext.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/Migrations/ShrimpPondDbContextModelSnapshot.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/Migrations/ShrimpPondDbContextModelSnapshot.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/Repository/Generic/UnitOfWork.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/Repository/Generic/UnitOfWork.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Persistence.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Persistence.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Application.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Application.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Application.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Application.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Domain.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Domain.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Domain.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Domain.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Persistence.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Persistence.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.CoreCompileInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.CoreCompileInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ref/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ref/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/refint/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/refint/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.csproj.CoreCompileInputs.cache\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.csproj.CoreCompileInputs.cache\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.pdb\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.pdb\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.sourcelink.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.sourcelink.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ref/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ref/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/refint/ShrimpPond.Persistence.dll\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/refint/ShrimpPond.Persistence.dll\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"DpaMonitoringSettings\">\r\n    <option name=\"autoShow\" value=\"false\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;vanvu0211&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/vanvu0211/web-api_shrimp_pond.git&quot;,\r\n    &quot;accountId&quot;: &quot;243b226b-9f8b-4074-ae86-76aec7988252&quot;\r\n  }\r\n}</component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1558d44394b3be0f45e5cfe17d84d06c60a9ea79543868636a2edb57c2342/IRequestHandler.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"KubernetesApiPersistence\">{}</component>\r\n  <component name=\"KubernetesApiProvider\">{\r\n  &quot;isMigrated&quot;: true\r\n}</component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 2\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2ntVTue9HWnVSDCXmupUfzxa3R9\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;.NET Launch Settings Profile.ShrimpPond.API.executor&quot;: &quot;Run&quot;,\r\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\".NET Launch Settings Profile.ShrimpPond.API\">\r\n    <configuration name=\"ShrimpPond.API: site6974-WebDeploy\" type=\"DotNetMsBuildPublish\" factoryName=\"Publish to IIS\">\r\n      <riderPublish configuration=\"Release\" platform=\"Any CPU\" publish_profile=\"site6974-WebDeploy.pubxml\" pubxml_path=\"$PROJECT_DIR$/ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy.pubxml\" user_name=\"site6974\" uuid_high=\"3745818214991612648\" uuid_low=\"-8375839568837452856\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"ShrimpPond.API\" type=\"LaunchSettings\" factoryName=\".NET Launch Settings Profile\">\r\n      <option name=\"LAUNCH_PROFILE_PROJECT_FILE_PATH\" value=\"$PROJECT_DIR$/ShrimpPond.API/ShrimpPond.API.csproj\" />\r\n      <option name=\"LAUNCH_PROFILE_TFM\" value=\"net6.0\" />\r\n      <option name=\"LAUNCH_PROFILE_NAME\" value=\"ShrimpPond.API\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <option name=\"USE_MONO\" value=\"0\" />\r\n      <option name=\"RUNTIME_ARGUMENTS\" value=\"\" />\r\n      <option name=\"GENERATE_APPLICATIONHOST_CONFIG\" value=\"1\" />\r\n      <option name=\"SHOW_IIS_EXPRESS_OUTPUT\" value=\"0\" />\r\n      <option name=\"SEND_DEBUG_REQUEST\" value=\"1\" />\r\n      <option name=\"ADDITIONAL_IIS_EXPRESS_ARGUMENTS\" value=\"\" />\r\n      <method v=\"2\">\r\n        <option name=\"Build\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ShrimpPond.API: IIS Express\" type=\"LaunchSettings\" factoryName=\".NET Launch Settings Profile\">\r\n      <option name=\"LAUNCH_PROFILE_PROJECT_FILE_PATH\" value=\"$PROJECT_DIR$/ShrimpPond.API/ShrimpPond.API.csproj\" />\r\n      <option name=\"LAUNCH_PROFILE_TFM\" value=\"net6.0\" />\r\n      <option name=\"LAUNCH_PROFILE_NAME\" value=\"IIS Express\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <option name=\"USE_MONO\" value=\"0\" />\r\n      <option name=\"RUNTIME_ARGUMENTS\" value=\"\" />\r\n      <option name=\"GENERATE_APPLICATIONHOST_CONFIG\" value=\"1\" />\r\n      <option name=\"SHOW_IIS_EXPRESS_OUTPUT\" value=\"0\" />\r\n      <option name=\"SEND_DEBUG_REQUEST\" value=\"1\" />\r\n      <option name=\"ADDITIONAL_IIS_EXPRESS_ARGUMENTS\" value=\"\" />\r\n      <method v=\"2\">\r\n        <option name=\"Build\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"bada3325-cd22-4a51-83e0-ee29d02ba4bd\" name=\"Changes\" comment=\"\" />\r\n      <created>1729792371403</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1729792371403</updated>\r\n      <workItem from=\"1729792373389\" duration=\"728000\" />\r\n      <workItem from=\"1730519868899\" duration=\"69000\" />\r\n      <workItem from=\"1730520387518\" duration=\"2061000\" />\r\n      <workItem from=\"1730870231693\" duration=\"1302000\" />\r\n      <workItem from=\"1730873018961\" duration=\"597000\" />\r\n      <workItem from=\"1730873679055\" duration=\"1184000\" />\r\n      <workItem from=\"1730878931033\" duration=\"737000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"test rider\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1729792849352</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1729792849352</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"false\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"test rider\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"test rider\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml b/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml
+--- a/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml	(revision e982534ee7159e56f59d7c3f64425f5739b2b77d)
++++ b/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml	(date 1731681261016)
+@@ -8,6 +8,7 @@
+     <projectFile profileName="IIS Express">ShrimpPond.API/ShrimpPond.API.csproj</projectFile>
+     <projectFile profileName="ShrimpPond.API">ShrimpPond.API/ShrimpPond.API.csproj</projectFile>
+     <projectFile pubXmlPath="ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy.pubxml">ShrimpPond.API/ShrimpPond.API.csproj</projectFile>
++    <projectFile pubXmlPath="ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy1.pubxml">ShrimpPond.API/ShrimpPond.API.csproj</projectFile>
+     <projectFile profileName="IIS Express">ShrimpPondServer/ShrimpPondServer.csproj</projectFile>
+     <projectFile profileName="ShrimpPondServer">ShrimpPondServer/ShrimpPondServer.csproj</projectFile>
+     <projectFile profileName="IIS Express">WebApplication1/WebApplication1.csproj</projectFile>
+@@ -18,200 +19,63 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="bada3325-cd22-4a51-83e0-ee29d02ba4bd" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/ShrimpPond.API/Controllers/TimeSettingController.cs" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ShrimpPond.API/MQTTModels/EnviromentData.cs" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ShrimpPond.API/MQTTModels/SelectPond.cs" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ShrimpPond.Application/Feature/TimeSetting/Command/CreateTimeSetting/CreateTimeSetting.cs" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ShrimpPond.Application/Feature/TimeSetting/Command/CreateTimeSetting/CreateTimeSettingHandler.cs" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ShrimpPond.Application/Feature/TimeSetting/Command/CreateTimeSetting/CreateTimeSettingValidation.cs" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ShrimpPond.Application/Feature/TimeSetting/Command/CreateTimeSetting/TimeSettingData.cs" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/ShrimpPond.Domain/TimeSetting/TimeSettingObject.cs" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/dataSources.local.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/.dtbcache.v2" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/.futdcache.v2" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.API.dll" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.API.exe" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Application.dll" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Domain.dll" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Infrastructure.dll" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/ShrimpPond.Persistence.dll" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/apphost.exe" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shelved.patch" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shrimppond_cleanarchitecture.metadata.v8.bin" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shrimppond_cleanarchitecture.projects.v8.bin" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM_[Changes]1/shrimppond_cleanarchitecture.strings.v8.bin" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_2_2024_10_55_AM__Changes_1.xml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShrimpPond_CleanArchitecture/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.metadata.v8.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.metadata.v8.bin" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.projects.v8.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.projects.v8.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.strings.v8.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/shrimppond_cleanarchitecture.strings.v8.bin" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/.futdcache.v2" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/.suo" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ShrimpPond_CleanArchitecture/v17/DocumentLayout.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/AccountController.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/AuthorizationServer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/AuthorizationServer.csproj" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/Data/AuthenrizationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/Data/AuthenrizationDbContext.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/Models/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/Models/Login.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/Models/Register.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/Models/Register.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/Models/UserRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/Models/UserRole.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/Program.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/Properties/launchSettings.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/appsettings.Development.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/AuthorizationServer/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/appsettings.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy.pubxml.user" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy.pubxml.user" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/Worker/ScadaHost.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/Worker/ScadaHost.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/appsettings.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.exe" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.API.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/ShrimpPond.Persistence.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.exe" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.API.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Infrastructure.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/ShrimpPond.Persistence.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/bin/Release/net6.0/appsettings.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/AuthorizationServer/AuthorizationServer/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthorizationServer/AuthorizationServer/Controllers/AccountController.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfo.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ShrimpPond.API.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ref/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/ref/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/refint/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Debug/net6.0/refint/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.exe" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.API.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Infrastructure.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/ShrimpPond.Persistence.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/PubTmp/Out/appsettings.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.AssemblyInfo.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.AssemblyInfoInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.csproj.AssemblyReference.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ShrimpPond.API.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/apphost.exe" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ref/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/ref/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/refint/ShrimpPond.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/Release/net6.0/refint/ShrimpPond.API.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/Contract/Persistence/Genenric/IUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/Contract/Persistence/Genenric/IUnitOfWork.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/bin/Debug/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/bin/Release/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/ShrimpPond.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/ShrimpPond.API.csproj.nuget.dgspec.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/ShrimpPond.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/ShrimpPond.API.csproj.nuget.g.props" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/project.assets.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.API/obj/project.nuget.cache" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfo.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ShrimpPond.Application.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ref/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/ref/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/refint/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Debug/net6.0/refint/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.AssemblyInfo.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.AssemblyInfoInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.csproj.AssemblyReference.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ShrimpPond.Application.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ref/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/ref/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/refint/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/Release/net6.0/refint/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/bin/Debug/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/bin/Debug/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/bin/Debug/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/bin/Debug/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/bin/Release/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/bin/Release/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/bin/Release/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/bin/Release/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/ShrimpPond.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/ShrimpPond.Application.csproj.nuget.dgspec.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/ShrimpPond.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/ShrimpPond.Application.csproj.nuget.g.props" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/project.assets.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Application/obj/project.nuget.cache" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfo.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ShrimpPond.Domain.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ref/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/ref/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/refint/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Debug/net6.0/refint/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.AssemblyInfo.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ShrimpPond.Domain.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ref/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/ref/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/refint/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/Release/net6.0/refint/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Debug/net6.0/ShrimpPond.Infrastructure.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/bin/Release/net6.0/ShrimpPond.Infrastructure.pdb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/ShrimpPond.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/ShrimpPond.Domain.csproj.nuget.dgspec.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/ShrimpPond.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/ShrimpPond.Domain.csproj.nuget.g.props" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/project.assets.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Domain/obj/project.nuget.cache" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ShrimpPond.Infrastructure.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ref/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/ref/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/refint/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Debug/net6.0/refint/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ShrimpPond.Infrastructure.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ref/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/ref/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/refint/ShrimpPond.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/Release/net6.0/refint/ShrimpPond.Infrastructure.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/DatabaseContext/ShrimpPondDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/DatabaseContext/ShrimpPondDbContext.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/Migrations/ShrimpPondDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/Migrations/ShrimpPondDbContextModelSnapshot.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/Repository/Generic/UnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/Repository/Generic/UnitOfWork.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Debug/net6.0/ShrimpPond.Persistence.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Application.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Application.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Domain.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Domain.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/bin/Release/net6.0/ShrimpPond.Persistence.pdb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/ShrimpPond.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/ShrimpPond.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/ShrimpPond.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/ShrimpPond.Infrastructure.csproj.nuget.g.props" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/project.assets.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ShrimpPond.Persistence.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ref/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/ref/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/refint/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Debug/net6.0/refint/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.AssemblyInfo.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.pdb" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ShrimpPond.Persistence.sourcelink.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ref/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/ref/ShrimpPond.Persistence.dll" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/refint/ShrimpPond.Persistence.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/Release/net6.0/refint/ShrimpPond.Persistence.dll" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/ShrimpPond.Persistence.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/ShrimpPond.Persistence.csproj.nuget.dgspec.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/ShrimpPond.Persistence.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/ShrimpPond.Persistence.csproj.nuget.g.props" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/project.assets.json" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShrimpPond.Persistence/obj/project.nuget.cache" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -219,7 +83,7 @@
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="DpaMonitoringSettings">
+-    <option name="autoShow" value="false" />
++    <option name="firstShow" value="false" />
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+@@ -242,7 +106,8 @@
+   }
+ }</component>
+   <component name="HighlightingSettingsPerFile">
+-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1558d44394b3be0f45e5cfe17d84d06c60a9ea79543868636a2edb57c2342/IRequestHandler.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/AuthorizationServer/AuthorizationServer/Controllers/AccountController.cs" root0="SKIP_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/ShrimpPond.API/appsettings.json" root0="SKIP_HIGHLIGHTING" />
+   </component>
+   <component name="KubernetesApiPersistence">{}</component>
+   <component name="KubernetesApiProvider">{
+@@ -260,30 +125,52 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;.NET Launch Settings Profile.ShrimpPond.API.executor&quot;: &quot;Run&quot;,
+-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    ".NET Launch Settings Profile.AuthServer.executor": "Run",
++    ".NET Launch Settings Profile.ShrimpPond.API.executor": "Run",
++    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
++    "git-widget-placeholder": "authorization__feature",
++    "ignore.virus.scanning.warn.message": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "settings.editor.selected.configurable": "project.propDebugger",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
+-  <component name="RunManager" selected=".NET Launch Settings Profile.ShrimpPond.API">
++}]]></component>
++  <component name="RunManager" selected=".NET Launch Settings Profile.AuthServer">
+     <configuration name="ShrimpPond.API: site6974-WebDeploy" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
+       <riderPublish configuration="Release" platform="Any CPU" publish_profile="site6974-WebDeploy.pubxml" pubxml_path="$PROJECT_DIR$/ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy.pubxml" user_name="site6974" uuid_high="3745818214991612648" uuid_low="-8375839568837452856" />
+       <method v="2" />
+     </configuration>
++    <configuration name="ShrimpPond.API: site6974-WebDeploy1" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
++      <riderPublish configuration="Release" platform="Any CPU" publish_profile="site6974-WebDeploy1.pubxml" pubxml_path="$PROJECT_DIR$/ShrimpPond.API/Properties/PublishProfiles/site6974-WebDeploy1.pubxml" user_name="site6974" uuid_high="3745818214991612648" uuid_low="-8375839568837452856" />
++      <method v="2" />
++    </configuration>
++    <configuration name="AuthServer" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
++      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/AuthorizationServer/AuthorizationServer/AuthorizationServer.csproj" />
++      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
++      <option name="LAUNCH_PROFILE_NAME" value="AuthorizationServer" />
++      <option name="USE_EXTERNAL_CONSOLE" value="0" />
++      <option name="USE_MONO" value="0" />
++      <option name="RUNTIME_ARGUMENTS" value="" />
++      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
++      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
++      <option name="SEND_DEBUG_REQUEST" value="1" />
++      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
++      <method v="2">
++        <option name="Build" />
++      </method>
++    </configuration>
+     <configuration name="ShrimpPond.API" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ShrimpPond.API/ShrimpPond.API.csproj" />
+       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+-      <option name="LAUNCH_PROFILE_NAME" value="ShrimpPond.API" />
++      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+       <option name="USE_EXTERNAL_CONSOLE" value="0" />
+       <option name="USE_MONO" value="0" />
+       <option name="RUNTIME_ARGUMENTS" value="" />
+@@ -310,6 +197,13 @@
+         <option name="Build" />
+       </method>
+     </configuration>
++    <list>
++      <item itemvalue=".NET Launch Settings Profile.ShrimpPond.API" />
++      <item itemvalue=".NET Launch Settings Profile.AuthServer" />
++      <item itemvalue=".NET Launch Settings Profile.ShrimpPond.API: IIS Express" />
++      <item itemvalue="Publish to IIS.ShrimpPond.API: site6974-WebDeploy" />
++      <item itemvalue="Publish to IIS.ShrimpPond.API: site6974-WebDeploy1" />
++    </list>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -326,6 +220,8 @@
+       <workItem from="1730873018961" duration="597000" />
+       <workItem from="1730873679055" duration="1184000" />
+       <workItem from="1730878931033" duration="737000" />
++      <workItem from="1731656970527" duration="785000" />
++      <workItem from="1731680832844" duration="429000" />
+     </task>
+     <task id="LOCAL-00001" summary="test rider">
+       <option name="closed" value="true" />

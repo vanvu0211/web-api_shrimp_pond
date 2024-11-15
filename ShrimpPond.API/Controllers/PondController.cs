@@ -1,16 +1,11 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ShrimpPond.Application.Exceptions;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
 using ShrimpPond.Application.Feature.Pond.Commands.DeletePond;
 using ShrimpPond.Application.Feature.Pond.Commands.HarvestPond;
 using ShrimpPond.Application.Feature.Pond.Queries.GetAllPond;
 using ShrimpPond.Application.Feature.Pond.Queries.GetHarvestTime;
-using ShrimpPond.Application.Feature.PondType.Commands.DeletePondType;
-using ShrimpPond.Application.Feature.PondType.Queries.GetPondType;
 using ShrimpPond.Domain.PondData;
 
 namespace ShrimpPond.API.Controllers
@@ -78,7 +73,7 @@ namespace ShrimpPond.API.Controllers
         public async Task<IActionResult> DeletePond([FromQuery] string PondId)
         {
             var command = new DeletePond { PondId = PondId };
-            var IdReturn = await _mediator.Send(command);
+            var idReturn = await _mediator.Send(command);
             return Ok(command);
         }
     }

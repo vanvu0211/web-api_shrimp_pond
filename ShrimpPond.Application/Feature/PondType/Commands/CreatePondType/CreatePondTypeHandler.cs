@@ -24,7 +24,7 @@ namespace ShrimpPond.Application.Feature.PondType.Commands.CreatePondType
 
             //validate
             var validator = new CreatePondTypeValidation();
-            var validatorResult = await validator.ValidateAsync(request);
+            var validatorResult = await validator.ValidateAsync(request, cancellationToken);
             if (validatorResult.Errors.Any())
             {
                 throw new BadRequestException("Invalid ET", validatorResult);
