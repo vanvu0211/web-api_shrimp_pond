@@ -87,8 +87,7 @@
               "RelativeToolTip": "ShrimpPond.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-15T05:03:22.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T05:03:22.204Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTraceability\\GetTraceabilityHandler.cs",
               "ViewState": "AQIAAHAAAAAAAAAAAAAAAEsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T04:36:48.207Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T04:36:48.207Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "ShrimpPond.API\\Program.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T03:51:15.027Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-15T03:51:15.027Z"
             }
           ]
         }

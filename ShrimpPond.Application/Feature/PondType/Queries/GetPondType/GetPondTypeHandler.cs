@@ -2,11 +2,7 @@
 using MediatR;
 using ShrimpPond.Application.Contract.Logging;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ShrimpPond.Application.Feature.PondType.Queries.GetPondType
 {
@@ -22,7 +18,7 @@ namespace ShrimpPond.Application.Feature.PondType.Queries.GetPondType
             _logger = logger;
             _mapper = mapper;
         }
-        public async Task<List<PondTypeDTO>> Handle(GetPondType request, CancellationToken cancellationToken)
+        public Task<List<PondTypeDTO>> Handle(GetPondType request, CancellationToken cancellationToken)
         {
             //query
             var pondTypes = _unitOfWork.pondTypeRepository.FindAll();
@@ -31,7 +27,7 @@ namespace ShrimpPond.Application.Feature.PondType.Queries.GetPondType
             // convert
             var data = _mapper.Map<List<PondTypeDTO>>(pondTypes);
             //return
-            return data;
+            return Task.FromResult(data);
         }
     }
 }
