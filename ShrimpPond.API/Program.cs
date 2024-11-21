@@ -48,7 +48,7 @@ namespace ShrimpPond.API
             builder.Services.AddSingleton<ManagedMqttClient>();
             builder.Services.AddSingleton<Buffer>();
             builder.Services.AddHostedService<ScadaHost>();
-
+            builder.Services.AddHostedService<CheckTimeSettingHost>();
             builder.Services.AddControllers();
 
             var app = builder.Build();
