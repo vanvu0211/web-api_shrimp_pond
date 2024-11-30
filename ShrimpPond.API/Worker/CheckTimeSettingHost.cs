@@ -29,8 +29,8 @@ namespace ShrimpPond.API.Worker
         {
             while( ! stoppingToken.IsCancellationRequested )
             {
-                await Task.Delay(1000 * 30, stoppingToken);
                 await CheckTime();
+                await Task.Delay(1000 * 30, stoppingToken);
             }
         }
 
@@ -48,33 +48,37 @@ namespace ShrimpPond.API.Worker
             var dataPonds = string.Join(",", ponds.Select(pond => pond.PondId));
 
             // Lấy TimeSettingId lớn nhất
-            var timeSettingId = unitOfWork.timeSettingRepository.FindAll().Max(x => x.TimeSettingId);
-
-            // Lấy danh sách thời gian từ timeSettingObjects
-            var timeSettingTimes = unitOfWork.timeSettingObjectRepository.FindAll()
-                .Where(x => x.TimeSettingId == timeSettingId)
-                .Select(x => Convert.ToDateTime(x.Time))
-                .ToList();
-
-            // Thời gian hiện tại
-            var nowTime = DateTime.UtcNow.AddHours(7);
-
-            // Kiểm tra nếu bất kỳ thời gian nào nằm trong khoảng ±1 phút
-            var timeMatch = timeSettingTimes.Any(time =>
-                Math.Abs((time - nowTime).TotalMinutes) <= 1);
-
-            // Kiểm tra điều kiện gửi lệnh MQTT
-            if (timeMatch && (lastSentTime == null || (nowTime - lastSentTime.Value).TotalSeconds > 50))
+            var timeSettingId = unitOfWork.timeSettingRepository.FindAll().Count();
+            if(timeSettingId != 0)
             {
-                lastSentTime = nowTime;
+                // Lấy danh sách thời gian từ timeSettingObjects
+                var timeSettingTimes = unitOfWork.timeSettingObjectRepository.FindAll()
+                    .Where(x => x.TimeSettingId == timeSettingId)
+                    .Select(x => Convert.ToDateTime(x.Time))
+                    .ToList();
 
-                await _mqttClient.Publish($"SHRIMP_POND/SELECT_POND", dataPonds, false);
-                await Task.Delay(1000);
-                await _mqttClient.Publish($"SHRIMP_POND/START", "START", false);
+                // Thời gian hiện tại
+                var nowTime = DateTime.UtcNow.AddHours(7);
 
-                await SendMail("vu34304@gmail.com", "Gửi thời gian cài đặt thành công vào lúc: " + nowTime.ToLongTimeString(), "Danh sách ao đo:" + dataPonds);
-                await SendMail("van048483@gmail.com", "Gửi thời gian cài đặt thành công vào lúc: " + nowTime.ToLongTimeString(), "Danh sách ao đo:" + dataPonds);
-                // Cập nhật thời gian gửi gần nhất
+                // Kiểm tra nếu bất kỳ thời gian nào nằm trong khoảng ±1 phút
+                var timeMatch = timeSettingTimes.Any(time =>
+                    Math.Abs((time - nowTime).TotalMinutes) <= 1);
+
+                // Kiểm tra điều kiện gửi lệnh MQTT
+                if (timeMatch && (lastSentTime == null || (nowTime - lastSentTime.Value).TotalSeconds > 50))
+                {
+                    lastSentTime = nowTime;
+
+                    await _mqttClient.Publish($"SHRIMP_POND/SELECT_POND", dataPonds, false);
+                    await Task.Delay(1000);
+                    await _mqttClient.Publish($"SHRIMP_POND/START", "START", false);
+                    await _mqttClient.Publish($"SHRIMP_POND/START_TIME/START_TIME", "START", false);
+
+                    await SendMail("vu34304@gmail.com", "Gửi thời gian cài đặt thành công vào lúc: " + nowTime.ToLongTimeString(), "Danh sách ao đo:" + dataPonds);
+                    await SendMail("van048483@gmail.com", "Gửi thời gian cài đặt thành công vào lúc: " + nowTime.ToLongTimeString(), "Danh sách ao đo:" + dataPonds);
+                    // Cập nhật thời gian gửi gần nhất
+                }
+
             }
 
         }

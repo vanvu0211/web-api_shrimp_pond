@@ -21,7 +21,9 @@ namespace ShrimpPond.API.Worker
         private readonly IHubContext<NotificationHub> _hubContext;
 
         private readonly IServiceScopeFactory _scopeFactory;
-        private static Timer? _timer;
+        public DateTime? startTime { get; set; }
+        public DateTime? endTime { get; set; }
+
 
         public ScadaHost(ManagedMqttClient mqttClient, Buffer buffer,
             IHubContext<NotificationHub> hubContext,
@@ -37,10 +39,6 @@ namespace ShrimpPond.API.Worker
             _scopeFactory = scopeFactory;
 
         }
-
-
-      
-
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
@@ -78,9 +76,24 @@ namespace ShrimpPond.API.Worker
             //// gửi chỉ số oee, xử lí lưu database, gửi lên web
             switch (topic1)
             {
+                case "START_TIME":
+                    {
+                        startTime = DateTime.UtcNow.AddHours(7);
+                        break;
+                    }
                 case "ENVIRONMENT":
                     {
+                        if(startTime == null)
+                        {
+                            startTime = DateTime.UtcNow.AddHours(5);
+                        }
+
+                        endTime = DateTime.UtcNow.AddHours(7);
+                        var unitTime = (endTime.Value - startTime.Value).TotalMinutes / 2;
+
                         var environments = JsonConvert.DeserializeObject<List<EnviromentData>>(payloadMessage)!.ToList();
+
+                        var index = 1;
 
                         foreach (var environment in environments)
                         {
@@ -93,16 +106,17 @@ namespace ShrimpPond.API.Worker
                                 PondId = topic2,
                                 Name = environment.name,
                                 Value = environment.value,
-                                Timestamp = (DateTime.UtcNow.AddHours(7))
+                                Timestamp = startTime + TimeSpan.FromMinutes(unitTime*index),// chia thời gian cho mỗi lần đo
                             };
 
+                             index++;
 
                             unitOfWork.environmentStatusRepository.Add(data);
                             await unitOfWork.SaveChangeAsync();
 
 
                             //Gửi dữ liệu
-        
+
                             await SendMail("vu34304@gmail.com", "Gửi dữ liệu ao " + topic2, "Dữ liệu: " + JsonConvert.SerializeObject(data));
                             await SendMail("van048483@gmail.com", "Gửi dữ liệu ao " + topic2, "Dữ liệu: " + JsonConvert.SerializeObject(data));
 
@@ -122,8 +136,8 @@ namespace ShrimpPond.API.Worker
                                     if (payloadMessage == "BAD")
                                     {
                                         
-                                        await SendMail("vu34304@gmail.com", "Kết nối MQTT", "Mất kết nối MQTT");
-                                        await SendMail("van048483@gmail.com", "Kết nối MQTT", "Mất kết nối MQTT");
+                                        //await SendMail("vu34304@gmail.com", "Kết nối MQTT", "Mất kết nối MQTT");
+                                        //await SendMail("van048483@gmail.com", "Kết nối MQTT", "Mất kết nối MQTT");
 
                                         //Gui signalR
                                         var error = new ErrorNotification(topic2, payloadMessage);
@@ -137,8 +151,8 @@ namespace ShrimpPond.API.Worker
                                     if (payloadMessage == "GOOD")
                                     {
                                         //Gui mail
-                                        await SendMail("vu34304@gmail.com", "Kết nối MQTT", "Đã kết nối MQTT");
-                                        await SendMail("van048483@gmail.com", "Kết nối MQTTT", "Đã kết nối MQTT");
+                                        //await SendMail("vu34304@gmail.com", "Kết nối MQTT", "Đã kết nối MQTT");
+                                        //await SendMail("van048483@gmail.com", "Kết nối MQTTT", "Đã kết nối MQTT");
 
                                         //Gui signalR
                                         var error = new ErrorNotification(topic2, payloadMessage);
@@ -155,15 +169,15 @@ namespace ShrimpPond.API.Worker
                                 {
                                     if (payloadMessage == "BAD")
                                     {
-                                        var gmail = new GmailMessage
-                                        {
-                                            To = "vu34304@gmail.com",
-                                            Subject = "Lỗi RS485",
-                                            Body = "Vui lòng kiểm tra lại !"
+                                        //var gmail = new GmailMessage
+                                        //{
+                                        //    To = "vu34304@gmail.com",
+                                        //    Subject = "Lỗi RS485",
+                                        //    Body = "Vui lòng kiểm tra lại !"
 
-                                        };
+                                        //};
 
-                                        await _gmailSender.SendGmail(gmail);
+                                        //await _gmailSender.SendGmail(gmail);
 
                                         //Gui signalR
                                         var error = new ErrorNotification(topic2, payloadMessage);
@@ -178,15 +192,15 @@ namespace ShrimpPond.API.Worker
                                 {
                                     if (payloadMessage == "BAD")
                                     {
-                                        var gmail = new GmailMessage
-                                        {
-                                            To = "vu34304@gmail.com",
-                                            Subject = "Lỗi PCF8574",
-                                            Body = "Vui lòng kiểm tra lại !"
+                                        //var gmail = new GmailMessage
+                                        //{
+                                        //    To = "vu34304@gmail.com",
+                                        //    Subject = "Lỗi PCF8574",
+                                        //    Body = "Vui lòng kiểm tra lại !"
 
-                                        };
+                                        //};
 
-                                        await _gmailSender.SendGmail(gmail);
+                                        //await _gmailSender.SendGmail(gmail);
 
                                         //Gui signalR
                                         var error = new ErrorNotification(topic2, payloadMessage);
@@ -202,15 +216,15 @@ namespace ShrimpPond.API.Worker
                                 {
                                     if (payloadMessage == "BAD")
                                     {
-                                        var gmail = new GmailMessage
-                                        {
-                                            To = "vu34304@gmail.com",
-                                            Subject = "Lỗi ADC",
-                                            Body = "Vui lòng kiểm tra lại !"
+                                        //var gmail = new GmailMessage
+                                        //{
+                                        //    To = "vu34304@gmail.com",
+                                        //    Subject = "Lỗi ADC",
+                                        //    Body = "Vui lòng kiểm tra lại !"
 
-                                        };
+                                        //};
 
-                                        await _gmailSender.SendGmail(gmail);
+                                        //await _gmailSender.SendGmail(gmail);
 
                                         //Gui signalR
                                         var error = new ErrorNotification(topic2, payloadMessage);
@@ -228,18 +242,18 @@ namespace ShrimpPond.API.Worker
                                     if (payloadMessage == "TRUE")
                                     {
 
-                                        await _mqttClient.Publish($"SHRIMP_POND/SELECT_POND", "", false);
+                                        //await _mqttClient.Publish($"SHRIMP_POND/SELECT_POND", "", false);
 
 
-                                        var gmail = new GmailMessage
-                                        {
-                                            To = "vu34304@gmail.com",
-                                            Subject = "Lỗi nghiêm trọng",
-                                            Body = "Đã dừng hệ thống!"
+                                        //var gmail = new GmailMessage
+                                        //{
+                                        //    To = "vu34304@gmail.com",
+                                        //    Subject = "Lỗi nghiêm trọng",
+                                        //    Body = "Đã dừng hệ thống!"
 
-                                        };
+                                        //};
 
-                                        await _gmailSender.SendGmail(gmail);
+                                        //await _gmailSender.SendGmail(gmail);
 
                                         //Gui signalR
                                         var error = new ErrorNotification(topic2, payloadMessage);
@@ -247,16 +261,11 @@ namespace ShrimpPond.API.Worker
                                         string jsonEnvironment = JsonConvert.SerializeObject(error);
 
                                         await _hubContext.Clients.All.SendAsync("ErrorNotification", jsonEnvironment);
-
-
-
                                     }
 
                                     break;
                                 }
                         }
-
-
                         break;
                     }
             }

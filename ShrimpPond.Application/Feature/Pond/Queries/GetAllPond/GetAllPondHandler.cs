@@ -47,6 +47,7 @@ namespace ShrimpPond.Application.Feature.Pond.Queries.GetAllPond
 
                 if(pond.OriginPondId == "")
                 {
+                   
                     dt.StartDate = pond.StartDate;
                 }
                 else
