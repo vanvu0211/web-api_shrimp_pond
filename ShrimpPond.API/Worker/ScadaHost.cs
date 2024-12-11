@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using ShrimpPond.API.Hubs;
 using ShrimpPond.API.MQTTModels;
@@ -23,8 +24,10 @@ namespace ShrimpPond.API.Worker
         private readonly IServiceScopeFactory _scopeFactory;
         public DateTime? startTime { get; set; }
         public DateTime? endTime { get; set; }
-
-
+        public double unitTime { get; set; }
+        public int count { get; set; }
+        public int temp { get; set; } = 1;
+        public DateTime time { get; set; }
         public ScadaHost(ManagedMqttClient mqttClient, Buffer buffer,
             IHubContext<NotificationHub> hubContext,
             IServiceScopeFactory scopeFactory,
@@ -53,7 +56,6 @@ namespace ShrimpPond.API.Worker
             await _mqttClient.Subscribe("SHRIMP_POND/+/+");       
         }
 
-
         private async Task OnMqttClientMessageReceivedAsync(MqttMessage e)
         {
             var topic = e.Topic;
@@ -66,34 +68,57 @@ namespace ShrimpPond.API.Worker
             var topicSegments = topic.Split('/');
             var topic1 = topicSegments[1];
             var topic2 = topicSegments[2];
+           
 
 
             payloadMessage = payloadMessage.Replace("false", "\"FALSE\"");
             Thread.Sleep(1000);
             payloadMessage = payloadMessage.Replace("true", "\"TRUE\"");
 
-
+            
+            
             //// gửi chỉ số oee, xử lí lưu database, gửi lên web
             switch (topic1)
             {
+                
+                case "POND":
+                    {
+                        count = int.Parse(payloadMessage);
+                        temp = 1;
+                        await SendMail("vu34304@gmail.com", "Gửi danh sách ao đo thành công", "");
+                        await SendMail("van048483@gmail.com", "Gửi danh sách ao đo thành công", "");
+                        break;
+                    }
                 case "START_TIME":
                     {
-                        startTime = DateTime.UtcNow.AddHours(7);
+                        switch (payloadMessage)
+                        {
+                            case "START":
+                                {
+                                    startTime = DateTime.UtcNow.AddHours(7);
+                                    break;
+                                }
+                          
+                        }
                         break;
                     }
                 case "ENVIRONMENT":
                     {
-                        if(startTime == null)
+
+                        if (temp <= count && startTime != null)
                         {
-                            startTime = DateTime.UtcNow.AddHours(5);
+                            var unitTime = (DateTime.UtcNow.AddHours(7) - startTime.Value).TotalMinutes * temp/count;
+                            time = startTime.Value.AddMinutes(unitTime);
+                            await SendMail("vu34304@gmail.com", "unittime ", unitTime.ToString());
+                            temp++;
+                        }
+                        else
+                        {
+                            temp = 1;
+                            time = DateTime.UtcNow.AddHours(7);
                         }
 
-                        endTime = DateTime.UtcNow.AddHours(7);
-                        var unitTime = (endTime.Value - startTime.Value).TotalMinutes / 2;
-
                         var environments = JsonConvert.DeserializeObject<List<EnviromentData>>(payloadMessage)!.ToList();
-
-                        var index = 1;
 
                         foreach (var environment in environments)
                         {
@@ -106,10 +131,9 @@ namespace ShrimpPond.API.Worker
                                 PondId = topic2,
                                 Name = environment.name,
                                 Value = environment.value,
-                                Timestamp = startTime + TimeSpan.FromMinutes(unitTime*index),// chia thời gian cho mỗi lần đo
+                                Timestamp = time,// chia thời gian cho mỗi lần đo
                             };
 
-                             index++;
 
                             unitOfWork.environmentStatusRepository.Add(data);
                             await unitOfWork.SaveChangeAsync();
@@ -161,6 +185,17 @@ namespace ShrimpPond.API.Worker
 
                                         await _hubContext.Clients.All.SendAsync("ErrorNotification", jsonEnvironment);
 
+                                        if(startTime == null)
+                                        {
+                                            return;
+                                        }
+                                        if ((DateTime.UtcNow.AddHours(7) - startTime.Value).TotalMinutes < 2 * count)
+                                        {
+                                            await _mqttClient.Publish($"SHRIMP_POND/START", "START", false);
+                                            await _mqttClient.Publish($"SHRIMP_POND/START_TIME/STATUS", "START", false);
+
+                                            await SendMail("vu34304@gmail.com", "Đã gửi lại danh sách ao đo", "");
+                                        }
                                     }
 
                                     break;

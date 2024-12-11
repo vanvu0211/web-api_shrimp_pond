@@ -35,7 +35,7 @@ namespace ShrimpPond.API.Controllers
 
             environments = environments
                 .Where(x => x.Timestamp >= startDate)
-                .Where(x => x.Timestamp <= endDate)
+                .Where(x => x.Timestamp <= endDate.AddDays(1))
                 .OrderByDescending(x => x.Timestamp)
                 .Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
             return Ok(environments);

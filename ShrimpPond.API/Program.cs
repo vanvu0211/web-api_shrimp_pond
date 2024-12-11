@@ -1,17 +1,12 @@
 using EquipmentManagement.Infrastructure;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using ShrimpPond.API.Hubs;
 using ShrimpPond.API.Middleware;
 using ShrimpPond.API.Worker;
 using ShrimpPond.Application;
-using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Infrastructure.Communication;
 using ShrimpPond.Persistence;
-using ShrimpPond.Persistence.Repository.Generic;
-using System.Text;
 using Buffer = ShrimpPond.API.Worker.Buffer;
-
+using Quartz;
 
 namespace ShrimpPond.API
 {
@@ -48,9 +43,25 @@ namespace ShrimpPond.API
             builder.Services.AddSingleton<ManagedMqttClient>();
             builder.Services.AddSingleton<Buffer>();
             builder.Services.AddHostedService<ScadaHost>();
-            builder.Services.AddHostedService<CheckTimeSettingHost>();
-            builder.Services.AddControllers();
+            builder.Services.AddQuartz(options =>
+            {
+                var jobKey = JobKey.Create("Logging Job");
 
+                options.AddJob<CheckTimeSettingHost>(jobKey)
+                        .AddTrigger(trigger =>
+                        {
+                            trigger.ForJob(jobKey)
+                                    .WithSimpleSchedule(schedule => schedule.WithIntervalInMinutes(1).RepeatForever());
+                        });
+            });
+            builder.Services.AddQuartzHostedService(options =>
+            {
+                options.WaitForJobsToComplete = true;
+            });
+
+
+            builder.Services.AddControllers();
+            builder.Services.AddMemoryCache();
             var app = builder.Build();
             app.UseMiddleware<ExceptionMiddleware>();
 

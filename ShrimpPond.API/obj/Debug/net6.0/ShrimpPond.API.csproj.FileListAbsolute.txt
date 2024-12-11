@@ -370,3 +370,6 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\MimeKit.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\SendGrid.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Quartz.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Quartz.Extensions.DependencyInjection.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\bin\Debug\net6.0\Quartz.Extensions.Hosting.dll

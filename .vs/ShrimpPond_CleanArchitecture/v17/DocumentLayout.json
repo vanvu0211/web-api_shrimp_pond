@@ -3,219 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\worker\\scadahost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\worker\\scadahost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\worker\\checktimesettinghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\worker\\checktimesettinghost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.domain\\environments\\environmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\environments\\environmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\traceability\\queries\\gettimeharvest\\timeharvest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\traceability\\queries\\gettimeharvest\\timeharvest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\pond\\queries\\getallpond\\getallpondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\pond\\queries\\getallpond\\getallpondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\traceability\\queries\\gettimeharvest\\gettimeharvesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\traceability\\queries\\gettimeharvest\\gettimeharvesthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\pond\\queries\\getharvesttime\\getharvesttimehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\pond\\queries\\getharvesttime\\getharvesttimehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\traceability\\queries\\gettimeharvest\\gettimeharvest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\traceability\\queries\\gettimeharvest\\gettimeharvest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\pond\\queries\\getharvesttime\\harvesttimedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\pond\\queries\\getharvesttime\\harvesttimedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\pond\\commands\\activepond\\activepondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\pond\\commands\\activepond\\activepondhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\pond\\commands\\activepond\\activepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\pond\\commands\\activepond\\activepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\traceability\\queries\\gettraceability\\gettraceabilityhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\traceability\\queries\\gettraceability\\gettraceabilityhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\mqttmodels\\enviromentsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\mqttmodels\\enviromentsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\contract\\gmailservice\\igmailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\gmailservice\\igmailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vu343\\AppData\\Local\\SourceServer\\73330afb2597111e681c2257bb97e3d2d6d4780af31408e71bcf2ae6c0cc6394\\ShrimpPond.API\\Worker\\ScadaHost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\createtimesettinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\createtimesettinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\worker\\errornotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\worker\\errornotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\worker\\tagchangednotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\worker\\tagchangednotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\mqttmodels\\enviromentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\mqttmodels\\enviromentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\mqttmodels\\templeteobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\mqttmodels\\templeteobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\model\\customproblemdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\model\\customproblemdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.infrastructure\\infrastructureservicesregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|solutionrelative:shrimppond.infrastructure\\infrastructureservicesregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.infrastructure\\shrimppond.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|solutionrelative:shrimppond.infrastructure\\shrimppond.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.infrastructure\\emailservice\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|solutionrelative:shrimppond.infrastructure\\emailservice\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\models\\email\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\models\\email\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\createtimesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\createtimesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\createtimesettingvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\createtimesettingvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\timesettingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\timesettingdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\createtimesettinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\feature\\timesetting\\command\\createtimesetting\\createtimesettinghandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\models\\gmail\\gmailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\models\\gmail\\gmailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\worker\\scadahost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\worker\\scadahost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.infrastructure\\gmailservice\\gmailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4278C228-38AF-41C3-9E62-5F46E6910A0E}|ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj|solutionrelative:shrimppond.infrastructure\\gmailservice\\gmailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\models\\gmail\\gmailmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\models\\gmail\\gmailmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\contract\\emailservice\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\contract\\emailservice\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\models\\email\\emailmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\models\\email\\emailmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\shrimppond.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\shrimppond.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.domain\\ponddata\\pond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90F233B1-3C67-4907-8A34-0F1F768AE7D9}|ShrimpPond.Domain\\ShrimpPond.Domain.csproj|solutionrelative:shrimppond.domain\\ponddata\\pond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\controllers\\updatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\updatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\controllers\\traceabilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\traceabilitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\controllers\\timesettingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\timesettingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\authserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\authserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\models\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\controllers\\environmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\controllers\\environmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.persistence\\persistenceserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06FE33CA-739A-47BB-83D3-01AE4821224F}|ShrimpPond.Persistence\\ShrimpPond.Persistence.csproj|solutionrelative:shrimppond.persistence\\persistenceserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{849466C0-CD17-4E51-A6DC-F1CC7EE78F61}|ShrimpPond.Application\\ShrimpPond.Application.csproj|solutionrelative:shrimppond.application\\applicationserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\authserver\\migrations\\20241116045032_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{753D0DCF-CA8E-4851-92EF-8CD27962C379}|AuthServer\\AuthServer.csproj|solutionrelative:authserver\\migrations\\20241116045032_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|c:\\users\\vu343\\onedrive\\dokumen\\fablab projects\\shrimppond.webapi\\web-api_shrimp_pond\\shrimppond.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33FBD1D2-01C3-4AE8-8BC3-0A4A0BC85BC8}|ShrimpPond.API\\ShrimpPond.API.csproj|solutionrelative:shrimppond.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -225,20 +38,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnvironmentStatus.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Domain\\Environments\\EnvironmentStatus.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\Environments\\EnvironmentStatus.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Domain\\Environments\\EnvironmentStatus.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\Environments\\EnvironmentStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Program.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\Program.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Program.cs",
+              "RelativeToolTip": "ShrimpPond.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T02:02:37.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T16:40:07.561Z",
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -262,345 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ScadaHost.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAowHIAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T01:57:00.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GetAllPondHandler.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Queries\\GetAllPond\\GetAllPondHandler.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Pond\\Queries\\GetAllPond\\GetAllPondHandler.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Queries\\GetAllPond\\GetAllPondHandler.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Pond\\Queries\\GetAllPond\\GetAllPondHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T04:51:03.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ActivePondHandler.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Commands\\ActivePond\\ActivePondHandler.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Pond\\Commands\\ActivePond\\ActivePondHandler.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Commands\\ActivePond\\ActivePondHandler.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Pond\\Commands\\ActivePond\\ActivePondHandler.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:06:29.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ActivePond.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Commands\\ActivePond\\ActivePond.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Pond\\Commands\\ActivePond\\ActivePond.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Commands\\ActivePond\\ActivePond.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Pond\\Commands\\ActivePond\\ActivePond.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:06:28.841Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CheckTimeSettingHost.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\CheckTimeSettingHost.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Worker\\CheckTimeSettingHost.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\CheckTimeSettingHost.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Worker\\CheckTimeSettingHost.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAEMAAABpAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T18:56:50.391Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TimeHarvest.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\TimeHarvest.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\TimeHarvest.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\TimeHarvest.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\TimeHarvest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:07:21.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Program.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Program.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Program.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADIAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T03:51:15.027Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\appsettings.json",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\appsettings.json",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\appsettings.json",
-              "RelativeToolTip": "ShrimpPond.API\\appsettings.json",
-              "ViewState": "AQIAABYAAAAAAAAAAAAqwA4AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-15T05:03:22.204Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetHarvestTimeHandler.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Queries\\GetHarvestTime\\GetHarvestTimeHandler.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Pond\\Queries\\GetHarvestTime\\GetHarvestTimeHandler.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Queries\\GetHarvestTime\\GetHarvestTimeHandler.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Pond\\Queries\\GetHarvestTime\\GetHarvestTimeHandler.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:06:58.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HarvestTimeDTO.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Queries\\GetHarvestTime\\HarvestTimeDTO.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Pond\\Queries\\GetHarvestTime\\HarvestTimeDTO.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Pond\\Queries\\GetHarvestTime\\HarvestTimeDTO.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Pond\\Queries\\GetHarvestTime\\HarvestTimeDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:07:10.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetTimeHarvest.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\GetTimeHarvest.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\GetTimeHarvest.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\GetTimeHarvest.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\GetTimeHarvest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:07:18.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetTimeHarvestHandler.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\GetTimeHarvestHandler.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\GetTimeHarvestHandler.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\GetTimeHarvestHandler.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTimeHarvest\\GetTimeHarvestHandler.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T11:07:19.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "TagChangedNotification.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\TagChangedNotification.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Worker\\TagChangedNotification.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\TagChangedNotification.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Worker\\TagChangedNotification.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:02:22.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TimeSettingData.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\TimeSettingData.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\TimeSettingData.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\TimeSettingData.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\TimeSettingData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:20:18.707Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CreateTimeSettingHandler.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingHandler.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingHandler.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingHandler.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingHandler.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:25:10.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IGmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Contract\\GmailService\\IGmailSender.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\GmailService\\IGmailSender.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Contract\\GmailService\\IGmailSender.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\GmailService\\IGmailSender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:27:46.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GetTraceabilityHandler.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTraceability\\GetTraceabilityHandler.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTraceability\\GetTraceabilityHandler.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTraceability\\GetTraceabilityHandler.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\Traceability\\Queries\\GetTraceability\\GetTraceabilityHandler.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAAEsAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T04:36:48.207Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EnviromentSend.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\MQTTModels\\EnviromentSend.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\MQTTModels\\EnviromentSend.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\MQTTModels\\EnviromentSend.cs",
-              "RelativeToolTip": "ShrimpPond.API\\MQTTModels\\EnviromentSend.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:03:03.994Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CustomProblemDetails.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Model\\CustomProblemDetails.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Model\\CustomProblemDetails.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Model\\CustomProblemDetails.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Model\\CustomProblemDetails.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:02:37.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ScadaHost.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\AppData\\Local\\SourceServer\\73330afb2597111e681c2257bb97e3d2d6d4780af31408e71bcf2ae6c0cc6394\\ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\73330afb2597111e681c2257bb97e3d2d6d4780af31408e71bcf2ae6c0cc6394\\ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "ToolTip": "C:\\Users\\vu343\\AppData\\Local\\SourceServer\\73330afb2597111e681c2257bb97e3d2d6d4780af31408e71bcf2ae6c0cc6394\\ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\73330afb2597111e681c2257bb97e3d2d6d4780af31408e71bcf2ae6c0cc6394\\ShrimpPond.API\\Worker\\ScadaHost.cs",
-              "ViewState": "AQIAAIwAAAAAAAAAAAAAACMAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T19:04:53.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "TempleteObject.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\MQTTModels\\TempleteObject.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\MQTTModels\\TempleteObject.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\MQTTModels\\TempleteObject.cs",
-              "RelativeToolTip": "ShrimpPond.API\\MQTTModels\\TempleteObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:03:07.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EnviromentData.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\MQTTModels\\EnviromentData.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\MQTTModels\\EnviromentData.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\MQTTModels\\EnviromentData.cs",
-              "RelativeToolTip": "ShrimpPond.API\\MQTTModels\\EnviromentData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:03:09.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ErrorNotification.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\ErrorNotification.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Worker\\ErrorNotification.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\ErrorNotification.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Worker\\ErrorNotification.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:03:37.368Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CreateTimeSetting.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSetting.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSetting.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSetting.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSetting.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:20:17.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "EmailSettings.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Models\\Email\\EmailSettings.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Models\\Email\\EmailSettings.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Models\\Email\\EmailSettings.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Models\\Email\\EmailSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:31:18.063Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "EmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\EmailService\\EmailSender.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Infrastructure\\EmailService\\EmailSender.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\EmailService\\EmailSender.cs",
-              "RelativeToolTip": "ShrimpPond.Infrastructure\\EmailService\\EmailSender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:29:01.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ShrimpPond.Infrastructure.csproj",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj",
-              "RelativeToolTip": "ShrimpPond.Infrastructure\\ShrimpPond.Infrastructure.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-16T16:28:42.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "InfrastructureServicesRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
-              "RelativeToolTip": "ShrimpPond.Infrastructure\\InfrastructureServicesRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T03:52:03.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
               "Title": "CreateTimeSettingValidation.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingValidation.cs",
               "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingValidation.cs",
@@ -608,296 +83,71 @@
               "RelativeToolTip": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingValidation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:25:09.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "GmailSettings.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Models\\Gmail\\GmailSettings.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Models\\Gmail\\GmailSettings.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Models\\Gmail\\GmailSettings.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Models\\Gmail\\GmailSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAWwBAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:28:24.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "GmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\GmailService\\GmailSender.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Infrastructure\\GmailService\\GmailSender.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Infrastructure\\GmailService\\GmailSender.cs",
-              "RelativeToolTip": "ShrimpPond.Infrastructure\\GmailService\\GmailSender.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAwCIAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:33:21.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "GmailMessage.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Models\\Gmail\\GmailMessage.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Models\\Gmail\\GmailMessage.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Models\\Gmail\\GmailMessage.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Models\\Gmail\\GmailMessage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:28:11.038Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "EmailMessage.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Models\\Email\\EmailMessage.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Models\\Email\\EmailMessage.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Models\\Email\\EmailMessage.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Models\\Email\\EmailMessage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:26:58.072Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "IEmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Contract\\EmailService\\IEmailSender.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\Contract\\EmailService\\IEmailSender.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Contract\\EmailService\\IEmailSender.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\Contract\\EmailService\\IEmailSender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:23:12.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ShrimpPond.Application.csproj",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\ShrimpPond.Application.csproj",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\ShrimpPond.Application.csproj",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\ShrimpPond.Application.csproj",
-              "RelativeToolTip": "ShrimpPond.Application\\ShrimpPond.Application.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-16T16:21:27.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "TimeSettingController.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Controllers\\TimeSettingController.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\TimeSettingController.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Controllers\\TimeSettingController.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Controllers\\TimeSettingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T05:05:00.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "TraceabilityController.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Controllers\\TraceabilityController.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\TraceabilityController.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Controllers\\TraceabilityController.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Controllers\\TraceabilityController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T05:04:59.536Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "AuthServer\\Controllers\\AdminController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:52:03.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Controllers\\UserController.cs",
-              "RelativeToolTip": "AuthServer\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:51:40.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "20241116045032_initdb.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Migrations\\20241116045032_initdb.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Migrations\\20241116045032_initdb.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Migrations\\20241116045032_initdb.cs",
-              "RelativeToolTip": "AuthServer\\Migrations\\20241116045032_initdb.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAABBwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:50:33.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "AuthServer\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:47:36.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "UserRole.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Models\\UserRole.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Models\\UserRole.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Models\\UserRole.cs",
-              "RelativeToolTip": "AuthServer\\Models\\UserRole.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:43:12.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Pond.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Domain\\PondData\\Pond.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Domain\\PondData\\Pond.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Domain\\PondData\\Pond.cs",
-              "RelativeToolTip": "ShrimpPond.Domain\\PondData\\Pond.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAABBwBoAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T07:26:46.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Register.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Models\\Register.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Models\\Register.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Models\\Register.cs",
-              "RelativeToolTip": "AuthServer\\Models\\Register.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:43:06.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "UpdateController.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Controllers\\UpdateController.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\UpdateController.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Controllers\\UpdateController.cs",
-              "RelativeToolTip": "ShrimpPond.API\\Controllers\\UpdateController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T05:05:03.994Z",
+              "WhenOpened": "2024-12-11T18:58:52.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Models\\Login.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Models\\Login.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Models\\Login.cs",
-              "RelativeToolTip": "AuthServer\\Models\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "CreateTimeSettingHandler.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingHandler.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingHandler.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingHandler.cs",
+              "RelativeToolTip": "ShrimpPond.Application\\Feature\\TimeSetting\\Command\\CreateTimeSetting\\CreateTimeSettingHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:42:57.599Z"
+              "WhenOpened": "2024-12-11T18:58:05.223Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Program.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Program.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Program.cs",
-              "RelativeToolTip": "AuthServer\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAABBwBMAAACBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:41:25.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\appsettings.json",
-              "RelativeDocumentMoniker": "AuthServer\\appsettings.json",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\appsettings.json",
-              "RelativeToolTip": "AuthServer\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAPAAAA",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\appsettings.json",
+              "RelativeToolTip": "ShrimpPond.API\\appsettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-16T04:41:25.253Z"
+              "WhenOpened": "2024-12-08T06:26:25.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "AuthServer.csproj",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\AuthServer.csproj",
-              "RelativeDocumentMoniker": "AuthServer\\AuthServer.csproj",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\AuthServer.csproj",
-              "RelativeToolTip": "AuthServer\\AuthServer.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-16T04:37:37.51Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 5,
               "Title": "EnvironmentController.cs",
               "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Controllers\\EnvironmentController.cs",
               "RelativeDocumentMoniker": "ShrimpPond.API\\Controllers\\EnvironmentController.cs",
               "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Controllers\\EnvironmentController.cs",
               "RelativeToolTip": "ShrimpPond.API\\Controllers\\EnvironmentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T03:52:31.274Z"
+              "WhenOpened": "2024-12-08T04:23:33.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "AuthServer\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\AuthServer\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "AuthServer\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "DocumentIndex": 0,
+              "Title": "CheckTimeSettingHost.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\CheckTimeSettingHost.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\Worker\\CheckTimeSettingHost.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\CheckTimeSettingHost.cs",
+              "RelativeToolTip": "ShrimpPond.API\\Worker\\CheckTimeSettingHost.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwDoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T04:44:14.47Z"
+              "WhenOpened": "2024-12-07T16:40:30.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "PersistenceServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Persistence\\PersistenceServiceRegistration.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Persistence\\PersistenceServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Persistence\\PersistenceServiceRegistration.cs",
-              "RelativeToolTip": "ShrimpPond.Persistence\\PersistenceServiceRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "ScadaHost.cs",
+              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\ScadaHost.cs",
+              "RelativeDocumentMoniker": "ShrimpPond.API\\Worker\\ScadaHost.cs",
+              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.API\\Worker\\ScadaHost.cs",
+              "RelativeToolTip": "ShrimpPond.API\\Worker\\ScadaHost.cs",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAmwL8AAABsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T03:52:06.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "ApplicationServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\ApplicationServiceRegistration.cs",
-              "RelativeDocumentMoniker": "ShrimpPond.Application\\ApplicationServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\vu343\\OneDrive\\Dokumen\\Fablab Projects\\ShrimpPond.WebAPI\\web-api_shrimp_pond\\ShrimpPond.Application\\ApplicationServiceRegistration.cs",
-              "RelativeToolTip": "ShrimpPond.Application\\ApplicationServiceRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T03:51:54.331Z"
+              "WhenOpened": "2024-12-07T07:24:30.33Z",
+              "EditorCaption": ""
             }
           ]
         }

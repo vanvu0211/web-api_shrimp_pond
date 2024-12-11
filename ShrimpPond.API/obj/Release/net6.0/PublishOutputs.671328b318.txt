@@ -78,6 +78,9 @@ C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\NuGet.ProjectModel.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\NuGet.Protocol.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\NuGet.Versioning.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Quartz.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Quartz.Extensions.DependencyInjection.dll
+C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Quartz.Extensions.Hosting.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\SendGrid.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\StarkbankEcdsa.dll
 C:\Users\vu343\OneDrive\Dokumen\Fablab Projects\ShrimpPond.WebAPI\web-api_shrimp_pond\ShrimpPond.API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
