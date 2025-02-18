@@ -9,5 +9,6 @@ namespace ShrimpPond.Application.Feature.Pond.Queries.GetAllPond
 {
     public record GetAllPond : IRequest<List<PondDTO>>
     {
+        
     }
 }

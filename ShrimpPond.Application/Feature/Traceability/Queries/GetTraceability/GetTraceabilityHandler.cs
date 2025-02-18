@@ -47,10 +47,10 @@ namespace ShrimpPond.Application.Feature.Traceability.Queries.GetTraceability
                     var originPond = _unitOfWork.pondRepository.FindByCondition(p=>p.PondId==pond.OriginPondId).FirstOrDefault();
                     if(originPond != null)
                     {
-                        originPond.StartDate = endDate;
+                        endDate= originPond.StartDate;
                     } 
                 } 
-                endDate = pond.StartDate;
+                else endDate = pond.StartDate;
                 traceabilitie.DaysOfRearing =(harvestPond.HarvestDate - endDate).Days;
 
                 //Lấy trung bình size tôm

@@ -1,13 +1,9 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.Farm.Command.CreateFarm;
 using ShrimpPond.Application.Feature.Farm.Command.DeleteFarm;
 using ShrimpPond.Application.Feature.Farm.Queries.GetAllFarm;
-using ShrimpPond.Application.Feature.Food.Commands.CreateNewFood;
-using ShrimpPond.Application.Feature.Food.Commands.DeleteFood;
-using ShrimpPond.Application.Feature.Food.Queries.GetAllFood;
 
 namespace ShrimpPond.API.Controllers
 {
@@ -23,13 +19,13 @@ namespace ShrimpPond.API.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public async Task<IActionResult> GetFarm([FromQuery] string? search, int pageSize = 200, int pageNumber = 1)
+        public async Task<IActionResult> GetFarm([FromQuery] string userName, int pageSize = 200, int pageNumber = 1)
         {
-            var farms = await _mediator.Send(new GetAllFarm());
-            if (search != null)
+            var farms = await _mediator.Send(new GetAllFarm()
             {
-                farms = farms.Where(x => x.FarmName == search).ToList();
-            }
+                UserName = userName
+            });
+                
             farms = farms.Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
             return Ok(farms);
         }
@@ -41,9 +37,9 @@ namespace ShrimpPond.API.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteFarm([FromQuery] string FarmName)
+        public async Task<IActionResult> DeleteFarm([FromQuery] string farmName, string userName)
         {
-            var command = new DeleteFarm { FarmName = FarmName };
+            var command = new DeleteFarm { FarmName = farmName, UserName = userName };
             var IdReturn = await _mediator.Send(command);
             return Ok(command);
         }

@@ -1,12 +1,18 @@
-using EquipmentManagement.Infrastructure;
 using ShrimpPond.API.Hubs;
 using ShrimpPond.API.Middleware;
 using ShrimpPond.API.Worker;
 using ShrimpPond.Application;
 using ShrimpPond.Infrastructure.Communication;
 using ShrimpPond.Persistence;
-using Buffer = ShrimpPond.API.Worker.Buffer;
 using Quartz;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using ShrimpPond.API.Authorization.Data;
+using Buffer = ShrimpPond.API.Worker.Buffer;
+using ShrimpPond.Infrastructure;
 
 namespace ShrimpPond.API
 {
@@ -17,11 +23,60 @@ namespace ShrimpPond.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            // Add services to the container.
 
             builder.Services.AddApplicationServices();
             builder.Services.AddInfrastructureServices(builder.Configuration);
             builder.Services.AddPersistenceServices(builder.Configuration);
+
+
+
+            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+            builder.Services.AddControllers();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+            //builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttOptions"));
+            //builder.Services.AddSignalR();
+            //builder.Services.AddSingleton<ManagedMqttClient>();
+            //builder.Services.AddSingleton<Buffer>();
+           
+
+            // For Entity Framework
+            builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ShrimpPondAuth")));
+
+            // For Identity
+            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
+
+            // Adding Authentication
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+
+            // Adding Jwt Bearer
+            .AddJwtBearer(options =>
+            {
+                options.SaveToken = true;
+                options.RequireHttpsMetadata = false;
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
+                };
+            });
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminPolicy", policy => policy.RequireRole("Admin"));
+                options.AddPolicy("UserPolicy", policy => policy.RequireRole("User"));
+            });
 
             builder.Services.AddCors(options =>
             {
@@ -34,34 +89,8 @@ namespace ShrimpPond.API
                            });
             });
 
-
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-            builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttOptions"));
-            builder.Services.AddSignalR();
-            builder.Services.AddSingleton<ManagedMqttClient>();
-            builder.Services.AddSingleton<Buffer>();
-            builder.Services.AddHostedService<ScadaHost>();
-            builder.Services.AddQuartz(options =>
-            {
-                var jobKey = JobKey.Create("Logging Job");
-
-                options.AddJob<CheckTimeSettingHost>(jobKey)
-                        .AddTrigger(trigger =>
-                        {
-                            trigger.ForJob(jobKey)
-                                    .WithSimpleSchedule(schedule => schedule.WithIntervalInMinutes(1).RepeatForever());
-                        });
-            });
-            builder.Services.AddQuartzHostedService(options =>
-            {
-                options.WaitForJobsToComplete = true;
-            });
-
-
-            builder.Services.AddControllers();
             builder.Services.AddMemoryCache();
+
             var app = builder.Build();
             app.UseMiddleware<ExceptionMiddleware>();
 
@@ -74,11 +103,14 @@ namespace ShrimpPond.API
 
             app.UseHttpsRedirection();
 
+            // Authentication & Authorization
+            app.UseAuthentication();
             app.UseAuthorization();
+
             app.UseCors("AllowAll");
 
             app.MapControllers();
-            app.MapHub<NotificationHub>("/notificationHub");
+            //app.MapHub<NotificationHub>("/notificationHub");
 
             app.Run();
 

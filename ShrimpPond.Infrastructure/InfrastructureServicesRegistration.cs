@@ -10,7 +10,7 @@ using ShrimpPond.Infrastructure.GmailService;
 using ShrimpPond.Infrastructure.Logging;
 
 
-namespace EquipmentManagement.Infrastructure
+namespace ShrimpPond.Infrastructure
 {
 	public static class InfrastructureServicesRegistration
 	{

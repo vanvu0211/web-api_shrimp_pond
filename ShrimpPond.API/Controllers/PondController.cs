@@ -1,11 +1,15 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
+using ShrimpPond.Application.Feature.Pond.Commands.CreateCleanTime;
 using ShrimpPond.Application.Feature.Pond.Commands.DeletePond;
 using ShrimpPond.Application.Feature.Pond.Commands.HarvestPond;
 using ShrimpPond.Application.Feature.Pond.Queries.GetAllPond;
 using ShrimpPond.Application.Feature.Pond.Queries.GetHarvestTime;
+using ShrimpPond.Application.Feature.Pond.Queries.GetPondAdvance;
+using ShrimpPond.Application.Feature.Pond.Queries.GetTimeClean;
 using ShrimpPond.Domain.PondData;
 
 namespace ShrimpPond.API.Controllers
@@ -50,6 +54,32 @@ namespace ShrimpPond.API.Controllers
             var harvestTime = await _mediator.Send(new GetHarvestTime { PondId = pondId});
             return Ok(harvestTime);
         }
+
+        [HttpGet("GetPondAd")]
+        public async Task<IActionResult> GetPondAd([FromQuery] string userName, string farmName, EPondStatus? pondStatus)
+        {
+            var ponds = await _mediator.Send(new GetPondAdvance { userName = userName, farmName = farmName });
+            if (pondStatus != null)
+            {
+                ponds = ponds.Where(x => x.Status == pondStatus).ToList();
+            }
+            return Ok(ponds);
+        }
+
+        [HttpGet("GetCleanTime")]
+        public async Task<IActionResult> GetCleanTime()
+        {
+            var cleanTime = await _mediator.Send(new GetTimeClean());
+            return Ok(cleanTime);
+        }
+
+        [HttpPost("CleanSensor")]
+        public async Task<IActionResult> CleanSensor([FromBody] CreateCleanTime e)
+        {
+            var id = await _mediator.Send(e);
+            return Ok(e);
+        }
+
         [HttpPost("CreatePond")]
         public async Task<IActionResult> CreatePond([FromBody] CreatePond e)
         {

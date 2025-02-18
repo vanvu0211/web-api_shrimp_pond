@@ -1,20 +1,14 @@
-﻿using Microsoft.AspNetCore.SignalR;
-using ShrimpPond.API.Hubs;
+﻿using Microsoft.Extensions.Caching.Memory;
+using Quartz;
 using ShrimpPond.Application.Contract.GmailService;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Application.Models.Gmail;
 using ShrimpPond.Infrastructure.Communication;
-using ShrimpPond.Persistence.Migrations;
-using Timer = System.Timers.Timer;
-using Quartz;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.EntityFrameworkCore;
-using ShrimpPond.Persistence.Repository.Generic;
 
 namespace ShrimpPond.API.Worker
 {
     [DisallowConcurrentExecution]
-    public class CheckTimeSettingHost: IJob
+    public class CheckTimeSettingHost : IJob
     {
         private readonly ManagedMqttClient _mqttClient;
         private readonly IGmailSender _gmailSender;
@@ -50,10 +44,11 @@ namespace ShrimpPond.API.Worker
                 // Lấy danh sách thời gian từ timeSettingObjects
                 var timeSettingTimes = unitOfWork.timeSettingObjectRepository.FindAll()
                     .Where(x => x.TimeSettingId == timeSettingId)
-                    .Select(x => Convert.ToDateTime(x.Time))     
+                    .Select(x => Convert.ToDateTime(x.Time))
                     .ToList();
 
-                foreach(var data in timeSettingTimes ){
+                foreach (var data in timeSettingTimes)
+                {
                     Console.WriteLine(data);
                 }
 
@@ -61,7 +56,7 @@ namespace ShrimpPond.API.Worker
                 var nowTime = DateTime.UtcNow.AddHours(7);
                 Console.WriteLine(nowTime.ToString());
                 // Kiểm tra nếu bất kỳ thời gian nào nằm trong khoảng ±1 phút
-                var timeMatch = timeSettingTimes.Any(time => (time.Hour == nowTime.Hour && time.Minute<= nowTime.Minute+1 && time.Minute >= nowTime.Minute - 1)
+                var timeMatch = timeSettingTimes.Any(time => (time.Hour == nowTime.Hour && time.Minute <= nowTime.Minute + 1 && time.Minute >= nowTime.Minute - 1)
                    );
 
                 Console.WriteLine(timeMatch.ToString());
@@ -71,17 +66,30 @@ namespace ShrimpPond.API.Worker
                     lastSentTime = nowTime;
                     Console.Write(lastSentTime);
                     await _mqttClient.Publish($"SHRIMP_POND/SELECT_POND", dataPonds, true);
-                    await _mqttClient.Publish($"SHRIMP_POND/POND/COUNT", ponds.Count().ToString(), false);
+                    await _mqttClient.Publish($"SHRIMP_POND/POND/COUNT", ponds.Count().ToString(), true);
                     await Task.Delay(1000);
                     await _mqttClient.Publish($"SHRIMP_POND/START", "START", false);
                     await _mqttClient.Publish($"SHRIMP_POND/START_TIME/STATUS", "START", false);
+
+                    //await SendMail("vu34304@gmail.com", "Gửi danh sách Ao đo thành công", "");
+                    //await SendMail("van048483@gmail.com", "Gửi danh sách ao đo thành công", "");
 
                 }
 
             }
         }
 
+        private async Task SendMail(string email, string subject, string body)
+        {
+            var gmail = new GmailMessage
+            {
+                To = email,
+                Subject = subject,
+                Body = body
+            };
 
-       
+            await _gmailSender.SendGmail(gmail);
+        }
+
     }
 }

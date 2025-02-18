@@ -11,6 +11,7 @@ namespace ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond
     {
         public string PondId { get; set; } = string.Empty;
         public string PondTypeName { get; set; } = string.Empty ;
+        public string FarmName { get; set; } = string.Empty ;
         public float Deep { get; set; }
         public float Diameter { get; set; }
     }

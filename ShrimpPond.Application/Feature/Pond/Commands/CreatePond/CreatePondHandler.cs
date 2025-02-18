@@ -32,7 +32,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.CreatePond
                 throw new BadRequestException("PondId already exist");
             }
 
-            var condition2 = _unitOfWork.pondTypeRepository.FindAll().SingleOrDefault(p => p.PondTypeName == request.PondTypeName);
+            var condition2 = _unitOfWork.pondTypeRepository.FindAll().FirstOrDefault(p => p.PondTypeName == request.PondTypeName || p.FarmName == request.FarmName);
 
             if (condition2 == null)
             {

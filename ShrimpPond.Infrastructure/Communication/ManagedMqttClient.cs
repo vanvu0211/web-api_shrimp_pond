@@ -1,11 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using MQTTnet;
 using MQTTnet.Client;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Timers;
 using Timer = System.Timers.Timer;
 

@@ -17,9 +17,13 @@ namespace ShrimpPond.API.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public async Task<IActionResult> GetPondTypes([FromQuery] string? search, int pageSize = 200, int pageNumber = 1)
+        public async Task<IActionResult> GetPondTypes([FromQuery] string? search , string? farmName, int pageSize = 200, int pageNumber = 1)
         {
             var pondType = await _mediator.Send(new GetPondType());
+            if (farmName != null)
+            {
+                pondType = pondType.Where(x => x.FarmName == farmName).ToList();
+            }
             if (search != null)
             {
                 pondType = pondType.Where(x => x.PondTypeId == search).ToList();

@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using ShrimpPond.Application.Feature.TimeSetting.Command.CreateTimeSetting;
 using ShrimpPond.Domain.Environments;
 using ShrimpPond.Domain.Farm;
@@ -7,6 +9,7 @@ using ShrimpPond.Domain.PondData.Feeding.Food;
 using ShrimpPond.Domain.PondData.Feeding.Medicine;
 using ShrimpPond.Domain.PondData.Harvest;
 using ShrimpPond.Domain.TimeSetting;
+using ShrimpPond.Domain.PondData.CleanSensor;
 
 
 namespace ShrimpPond.Persistence.DatabaseContext
@@ -24,6 +27,7 @@ namespace ShrimpPond.Persistence.DatabaseContext
         public DbSet<Medicine> Medicine { get; set; }
         public DbSet<Certificate> Certificate { get; set; }
         public DbSet<PondType> PondType { get; set; }
+        public DbSet<CleanSensor> CleanSensor { get; set; }
 
         public DbSet<FoodFeeding> FoodFeeding { get; set; }
         public DbSet<FoodForFeeding> FoodForFeeding { get; set; }
@@ -36,6 +40,7 @@ namespace ShrimpPond.Persistence.DatabaseContext
         public DbSet<Harvest> Harvests { get; set; }
         public DbSet<Farm> Farms { get; set; }
         public DbSet<TimeSetting> TimeSettings { get; set; }
+        public DbSet<TimeSettingObject> timeSettingObjects { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -86,10 +91,15 @@ namespace ShrimpPond.Persistence.DatabaseContext
             modelBuilder.Entity<Farm>().Property(x => x.FarmId).ValueGeneratedOnAdd();
 
             modelBuilder.Entity<TimeSetting>().HasKey(n => n.TimeSettingId);
-            modelBuilder.Entity<TimeSetting>().Property(x => x.TimeSettingId).ValueGeneratedOnAdd(); 
-            
+            modelBuilder.Entity<TimeSetting>().Property(x => x.TimeSettingId).ValueGeneratedOnAdd();
+
             modelBuilder.Entity<TimeSettingObject>().HasKey(n => n.TimeSettingObjectId);
-            modelBuilder.Entity<TimeSettingObject>().Property(x => x.TimeSettingObjectId).ValueGeneratedOnAdd();
+            modelBuilder.Entity<TimeSettingObject>().Property(x => x.TimeSettingObjectId).ValueGeneratedOnAdd(); 
+            
+            modelBuilder.Entity<CleanSensor>().HasKey(n => n.CleanSensorId);
+            modelBuilder.Entity<CleanSensor>().Property(x => x.CleanSensorId).ValueGeneratedOnAdd();
+
         }
+
     }
 }

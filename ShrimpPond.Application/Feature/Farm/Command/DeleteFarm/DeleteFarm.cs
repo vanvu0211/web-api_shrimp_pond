@@ -10,5 +10,6 @@ namespace ShrimpPond.Application.Feature.Farm.Command.DeleteFarm
     public class DeleteFarm: IRequest<string>
     {
         public string FarmName { get; set; } = string.Empty;
+        public string UserName { get; set; } = string.Empty;
     }
 }

@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ShrimpPond.Application.Feature.Environment.Queries.CreateEnvironment;
 using ShrimpPond.Application.Feature.Environment.Queries.GetEnvironment;
+using ShrimpPond.Application.Feature.Farm.Command.CreateFarm;
 using ShrimpPond.Application.Feature.Food.Queries.GetAllFood;
 using ShrimpPond.Application.Feature.Pond.Queries.GetAllPond;
 
@@ -35,10 +37,17 @@ namespace ShrimpPond.API.Controllers
 
             environments = environments
                 .Where(x => x.Timestamp >= startDate)
-                .Where(x => x.Timestamp <= endDate.AddDays(1))
+                .Where(x => x.Timestamp <= endDate)
                 .OrderByDescending(x => x.Timestamp)
                 .Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList();
             return Ok(environments);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateFarm([FromBody] CreateEnvironment e)
+        {
+            var id = await _mediator.Send(e);
+            return Ok(e);
         }
     }
 }

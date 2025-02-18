@@ -17,7 +17,7 @@ namespace ShrimpPond.Persistence.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.33")
+                .HasAnnotation("ProductVersion", "6.0.36")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -44,7 +44,7 @@ namespace ShrimpPond.Persistence.Migrations
 
                     b.HasIndex("TimeSettingId");
 
-                    b.ToTable("TimeSettingObject");
+                    b.ToTable("timeSettingObjects");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.Environments.EnvironmentStatus", b =>
@@ -63,7 +63,7 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("Timestamp")
+                    b.Property<DateTime?>("Timestamp")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Value")
@@ -90,6 +90,10 @@ namespace ShrimpPond.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FarmName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -127,6 +131,22 @@ namespace ShrimpPond.Persistence.Migrations
                     b.HasIndex("PondId");
 
                     b.ToTable("Certificate");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.PondData.CleanSensor.CleanSensor", b =>
+                {
+                    b.Property<int>("CleanSensorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CleanSensorId"), 1L, 1);
+
+                    b.Property<DateTime>("CleanTime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("CleanSensorId");
+
+                    b.ToTable("CleanSensor");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.PondData.Feeding.Food.Food", b =>
@@ -351,7 +371,6 @@ namespace ShrimpPond.Persistence.Migrations
                         .HasColumnType("real");
 
                     b.Property<string>("OriginPondId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PondTypeId")

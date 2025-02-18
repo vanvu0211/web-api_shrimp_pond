@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ShrimpPond.Application.Feature.Farm.Queries.GetAllFarm
 {
-    internal class GetAllFarmHandler: IRequestHandler<GetAllFarm,List<FarmDTO>>
+    public class GetAllFarmHandler: IRequestHandler<GetAllFarm,List<FarmDTO>>
     {
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
@@ -29,7 +29,10 @@ namespace ShrimpPond.Application.Feature.Farm.Queries.GetAllFarm
         {
             //query
             var data = new List<FarmDTO>();
-            var farms = _unitOfWork.farmRepository.FindAll();
+
+
+            var farms = _unitOfWork.farmRepository.FindAll().Where(x=>x.UserName == request.UserName).ToList();
+
 
             foreach (var farm in farms)
             {
@@ -42,9 +45,7 @@ namespace ShrimpPond.Application.Feature.Farm.Queries.GetAllFarm
             }
             //logging
             _logger.LogInformation("Get pond successfully");
-            // convert
-            //var data = _mapper.Map<List<PondDTO>>(pondTypes);
-            //return
+
             return data;
         }
     }
