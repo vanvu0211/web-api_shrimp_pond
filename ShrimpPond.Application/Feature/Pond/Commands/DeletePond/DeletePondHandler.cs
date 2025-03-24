@@ -51,6 +51,10 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.DeletePond
             var certificates = _unitOfWork.certificateRepository.FindByCondition(x => x.pondId == deletePond.pondId).ToList();
             _unitOfWork.certificateRepository.RemoveRange(certificates);
 
+            //Xóa danh sách thu hoạch
+            var harvests = _unitOfWork.harvestRepository.FindByCondition(x => x.pondId == deletePond.pondId).ToList();
+            _unitOfWork.harvestRepository.RemoveRange(harvests);
+
             //Xoa du lieu size tom
             var sizeShrimps = _unitOfWork.sizeShrimpRepository.FindByCondition(x => x.pondId == deletePond.pondId).ToList();
             _unitOfWork.sizeShrimpRepository.RemoveRange(sizeShrimps);

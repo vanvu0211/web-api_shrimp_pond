@@ -28,14 +28,11 @@ namespace ShrimpPond.Application.Feature.InformationPond.Queries.GetInformationP
         public string seedName { get; set; } = string.Empty;
         public string seedId { get; set; } = string.Empty;
         public DateTime startDate { get; set; }
-        public List<Certificate>? certificates { get; set; }
+        public List<Certificate>? certificates { get; set; } 
         public List<GetFoodFeedingDTO>? feedingFoods { get; set; }
         public List<GetMedicineFeedingDTO>? feedingMedicines { get; set; }
         public List<GetSizeUpdateDTO>? sizeShrimps { get; set; }
         public List<GetLossUpdateDTO>? lossShrimps { get; set; }
         public List<HarvestDTO>? harvests { get; set; }
-
-
-    
     }
 }

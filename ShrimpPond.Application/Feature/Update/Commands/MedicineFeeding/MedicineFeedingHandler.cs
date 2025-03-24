@@ -9,18 +9,24 @@ using System.Text;
 using System.Threading.Tasks;
 using MediatR;
 using ShrimpPond.Domain.Medicine;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace ShrimpPond.Application.Feature.Feeding.Commands.MedicineFeeding
 {
     internal class MedicineFeedingHandler : IRequestHandler<MedicineFeeding, string>
     {
         private readonly IUnitOfWork _unitOfWork;
-        public MedicineFeedingHandler(IUnitOfWork unitOfWork)
+        private readonly IMemoryCache _cache; // Thêm IMemoryCache
+
+        public MedicineFeedingHandler(IUnitOfWork unitOfWork, IMemoryCache cache)
         {
             _unitOfWork = unitOfWork;
+            _cache = cache;
         }
         public async Task<string> Handle(MedicineFeeding request, CancellationToken cancellationToken)
         {
+            //xoa cachekey
+            _cache.Remove($"PondInfo_{request.pondId}");
             //validate
             var validator = new MedicineFeedingValidation();
             var validatorResult = await validator.ValidateAsync(request);

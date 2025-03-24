@@ -19,7 +19,7 @@ namespace ShrimpPond.Persistence.DatabaseContext
 
         public ShrimpPondDbContext(DbContextOptions<ShrimpPondDbContext> options) : base(options)
         {
-
+            Database.SetCommandTimeout(60); 
         }
 
         public DbSet<Pond> Pond { get; set; }

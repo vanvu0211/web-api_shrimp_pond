@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Application.Exceptions;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.ActiveNurseryPond;
@@ -10,13 +11,17 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.ActivePond
     
     {
         private readonly IUnitOfWork _unitOfWork;
-        public ActivePondHandler(IUnitOfWork unitOfWork)
+        private readonly IMemoryCache _cache;
+        public ActivePondHandler(IUnitOfWork unitOfWork, IMemoryCache cache)
         {
             _unitOfWork = unitOfWork;
+            _cache = cache;
         }
 
         public async Task<string> Handle(NurseryPond.Commands.ActiveNurseryPond.ActivePond request, CancellationToken cancellationToken)
         {
+            //xoa cachekey
+            _cache.Remove($"PondInfo_{request.pondId}");
             //validate
             var validator = new ActivePondValidation();
             var validatorResult = await validator.ValidateAsync(request, cancellationToken);

@@ -35,11 +35,12 @@ namespace ShrimpPond.API
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddMemoryCache();
             //builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttOptions"));
             //builder.Services.AddSignalR();
             //builder.Services.AddSingleton<ManagedMqttClient>();
             //builder.Services.AddSingleton<Buffer>();
-           
+
 
             // For Entity Framework
             builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ShrimpPondAuth")));

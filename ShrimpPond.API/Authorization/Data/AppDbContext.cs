@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using ShrimpPond.API.Authorization.Models;
 
 namespace ShrimpPond.API.Authorization.Data
 {
@@ -10,5 +11,6 @@ namespace ShrimpPond.API.Authorization.Data
         {
 
         }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
     }
 }

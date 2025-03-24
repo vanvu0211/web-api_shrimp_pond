@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Application.Exceptions;
 using ShrimpPond.Application.Feature.NurseryPond.Commands.CreatePond;
@@ -14,14 +15,18 @@ namespace ShrimpPond.Application.Feature.Update.Commands.SizeShrimpUpdate
     public class SizeShrimpUpdateHandle : IRequestHandler<SizeShrimpUpdate, string>
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMemoryCache _cache; // Thêm IMemoryCache
 
-        public SizeShrimpUpdateHandle(IUnitOfWork unitOfWork)
+        public SizeShrimpUpdateHandle(IUnitOfWork unitOfWork, IMemoryCache cache)
         {
             _unitOfWork = unitOfWork;
+            _cache = cache;
         }
 
         public async Task<string> Handle(SizeShrimpUpdate request, CancellationToken cancellationToken)
         {
+            //xoa cachekey
+            _cache.Remove($"PondInfo_{request.pondId}");
             //validate
             var validator = new SizeShrimpUpdateValidation();
             var validatorResult = await validator.ValidateAsync(request);

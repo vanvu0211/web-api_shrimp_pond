@@ -8,19 +8,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace ShrimpPond.Application.Feature.Pond.Commands.HarvestPond
 {
     public class HarvestPondHandler : IRequestHandler<HarvestPond, HarvestPond>
     {
         private readonly IUnitOfWork _unitOfWork;
-
-        public HarvestPondHandler(IUnitOfWork unitOfWork)
+        private readonly IMemoryCache _cache; // Thêm IMemoryCache
+        public HarvestPondHandler(IUnitOfWork unitOfWork, IMemoryCache cache)
         {
             _unitOfWork = unitOfWork;
+            _cache = cache;
         }
         public async Task<HarvestPond> Handle(HarvestPond request, CancellationToken cancellationToken)
         {
+            //xoa cachekey
+            _cache.Remove($"PondInfo_{request.pondId}");
+
             //validate
             var validator = new HarvestPondValidation();
             var validatorResult = await validator.ValidateAsync(request, cancellationToken);

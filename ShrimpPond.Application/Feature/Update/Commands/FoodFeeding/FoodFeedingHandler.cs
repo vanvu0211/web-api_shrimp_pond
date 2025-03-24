@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.Extensions.Caching.Memory;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Application.Exceptions;
 using ShrimpPond.Application.Feature.Feeding.Commands.Feeding;
@@ -18,12 +19,17 @@ namespace ShrimpPond.Application.Feature.Feeding.Commands.Feeding
     public class FoodFeedingHandler : IRequestHandler<FoodFeeding, string>
     {
         private readonly IUnitOfWork _unitOfWork;
-        public FoodFeedingHandler(IUnitOfWork unitOfWork)
+        private readonly IMemoryCache _cache; // Thêm IMemoryCache
+
+        public FoodFeedingHandler(IUnitOfWork unitOfWork, IMemoryCache cache)
         {
             _unitOfWork = unitOfWork;
+            _cache = cache;
         }
         public async Task<string> Handle(FoodFeeding request, CancellationToken cancellationToken)
         {
+            //xoa cachekey
+            _cache.Remove($"PondInfo_{request.pondId}");
             //validate
             var validator = new FoodFeedingValidation();
             var validatorResult = await validator.ValidateAsync(request);
