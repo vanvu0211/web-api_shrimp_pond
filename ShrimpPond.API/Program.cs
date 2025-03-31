@@ -36,10 +36,10 @@ namespace ShrimpPond.API
             builder.Services.AddSwaggerGen();
             builder.Services.AddMemoryCache();
 
-            //builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttOptions"));
-            //builder.Services.AddSignalR();
-            //builder.Services.AddSingleton<ManagedMqttClient>();
-            //builder.Services.AddHostedService<HostMachineWorker>();
+            builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttOptions"));
+            builder.Services.AddSignalR();
+            builder.Services.AddSingleton<ManagedMqttClient>();
+            builder.Services.AddHostedService<HostMachineWorker>();
 
             //builder.Services.AddSingleton<Buffer>();
 
@@ -113,7 +113,7 @@ namespace ShrimpPond.API
             app.UseCors("AllowAll");
 
             app.MapControllers();
-            //app.MapHub<NotificationHub>("/NotificationHub");
+            app.MapHub<NotificationHub>("/machineHub");
 
             app.Run();
 

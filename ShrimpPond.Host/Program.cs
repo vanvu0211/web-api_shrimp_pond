@@ -6,65 +6,47 @@ using Quartz;
 using ShrimpPond.Application;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Host.Hosting;
-using ShrimpPond.Host.Hubs; // Namespace chứa Hub
+using ShrimpPond.Host.Hubs;
 using ShrimpPond.Infrastructure;
-using ShrimpPond.Infrastructure.Communication;
 using ShrimpPond.Persistence;
 using ShrimpPond.Persistence.Repository.Generic;
 
-var builder = Host.CreateDefaultBuilder(args)
-    .ConfigureWebHostDefaults(webBuilder =>
+IHost host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((builder, services) =>
     {
-        webBuilder.UseUrls("http://103.170.122.142:5000"); // Lắng nghe trên IP và port cụ thể
-        webBuilder.ConfigureServices((context, services) =>
+        services.AddApplicationServices();
+        services.AddInfrastructureServices(builder.Configuration);
+        services.AddPersistenceServices(builder.Configuration);
+        services.AddHostedService<HostWorker>();
+        services.AddSignalR();
+
+        services.AddQuartz(options =>
         {
-            // Đăng ký các dịch vụ
-            services.AddApplicationServices();
-            services.AddInfrastructureServices(context.Configuration);
-            services.AddPersistenceServices(context.Configuration);
-            services.AddHostedService<HostWorker>();
-            services.AddSignalR(); // Thêm SignalR
-
-            // Cấu hình Quartz
-            services.AddQuartz(options =>
-            {
-                var jobKey = JobKey.Create("Logging Job");
-                options.AddJob<HostSchedule>(jobKey)
-                       .AddTrigger(trigger =>
-                       {
-                           trigger.ForJob(jobKey)
-                                  .WithSimpleSchedule(schedule => schedule.WithIntervalInMinutes(1).RepeatForever());
-                       });
-            });
-            services.AddQuartzHostedService(options =>
-            {
-                options.WaitForJobsToComplete = true;
-            });
-
-            // Cấu hình MQTT
-            services.Configure<MqttOptions>(context.Configuration.GetSection("MqttOptions"));
-            services.AddSingleton<ManagedMqttClient>();
-
-            // Đăng ký UnitOfWork
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-
-            // Cấu hình Windows Service
-            services.AddWindowsService(options =>
-            {
-                options.ServiceName = "Scada Host";
-            });
-        })
-        .Configure(app =>
-        {
-            app.UseRouting();
-
-            // Thêm middleware cho SignalR
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapHub<MachineHub>("/machineHub"); // Định nghĩa endpoint cho SignalR Hub
-            });
+            var jobKey = JobKey.Create("Logging Job");
+            options.AddJob<HostSchedule>(jobKey)
+                   .AddTrigger(trigger =>
+                   {
+                       trigger.ForJob(jobKey)
+                              .WithSimpleSchedule(schedule => schedule.WithIntervalInMinutes(1).RepeatForever());
+                   });
         });
-    });
+        services.AddQuartzHostedService(options =>
+        {
+            options.WaitForJobsToComplete = true;
+        });
 
-var host = builder.Build();
+        services.Configure<ShrimpPond.Infrastructure.Communication.MqttOptions>(builder.Configuration.GetSection("MqttOptions"));
+        services.AddSingleton<ShrimpPond.Infrastructure.Communication.ManagedMqttClient>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+        services.AddWindowsService(options =>
+        {
+            options.ServiceName = "Scada Host";
+        });
+
+      
+    })
+   
+    .Build();
+
 await host.RunAsync();

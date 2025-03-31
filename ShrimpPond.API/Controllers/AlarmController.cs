@@ -1,8 +1,10 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ShrimpPond.Application.Feature.Alarm.Command.FormatAlarm;
 using ShrimpPond.Application.Feature.Alarm.Queries.GetAllAlarm;
 using ShrimpPond.Application.Feature.Environment.Queries.GetEnvironment;
+using ShrimpPond.Application.Feature.Farm.Command.DeleteFarm;
 
 namespace ShrimpPond.API.Controllers
 {
@@ -16,7 +18,6 @@ namespace ShrimpPond.API.Controllers
         {
             _mediator = mediator;
         }
-        [HttpGet]
         [HttpGet]
         public async Task<IActionResult> GetEnvironment([FromQuery] int farmId, DateTime startDate, DateTime endDate, int pageSize = 200, int pageNumber = 1)
         {
@@ -43,6 +44,14 @@ namespace ShrimpPond.API.Controllers
                 Data = paginatedAlarms,
                 TotalCount = totalCount
             });
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteFarm()
+        {
+            var command = new FormatAlarm ();
+            var IdReturn = await _mediator.Send(command);
+            return Ok(command);
         }
     }
 }

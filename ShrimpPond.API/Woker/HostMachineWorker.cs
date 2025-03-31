@@ -92,8 +92,8 @@ namespace ShrimpPond.API.Woker
                                         AlarmDate = DateTime.UtcNow.AddHours(7),
                                         farmId = farmId
                                     };
-                                    unitOfWork.alarmRepository.Add(alarm);
-                                    await unitOfWork.SaveChangeAsync();
+                                    //unitOfWork.alarmRepository.Add(alarm);
+                                    //await unitOfWork.SaveChangeAsync();
                                     break;
                                 }
                             case "Oxi":
@@ -120,8 +120,8 @@ namespace ShrimpPond.API.Woker
                                         AlarmDate = DateTime.UtcNow.AddHours(7),
                                         farmId = farmId
                                     };
-                                    unitOfWork.alarmRepository.Add(alarm);
-                                    await unitOfWork.SaveChangeAsync();
+                                    //unitOfWork.alarmRepository.Add(alarm);
+                                    //await unitOfWork.SaveChangeAsync();
                                     //Gui gmail
                                     //await SendMail("vu34304@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
                                     //await SendMail("van048483@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
@@ -148,8 +148,8 @@ namespace ShrimpPond.API.Woker
                                         AlarmDate = DateTime.UtcNow.AddHours(7),
                                         farmId = farmId
                                     };
-                                    unitOfWork.alarmRepository.Add(alarm);
-                                    await unitOfWork.SaveChangeAsync();
+                                    //unitOfWork.alarmRepository.Add(alarm);
+                                    //await unitOfWork.SaveChangeAsync();
                                     //Gui gmail
                                     //await SendMail("vu34304@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
                                     //await SendMail("van048483@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
@@ -175,8 +175,8 @@ namespace ShrimpPond.API.Woker
                                         AlarmDate = DateTime.UtcNow.AddHours(7),
                                         farmId = farmId
                                     };
-                                    unitOfWork.alarmRepository.Add(alarm);
-                                    await unitOfWork.SaveChangeAsync();
+                                    //unitOfWork.alarmRepository.Add(alarm);
+                                    //await unitOfWork.SaveChangeAsync();
                                     //Gui gmail
                                     //await SendMail("vu34304@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
                                     //await SendMail("van048483@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
@@ -202,8 +202,8 @@ namespace ShrimpPond.API.Woker
                                         AlarmDate = DateTime.UtcNow.AddHours(7),
                                         farmId = farmId
                                     };
-                                    unitOfWork.alarmRepository.Add(alarm);
-                                    await unitOfWork.SaveChangeAsync();
+                                    //unitOfWork.alarmRepository.Add(alarm);
+                                    //await unitOfWork.SaveChangeAsync();
                                     //Gui gmail
                                     //await SendMail("vu34304@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
                                     //await SendMail("van048483@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
@@ -229,8 +229,8 @@ namespace ShrimpPond.API.Woker
                                         AlarmDate = DateTime.UtcNow.AddHours(7),
                                         farmId = farmId
                                     };
-                                    unitOfWork.alarmRepository.Add(alarm);
-                                    await unitOfWork.SaveChangeAsync();
+                                    //unitOfWork.alarmRepository.Add(alarm);
+                                    //await unitOfWork.SaveChangeAsync();
 
                                     // Gui gmail
                                     //await SendMail("vu34304@gmail.com", "Gửi dữ liệu ao " + topic2, jsonData);
