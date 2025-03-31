@@ -12,6 +12,6 @@ namespace ShrimpPond.Domain.Food
         public string name { get; set; } = string.Empty;
 
         public int farmId { get; set; }
-        public Domain.Farm.Farm farm { get; set; }
+        public Farm.Farm farm { get; set; }
     }
 }

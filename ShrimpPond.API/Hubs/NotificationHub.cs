@@ -1,84 +1,27 @@
 ﻿using Microsoft.AspNetCore.SignalR;
-using ShrimpPond.API.Worker;
-using ShrimpPond.API.Hubs;
-using ShrimpPond.Infrastructure.Communication;
-using Buffer = ShrimpPond.API.Worker.Buffer;
-using ShrimpPond.API.MQTTModels;
-using Newtonsoft.Json;
-
-
-
 namespace ShrimpPond.API.Hubs
 {
-    public class NotificationHub : Hub
+    public class NotificationHub: Hub
     {
-        private readonly Buffer _buffer;
-        private readonly ManagedMqttClient _mqttClient;
-
-        public NotificationHub(Buffer buffer, ManagedMqttClient mqttClient)
+        // Phương thức để client gọi và nhận thông báo từ server
+        public async Task SendMessage(string user, string message)
         {
-            _buffer = buffer;
-            _mqttClient = mqttClient;
+            // Gửi thông điệp đến tất cả client đang kết nối
+            await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
 
-        public string SendAllMachineOee()
+        // Sự kiện khi client kết nối
+        public override async Task OnConnectedAsync()
         {
-            //var a = new List<OeeSend>();
-            //List<TagChangedNotification> Oee = _buffer.GetMachineOee();
-            //foreach (TagChangedNotification oee in Oee)
-            //{
-            //    var oeeObjectFromBuffer = JsonConvert.DeserializeObject<OEE>(oee.TagValue.ToString());
-            //    var b = new OeeSend
-            //    {
-            //        Topic = oee.Topic,
-            //        DeviceId = oee.DeviceId,
-            //        IdleTime = oeeObjectFromBuffer.IdleTime,
-            //        ShiftTime = oeeObjectFromBuffer.ShiftTime,
-            //        Oee = oeeObjectFromBuffer.Oee,
-            //        OperationTime = oeeObjectFromBuffer.OperationTime,
-            //        Timestamp = oeeObjectFromBuffer.TimeStamp,
-            //    };
-            //    a.Add(b);
-            //}
-            //string jsonDb = JsonConvert.SerializeObject(a);
-            return "";
+            await Clients.Caller.SendAsync("ReceiveMessage", "System", $"Connected with ID: {Context.ConnectionId}");
+            await base.OnConnectedAsync();
         }
 
-        public string SendAllEnvironment()
+        // Sự kiện khi client ngắt kết nối
+        public override async Task OnDisconnectedAsync(Exception? exception)
         {
-            var envSend = new List<EnviromentSend>();
-            List<TagChangedNotification> envs = _buffer.GetEnvironment();
-            foreach (TagChangedNotification env in envs)
-            {
-                var envObjectFromBuffer = JsonConvert.DeserializeObject<EnviromentSend>(env.TagValue.ToString());
-
-                envSend.Add(envObjectFromBuffer);
-            }
-            string jsonDb = JsonConvert.SerializeObject(envSend);
-            return jsonDb;
-            return "";
-
-        }
-
-
-        public string SendAll()
-        {
-            string allTags = _buffer.GetAllTag();
-            return allTags;
-        }
-
-        public async Task SendAllTag()
-        {
-            //string allTags = _buffer.GetAllTag();
-
-            //await Clients.All.SendAsync("GetAll", allTags);
-        }
-
-        public async Task SendCommand(string deviceId, string command)
-        {
-            string topic = $"IOT/Detail/NewDetailToWork/{deviceId}";
-
-            await _mqttClient.Publish(topic, command, true);
+            await Clients.All.SendAsync("ReceiveMessage", "System", $"Client {Context.ConnectionId} disconnected");
+            await base.OnDisconnectedAsync(exception);
         }
     }
 }

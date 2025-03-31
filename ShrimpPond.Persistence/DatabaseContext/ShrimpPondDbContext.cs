@@ -10,6 +10,7 @@ using ShrimpPond.Domain.TimeSetting;
 using ShrimpPond.Domain.PondData.CleanSensor;
 using ShrimpPond.Domain.Food;
 using ShrimpPond.Domain.Medicine;
+using System.Reflection.PortableExecutable;
 
 
 namespace ShrimpPond.Persistence.DatabaseContext
@@ -41,65 +42,9 @@ namespace ShrimpPond.Persistence.DatabaseContext
         public DbSet<Farm> Farms { get; set; }
         public DbSet<TimeSetting> TimeSettings { get; set; }
         public DbSet<TimeSettingObject> timeSettingObjects { get; set; }
-
-
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    modelBuilder.ApplyConfigurationsFromAssembly(typeof(ShrimpPondDbContext).Assembly);
-        //    base.OnModelCreating(modelBuilder);
-        //    // Xác định các thuộc tính làm key    
-        //    modelBuilder.Entity<Pond>().HasKey(n => n.pondId);
-        //    modelBuilder.Entity<PondType>().HasKey(n => n.pondTypeId);
-
-
-        //    //Cho ăn
-        //    modelBuilder.Entity<FoodForFeeding>().HasKey(n => n.foodForFeedingId);
-        //    modelBuilder.Entity<FoodForFeeding>().Property(x => x.foodForFeedingId).ValueGeneratedOnAdd();
-        //    modelBuilder.Entity<FoodFeeding>().HasKey(n => n.foodFeedingId);
-        //    modelBuilder.Entity<FoodFeeding>().Property(x => x.foodFeedingId).ValueGeneratedOnAdd();
-
-        //    //Điều trị
-        //    modelBuilder.Entity<MedicineFeeding>().HasKey(n => n.medicineFeedingId);
-        //    modelBuilder.Entity<MedicineFeeding>().Property(x => x.medicineFeedingId).ValueGeneratedOnAdd();
-        //    modelBuilder.Entity<MedicineForFeeding>().HasKey(n => n.medicineForFeedingId);
-        //    modelBuilder.Entity<MedicineForFeeding>().Property(x => x.medicineForFeedingId).ValueGeneratedOnAdd();
-
-
-        //    modelBuilder.Entity<Food>().HasKey(n => n.foodId);
-        //    modelBuilder.Entity<Food>().Property(x => x.foodId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<Medicine>().HasKey(n => n.medicineId);
-        //    modelBuilder.Entity<Medicine>().Property(x => x.medicineId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<Certificate>().HasKey(n => n.certificateId);
-        //    modelBuilder.Entity<Certificate>().HasOne(p => p.pond).WithMany(p => p.certificates).HasForeignKey(p => p.pondId);
-        //    modelBuilder.Entity<Certificate>().Property(x => x.certificateId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<LossShrimp>().HasKey(n => n.lossShrimpId);
-        //    modelBuilder.Entity<LossShrimp>().Property(x => x.lossShrimpId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<SizeShrimp>().HasKey(n => n.sizeShrimpId);
-        //    modelBuilder.Entity<SizeShrimp>().Property(x => x.sizeShrimpId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<EnvironmentStatus>().HasKey(n => n.environmentStatusId);
-        //    modelBuilder.Entity<EnvironmentStatus>().Property(x => x.environmentStatusId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<Harvest>().HasKey(n => n.harvestId);
-        //    modelBuilder.Entity<Harvest>().Property(x => x.harvestId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<Farm>().HasKey(n => n.farmId);
-        //    modelBuilder.Entity<Farm>().Property(x => x.farmId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<TimeSetting>().HasKey(n => n.timeSettingId);
-        //    modelBuilder.Entity<TimeSetting>().Property(x => x.timeSettingId).ValueGeneratedOnAdd();
-
-        //    modelBuilder.Entity<TimeSettingObject>().HasKey(n => n.timeSettingObjectId);
-        //    modelBuilder.Entity<TimeSettingObject>().Property(x => x.timeSettingObjectId).ValueGeneratedOnAdd(); 
-            
-        //    modelBuilder.Entity<CleanSensor>().HasKey(n => n.cleanSensorId);
-        //    modelBuilder.Entity<CleanSensor>().Property(x => x.cleanSensorId).ValueGeneratedOnAdd();
-
-        //}
+        public DbSet<Domain.Machine.Machine> Machines { get; set; }
+        public DbSet<Domain.Machine.PondId> PondIds { get; set; }
+        public DbSet<Domain.Alarm.Alarm> Alarm { get; set; }
 
 
 
@@ -112,7 +57,12 @@ namespace ShrimpPond.Persistence.DatabaseContext
                 .HasForeignKey(cs => cs.farmId)
                 .OnDelete(DeleteBehavior.NoAction); // Tắt cascade delete để tránh xung đột
 
-
+            // Farm -> CleanSensor (1-n)
+            modelBuilder.Entity<Domain.Alarm.Alarm>()
+                .HasOne(cs => cs.farm)
+                .WithMany()
+                .HasForeignKey(cs => cs.farmId)
+                .OnDelete(DeleteBehavior.NoAction); // Tắt cascade delete để tránh xung đột
             // Pond -> EnvironmentStatus (1-n)
             modelBuilder.Entity<EnvironmentStatus>()
                 .HasOne(es => es.pond)
@@ -157,6 +107,14 @@ namespace ShrimpPond.Persistence.DatabaseContext
                 .WithMany()
                 .HasForeignKey(m => m.farmId)
                 .OnDelete(DeleteBehavior.NoAction);
+            // Farm -> machine (1-n)
+            modelBuilder.Entity<Domain.Machine.Machine>()
+                .HasOne(m => m.farm)
+                .WithMany()
+                .HasForeignKey(m => m.farmId)
+                .OnDelete(DeleteBehavior.NoAction);
+            // Farm -> machine (1-n)
+            
 
 
             // Pond -> MedicineFeeding (1-n)
@@ -263,6 +221,12 @@ namespace ShrimpPond.Persistence.DatabaseContext
             modelBuilder.Entity<TimeSetting>().Property(cs => cs.timeSettingId).ValueGeneratedOnAdd();
             modelBuilder.Entity<TimeSettingObject>().HasKey(tso => tso.timeSettingObjectId);
             modelBuilder.Entity<TimeSettingObject>().Property(cs => cs.timeSettingObjectId).ValueGeneratedOnAdd();
+            modelBuilder.Entity<Domain.Machine.Machine>().HasKey(tso => tso.machineId);
+            modelBuilder.Entity<Domain.Machine.Machine>().Property(cs => cs.machineId).ValueGeneratedOnAdd();
+            modelBuilder.Entity<Domain.Machine.PondId>().HasKey(tso => tso.id);
+            modelBuilder.Entity<Domain.Machine.PondId>().Property(cs => cs.id).ValueGeneratedOnAdd();
+            modelBuilder.Entity<Domain.Alarm.Alarm>().HasKey(tso => tso.AlarmId);
+            modelBuilder.Entity<Domain.Alarm.Alarm>().Property(cs => cs.AlarmId).ValueGeneratedOnAdd();
         }
     }
 }

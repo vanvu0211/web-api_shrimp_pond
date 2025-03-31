@@ -25,6 +25,9 @@ namespace ShrimpPond.Application.Contract.Persistence.Genenric
         ITimeSettingRepository timeSettingRepository { get; }
         ITimeSettingObjectRepository timeSettingObjectRepository { get; }
         ICleanSensorRepository cleanSensorRepository { get; }
+        IMachineRepository machineRepository { get; }
+        IPondIdRepository pondIdRepository { get; }
+        IAlarmRepository alarmRepository { get; }
         Task<int> CommitAsync();
         Task SaveChangeAsync();
     }

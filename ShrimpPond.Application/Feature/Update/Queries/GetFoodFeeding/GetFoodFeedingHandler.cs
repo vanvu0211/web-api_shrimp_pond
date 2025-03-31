@@ -28,7 +28,6 @@ namespace ShrimpPond.Application.Feature.Update.Queries.GetFoodFeeding
         public async Task<List<GetFoodFeedingDTO>> Handle(GetFoodFeeding request, CancellationToken cancellationToken)
         {
             //query
-
             var foodFeedings = _unitOfWork.foodFeedingRepository.FindByCondition(f => f.pondId == request.pondId );
 
             List<GetFoodFeedingDTO> getFoodFeedingDTOs = new List<GetFoodFeedingDTO>();

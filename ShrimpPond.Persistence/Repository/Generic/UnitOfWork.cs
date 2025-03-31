@@ -33,6 +33,9 @@ namespace ShrimpPond.Persistence.Repository.Generic
             timeSettingRepository = new TimeSettingRepository(context);
             timeSettingObjectRepository = new TimeSettingObjectRepository(context);
             cleanSensorRepository = new CleanSensorRepository(context);
+            machineRepository = new MachineRepository(context);
+            pondIdRepository = new PondIdRepository(context);
+            alarmRepository = new AlarmRepository(context);
         }
         public IPondRepository pondRepository { get; private set; }
         public ICertificateRepository certificateRepository { get; private set; }
@@ -51,6 +54,9 @@ namespace ShrimpPond.Persistence.Repository.Generic
         public ITimeSettingRepository timeSettingRepository { get; private set; }
         public ITimeSettingObjectRepository timeSettingObjectRepository { get; private set; }
         public ICleanSensorRepository cleanSensorRepository { get; private set; }
+        public IMachineRepository machineRepository { get; private set; }
+        public IPondIdRepository pondIdRepository { get; private set; }
+        public IAlarmRepository alarmRepository { get; private set; }
 
         public async Task<int> CommitAsync()
         {

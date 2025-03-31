@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MimeKit.Tnef;
 using ShrimpPond.Application.Feature.Pond.Queries.GetAllPond;
 using ShrimpPond.Application.Feature.Traceability.Queries.GetSeedId;
 using ShrimpPond.Application.Feature.Traceability.Queries.GetTimeHarvest;

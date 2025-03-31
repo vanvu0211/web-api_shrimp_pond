@@ -47,6 +47,35 @@ namespace ShrimpPond.Persistence.Migrations
                     b.ToTable("timeSettingObjects");
                 });
 
+            modelBuilder.Entity("ShrimpPond.Domain.Alarm.Alarm", b =>
+                {
+                    b.Property<int>("AlarmId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AlarmId"), 1L, 1);
+
+                    b.Property<DateTime>("AlarmDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("AlarmDetail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AlarmName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("farmId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AlarmId");
+
+                    b.HasIndex("farmId");
+
+                    b.ToTable("Alarm");
+                });
+
             modelBuilder.Entity("ShrimpPond.Domain.Environments.EnvironmentStatus", b =>
                 {
                     b.Property<int>("environmentStatusId")
@@ -169,6 +198,57 @@ namespace ShrimpPond.Persistence.Migrations
                     b.HasIndex("foodFeedingId");
 
                     b.ToTable("FoodForFeeding");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.Machine.Machine", b =>
+                {
+                    b.Property<int>("machineId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("machineId"), 1L, 1);
+
+                    b.Property<int>("farmId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("machineName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("machineId");
+
+                    b.HasIndex("farmId");
+
+                    b.ToTable("Machines");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.Machine.PondId", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<int>("machineId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("pondId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("pondName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("machineId");
+
+                    b.ToTable("PondIds");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.Medicine.Medicine", b =>
@@ -484,6 +564,17 @@ namespace ShrimpPond.Persistence.Migrations
                     b.Navigation("timeSetting");
                 });
 
+            modelBuilder.Entity("ShrimpPond.Domain.Alarm.Alarm", b =>
+                {
+                    b.HasOne("ShrimpPond.Domain.Farm.Farm", "farm")
+                        .WithMany()
+                        .HasForeignKey("farmId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("farm");
+                });
+
             modelBuilder.Entity("ShrimpPond.Domain.Environments.EnvironmentStatus", b =>
                 {
                     b.HasOne("ShrimpPond.Domain.PondData.Pond", "pond")
@@ -526,6 +617,26 @@ namespace ShrimpPond.Persistence.Migrations
                         .IsRequired();
 
                     b.Navigation("foodFeeding");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.Machine.Machine", b =>
+                {
+                    b.HasOne("ShrimpPond.Domain.Farm.Farm", "farm")
+                        .WithMany()
+                        .HasForeignKey("farmId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("farm");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.Machine.PondId", b =>
+                {
+                    b.HasOne("ShrimpPond.Domain.Machine.Machine", null)
+                        .WithMany("pondIds")
+                        .HasForeignKey("machineId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.Medicine.Medicine", b =>
@@ -663,6 +774,11 @@ namespace ShrimpPond.Persistence.Migrations
             modelBuilder.Entity("ShrimpPond.Domain.Food.FoodFeeding", b =>
                 {
                     b.Navigation("foods");
+                });
+
+            modelBuilder.Entity("ShrimpPond.Domain.Machine.Machine", b =>
+                {
+                    b.Navigation("pondIds");
                 });
 
             modelBuilder.Entity("ShrimpPond.Domain.Medicine.MedicineFeeding", b =>

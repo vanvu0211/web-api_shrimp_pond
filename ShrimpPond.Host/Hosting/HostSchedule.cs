@@ -5,6 +5,7 @@ using ShrimpPond.Application.Contract.GmailService;
 using ShrimpPond.Application.Contract.Persistence.Genenric;
 using ShrimpPond.Application.Contract.SmsService;
 using ShrimpPond.Application.Models.Gmail;
+using ShrimpPond.Domain.Alarm;
 using ShrimpPond.Domain.PondData;
 using ShrimpPond.Infrastructure.Communication;
 using System;
@@ -35,12 +36,6 @@ namespace ShrimpPond.Host.Hosting
 
         public async Task Execute(IJobExecutionContext context)
         {
-            _smsSender.SendSms(new Application.Models.Sms.SmsMessage()
-            {
-                FROM = "+15863276894",
-                Body = "Test sms",
-                To= "+84357010930"
-            });
 
             using var scope = _scopeFactory.CreateScope();
 
@@ -86,7 +81,18 @@ namespace ShrimpPond.Host.Hosting
                         await Task.Delay(1000);
                         await _mqttClient.Publish($"SHRIMP_POND/START", "START", false);
                         await _mqttClient.Publish($"SHRIMP_POND/START_TIME/STATUS", "START", false);
-
+                        await _mqttClient.Publish($"SHRIMP_POND/FarmId/Value", farmActive.farmId.ToString(), true);
+                        //Luu alarm
+                        var alarm = new Alarm()
+                        {
+                            AlarmName = "Thông báo",
+                            AlarmDetail = "Gửi tín hiệu đo các ao: " + dataPonds,
+                            AlarmDate = DateTime.UtcNow.AddHours(7),
+                            farmId = farmActive.farmId
+                        };
+                        unitOfWork.alarmRepository.Add(alarm);
+                        await unitOfWork.SaveChangeAsync();
+                        //Gui maiil
                         await SendMail("vu34304@gmail.com", "Gửi danh sách Ao đo thành công", "");
                         await SendMail("van048483@gmail.com", "Gửi danh sách ao đo thành công", "");
 

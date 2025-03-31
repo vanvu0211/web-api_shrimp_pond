@@ -1,18 +1,17 @@
-using ShrimpPond.API.Hubs;
-using ShrimpPond.API.Middleware;
-using ShrimpPond.API.Worker;
-using ShrimpPond.Application;
-using ShrimpPond.Infrastructure.Communication;
-using ShrimpPond.Persistence;
-using Quartz;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
+using Quartz;
 using ShrimpPond.API.Authorization.Data;
-using Buffer = ShrimpPond.API.Worker.Buffer;
+using ShrimpPond.API.Hubs;
+using ShrimpPond.API.Middleware;
+using ShrimpPond.API.Woker;
+using ShrimpPond.Application;
 using ShrimpPond.Infrastructure;
+using ShrimpPond.Infrastructure.Communication;
+using ShrimpPond.Persistence;
+using System.Text;
 
 namespace ShrimpPond.API
 {
@@ -36,9 +35,12 @@ namespace ShrimpPond.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddMemoryCache();
+
             //builder.Services.Configure<MqttOptions>(builder.Configuration.GetSection("MqttOptions"));
             //builder.Services.AddSignalR();
             //builder.Services.AddSingleton<ManagedMqttClient>();
+            //builder.Services.AddHostedService<HostMachineWorker>();
+
             //builder.Services.AddSingleton<Buffer>();
 
 
@@ -111,7 +113,7 @@ namespace ShrimpPond.API
             app.UseCors("AllowAll");
 
             app.MapControllers();
-            //app.MapHub<NotificationHub>("/notificationHub");
+            //app.MapHub<NotificationHub>("/NotificationHub");
 
             app.Run();
 
