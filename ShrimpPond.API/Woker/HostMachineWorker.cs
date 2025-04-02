@@ -84,16 +84,16 @@ namespace ShrimpPond.API.Woker
                                     var data = new DataNotification(topic2, payloadMessage);
                                     string jsonData = JsonConvert.SerializeObject(data);
                                     await _hubContext.Clients.All.SendAsync("MachineStatusChanged", jsonData);
-                                    //Luu alarm
-                                    var alarm = new Alarm()
-                                    {
-                                        AlarmName = "Thông báo",
-                                        AlarmDetail = "Tình trạng kết nối ESP tủ điện 2: " + payloadMessage,
-                                        AlarmDate = DateTime.UtcNow.AddHours(7),
-                                        farmId = farmId
-                                    };
-                                    //unitOfWork.alarmRepository.Add(alarm);
-                                    //await unitOfWork.SaveChangeAsync();
+                                    ////Luu alarm
+                                    //var alarm = new Alarm()
+                                    //{
+                                    //    AlarmName = "Thông báo",
+                                    //    AlarmDetail = "Tình trạng kết nối ESP tủ điện 2: " + payloadMessage,
+                                    //    AlarmDate = DateTime.UtcNow.AddHours(7),
+                                    //    farmId = farmId
+                                    //};
+                                    ////unitOfWork.alarmRepository.Add(alarm);
+                                    ////await unitOfWork.SaveChangeAsync();
                                     break;
                                 }
                             case "Oxi":
@@ -103,23 +103,23 @@ namespace ShrimpPond.API.Woker
                                     string jsonData = JsonConvert.SerializeObject(data);
                                     await _hubContext.Clients.All.SendAsync("MachineStatusChanged", jsonData);
 
-                                    //Luu gia tri vao database
-                                    var oxiMachines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy quạt oxi").ToList();
-                                    foreach (var oxiMachine in oxiMachines)
-                                    {
-                                        oxiMachine.status = (payloadMessage == "OFF") ? false : true;
-                                        unitOfWork.machineRepository.Update(oxiMachine);
-                                    }
+                                    ////Luu gia tri vao database
+                                    //var oxiMachines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy quạt oxi").ToList();
+                                    //foreach (var oxiMachine in oxiMachines)
+                                    //{
+                                    //    oxiMachine.status = (payloadMessage == "OFF") ? false : true;
+                                    //    unitOfWork.machineRepository.Update(oxiMachine);
+                                    //}
                                    
 
-                                    //Luu alarm
-                                    var alarm = new Alarm()
-                                    {
-                                        AlarmName = "Thông báo",
-                                        AlarmDetail = (payloadMessage == "OFF") ? "Tắt" + " máy quạt oxi" : "Bật" ,
-                                        AlarmDate = DateTime.UtcNow.AddHours(7),
-                                        farmId = farmId
-                                    };
+                                    ////Luu alarm
+                                    //var alarm = new Alarm()
+                                    //{
+                                    //    AlarmName = "Thông báo",
+                                    //    AlarmDetail = (payloadMessage == "OFF") ? "Tắt" + " máy quạt oxi" : "Bật" ,
+                                    //    AlarmDate = DateTime.UtcNow.AddHours(7),
+                                    //    farmId = farmId
+                                    //};
                                     //unitOfWork.alarmRepository.Add(alarm);
                                     //await unitOfWork.SaveChangeAsync();
                                     //Gui gmail
@@ -133,21 +133,21 @@ namespace ShrimpPond.API.Woker
                                     string jsonData = JsonConvert.SerializeObject(data);
                                     await _hubContext.Clients.All.SendAsync("MachineStatusChanged", jsonData);
 
-                                    //Luu gia tri vao database
-                                    var wasteSeparatorMachines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy lọc phân").ToList();
-                                    foreach (var wasteSeparatorMachine in wasteSeparatorMachines)
-                                    {
-                                        wasteSeparatorMachine.status = (payloadMessage == "OFF") ? false : true;
-                                        unitOfWork.machineRepository.Update(wasteSeparatorMachine);
-                                    }
-                                    //Luu alarm
-                                    var alarm = new Alarm()
-                                    {
-                                        AlarmName = "Thông báo",
-                                        AlarmDetail = (payloadMessage == "OFF") ? "Tắt máy lọc phân" : "Bật máy lọc phân",
-                                        AlarmDate = DateTime.UtcNow.AddHours(7),
-                                        farmId = farmId
-                                    };
+                                    ////Luu gia tri vao database
+                                    //var wasteSeparatorMachines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy lọc phân").ToList();
+                                    //foreach (var wasteSeparatorMachine in wasteSeparatorMachines)
+                                    //{
+                                    //    wasteSeparatorMachine.status = (payloadMessage == "OFF") ? false : true;
+                                    //    unitOfWork.machineRepository.Update(wasteSeparatorMachine);
+                                    //}
+                                    ////Luu alarm
+                                    //var alarm = new Alarm()
+                                    //{
+                                    //    AlarmName = "Thông báo",
+                                    //    AlarmDetail = (payloadMessage == "OFF") ? "Tắt máy lọc phân" : "Bật máy lọc phân",
+                                    //    AlarmDate = DateTime.UtcNow.AddHours(7),
+                                    //    farmId = farmId
+                                    //};
                                     //unitOfWork.alarmRepository.Add(alarm);
                                     //await unitOfWork.SaveChangeAsync();
                                     //Gui gmail
@@ -160,21 +160,21 @@ namespace ShrimpPond.API.Woker
                                     var data = new DataNotification(topic2, payloadMessage);
                                     string jsonData = JsonConvert.SerializeObject(data);
                                     await _hubContext.Clients.All.SendAsync("MachineStatusChanged", jsonData);
-                                    //Luu gia tri vao database
-                                    var fan1Machines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy quạt 1").ToList();
-                                    foreach (var fan1Machine in fan1Machines)
-                                    {
-                                        fan1Machine.status = (payloadMessage == "OFF") ? false : true;
-                                        unitOfWork.machineRepository.Update(fan1Machine);
-                                    }
-                                    //Luu alarm
-                                    var alarm = new Alarm()
-                                    {
-                                        AlarmName = "Thông báo",
-                                        AlarmDetail = (payloadMessage == "OFF") ? "Tắt" + " máy quạt 1" : "Bật" + " máy quạt 1",
-                                        AlarmDate = DateTime.UtcNow.AddHours(7),
-                                        farmId = farmId
-                                    };
+                                    ////Luu gia tri vao database
+                                    //var fan1Machines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy quạt 1").ToList();
+                                    //foreach (var fan1Machine in fan1Machines)
+                                    //{
+                                    //    fan1Machine.status = (payloadMessage == "OFF") ? false : true;
+                                    //    unitOfWork.machineRepository.Update(fan1Machine);
+                                    //}
+                                    ////Luu alarm
+                                    //var alarm = new Alarm()
+                                    //{
+                                    //    AlarmName = "Thông báo",
+                                    //    AlarmDetail = (payloadMessage == "OFF") ? "Tắt" + " máy quạt 1" : "Bật" + " máy quạt 1",
+                                    //    AlarmDate = DateTime.UtcNow.AddHours(7),
+                                    //    farmId = farmId
+                                    //};
                                     //unitOfWork.alarmRepository.Add(alarm);
                                     //await unitOfWork.SaveChangeAsync();
                                     //Gui gmail
@@ -187,21 +187,21 @@ namespace ShrimpPond.API.Woker
                                     var data = new DataNotification(topic2, payloadMessage);
                                     string jsonData = JsonConvert.SerializeObject(data);
                                     await _hubContext.Clients.All.SendAsync("MachineStatusChanged", jsonData);
-                                    //Luu gia tri vao database
-                                    var fan2Machines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy quạt 2").ToList();
-                                    foreach (var fan2Machine in fan2Machines)
-                                    {
-                                        fan2Machine.status = (payloadMessage == "OFF") ? false : true;
-                                        unitOfWork.machineRepository.Update(fan2Machine);
-                                    }
-                                    //Luu alarm
-                                    var alarm = new Alarm()
-                                    {
-                                        AlarmName = "Thông báo",
-                                        AlarmDetail = (payloadMessage == "OFF") ? "Tắt" + " máy quạt 2" : "Bật" + " máy quạt 2",
-                                        AlarmDate = DateTime.UtcNow.AddHours(7),
-                                        farmId = farmId
-                                    };
+                                    ////Luu gia tri vao database
+                                    //var fan2Machines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy quạt 2").ToList();
+                                    //foreach (var fan2Machine in fan2Machines)
+                                    //{
+                                    //    fan2Machine.status = (payloadMessage == "OFF") ? false : true;
+                                    //    unitOfWork.machineRepository.Update(fan2Machine);
+                                    //}
+                                    ////Luu alarm
+                                    //var alarm = new Alarm()
+                                    //{
+                                    //    AlarmName = "Thông báo",
+                                    //    AlarmDetail = (payloadMessage == "OFF") ? "Tắt" + " máy quạt 2" : "Bật" + " máy quạt 2",
+                                    //    AlarmDate = DateTime.UtcNow.AddHours(7),
+                                    //    farmId = farmId
+                                    //};
                                     //unitOfWork.alarmRepository.Add(alarm);
                                     //await unitOfWork.SaveChangeAsync();
                                     //Gui gmail
@@ -215,20 +215,20 @@ namespace ShrimpPond.API.Woker
                                     string jsonData = JsonConvert.SerializeObject(data);
                                     await _hubContext.Clients.All.SendAsync("MachineStatusChanged", jsonData);
                                     //Luu gia tri vao database
-                                    var fan3Machines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy quạt 3").ToList();
-                                    foreach (var fan3Machine in fan3Machines)
-                                    {
-                                        fan3Machine.status = (payloadMessage == "OFF") ? false : true;
-                                        unitOfWork.machineRepository.Update(fan3Machine);
-                                    }
-                                    //Luu alarm
-                                    var alarm = new Alarm()
-                                    {
-                                        AlarmName = "Thông báo",
-                                        AlarmDetail = (payloadMessage == "OFF") ? "Tắt" + " máy quạt 3" : "Bật" + " máy quạt 3",
-                                        AlarmDate = DateTime.UtcNow.AddHours(7),
-                                        farmId = farmId
-                                    };
+                                    //var fan3Machines = unitOfWork.machineRepository.FindByCondition(x => x.machineName == "Máy quạt 3").ToList();
+                                    //foreach (var fan3Machine in fan3Machines)
+                                    //{
+                                    //    fan3Machine.status = (payloadMessage == "OFF") ? false : true;
+                                    //    unitOfWork.machineRepository.Update(fan3Machine);
+                                    //}
+                                    ////Luu alarm
+                                    //var alarm = new Alarm()
+                                    //{
+                                    //    AlarmName = "Thông báo",
+                                    //    AlarmDetail = (payloadMessage == "OFF") ? "Tắt" + " máy quạt 3" : "Bật" + " máy quạt 3",
+                                    //    AlarmDate = DateTime.UtcNow.AddHours(7),
+                                    //    farmId = farmId
+                                    //};
                                     //unitOfWork.alarmRepository.Add(alarm);
                                     //await unitOfWork.SaveChangeAsync();
 

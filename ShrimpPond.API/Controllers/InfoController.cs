@@ -10,7 +10,7 @@ namespace ShrimpPond.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [Authorize]
     public class InfoController : ControllerBase
     {
         private readonly IMediator _mediator;

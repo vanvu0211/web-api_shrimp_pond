@@ -16,7 +16,7 @@ namespace ShrimpPond.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [Authorize]
     public class UpdateController : ControllerBase
     {
         private readonly IMediator _mediator;

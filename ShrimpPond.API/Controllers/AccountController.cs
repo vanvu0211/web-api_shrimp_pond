@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using ShrimpPond.API.Authorization.Models;
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -31,10 +32,9 @@ namespace ShrimpPond.API.Controllers
             {
                 UserName = model.Username,
             };
-
             var result = await _userManager.CreateAsync(user, model.Password);
             var result1 = await _userManager.AddToRoleAsync(user, "Admin");
-            
+
             if (result.Succeeded && result1.Succeeded)
             {
                 return Ok(new { message = "User Registed Sucessfully" });

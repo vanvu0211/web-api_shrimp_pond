@@ -1,17 +1,22 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.Farm.Command.CreateFarm;
+using ShrimpPond.Application.Feature.Farm.Command.DeleteFarm;
 using ShrimpPond.Application.Feature.Farm.Queries.GetAllFarm;
 using ShrimpPond.Application.Feature.Machine.Command.CreateMachine;
+using ShrimpPond.Application.Feature.Machine.Command.DeleteMachine;
 using ShrimpPond.Application.Feature.Machine.Command.UpdateMachine;
 using ShrimpPond.Application.Feature.Machine.Queries.GetALlMachine;
 using ShrimpPond.Application.Feature.Machine.Queries.GetMachineByPondId;
+using ShrimpPond.Domain.Farm;
 
 namespace ShrimpPond.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MachineController : ControllerBase
     {
 
@@ -45,6 +50,13 @@ namespace ShrimpPond.API.Controllers
         {
             var id = await _mediator.Send(e);
             return Ok(e);
+        }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteMachine([FromQuery] int machineId)
+        {
+            var command = new DeleteMachine { machineId = machineId };
+            var IdReturn = await _mediator.Send(command);
+            return Ok(command);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShrimpPond.Application.Feature.Alarm.Command.FormatAlarm;
@@ -10,6 +11,7 @@ namespace ShrimpPond.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AlarmController : ControllerBase
     {
         private readonly IMediator _mediator;
