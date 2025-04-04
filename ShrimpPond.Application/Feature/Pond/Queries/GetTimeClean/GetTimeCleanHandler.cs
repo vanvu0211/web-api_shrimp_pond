@@ -42,7 +42,7 @@ namespace ShrimpPond.Application.Feature.Pond.Queries.GetTimeClean
             var firstTime = _unitOfWork.cleanSensorRepository.FindByCondition(x=>x.farmId == farm.farmId).OrderBy(x=>x.cleanSensorId).LastOrDefault();
             if (firstTime == null)
             {
-                var firstPond = _unitOfWork.pondRepository.FindAll().OrderBy(x => x.startDate).FirstOrDefault();
+                var firstPond = _unitOfWork.pondRepository.FindByCondition(x => x.farmId == farm.farmId).OrderBy(x => x.startDate).FirstOrDefault();
                 if (firstPond == null)
                 {
                     cleanTime = DateTime.UtcNow.AddHours(7).AddDays(-1);

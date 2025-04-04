@@ -10,8 +10,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.CreateCleanTime
     public class CreateCleanTime: IRequest<string>
     {
         public DateTime cleanTime {  get; set; }
-        public string userName { get; set; } = string.Empty;
-        public string farmName { get; set; } = string.Empty;
+        public int farmId { get; set; }
 
     }
 }

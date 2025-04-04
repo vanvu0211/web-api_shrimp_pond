@@ -23,7 +23,7 @@ namespace ShrimpPond.Application.Feature.Pond.Commands.CreateCleanTime
         public async Task<string> Handle(CreateCleanTime request, CancellationToken cancellationToken)
         {
 
-            var farm = _unitOfWork.farmRepository.FindByCondition(x => x.farmName == request.farmName && x.userName == request.userName).FirstOrDefault();
+            var farm = await _unitOfWork.farmRepository.GetByIdAsync(request.farmId);
             if (farm == null)
             {
                 throw new BadRequestException("Not Found Farm");
